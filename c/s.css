@@ -1,0 +1,769 @@
+html {font-size: 1em;}
+
+.pure-g [class *="pure-u"] {
+    font-family: avenir, "avenir next", "helvetica neue", helvetica, arial, sans-serif;  
+}
+
+body {
+  background-color: white;
+  font-family: adobe-garamond-pro,avenir, georgia, serif;     
+  font-weight: 500;
+  line-height: 1.45;
+  xline-height: 1.618;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: 600;
+  line-height: 1.2;
+  font-family: "Helvetica Neue",Arial,sans-serif;    
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 2.074em;
+}
+
+h2,
+h3 {
+    font-size: 1.2em;
+}
+
+h4 {
+    font-size: 0.833em;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+p {font-size: 1em;}
+
+small, .font_small {font-size: 0.833em;}
+
+.intro p {
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.centering-unknown {
+    display: table;
+    overflow: hidden;
+    width: 100%;
+}
+
+hr {
+    clear: both;
+}
+
+img,
+iframe {
+    max-width: 100%;
+}
+
+.multi-column {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;  
+    -webkit-column-gap: 1em; 
+    -moz-column-gap: 1em; 
+    column-gap: 1em;
+    max-width: 100%!important;
+    padding: 1em;
+}
+
+.multi-column p {
+    font-size: 1em;
+    padding: 0 0 1em;
+}
+
+section .floatLeft,
+section .floatRight {
+    float: none;
+    clear: none;
+}
+
+article {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 1em; 
+    overflow: hidden;
+}
+
+.embed-container { 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden; 
+    max-width: 100%; 
+} 
+
+.embed-container iframe, 
+.embed-container object, 
+.embed-container embed { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
+
+.awwesome {
+    background: #fff;
+}
+
+.awwesome article {
+      position: relative;
+    margin: 0;
+    xmax-width: 100%;
+    overflow: hidden;
+}
+
+.awwesome .iPad {
+    xmax-width: 650px;
+    margin: 0 0 0 -260px;
+    
+    xmax-width: 620px;
+    margin: 0;
+}
+
+.btn {
+    font-family: "Helvetica Neue",Arial,sans-serif; 
+    display: inline-block;
+    background: transparent;
+    border-radius: 5px;
+    box-shadow: none;
+    border: 1px solid #1ec185;
+    font-size: 18px;
+    font-weight: 500;
+    height: 55px;
+    line-height: 55px;
+    color: #fff;
+    padding: 0 2pc;
+}
+
+.intranet {
+    background: #005298;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…IgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+    background: -moz-linear-gradient(45deg, #005298 0%, #7f00a3 100%);
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#005298), color-stop(100%,#7f00a3));
+    background: -webkit-linear-gradient(45deg, #005298 0%,#7f00a3 100%);
+    background: -o-linear-gradient(45deg, #005298 0%,#7f00a3 100%);
+    background: -ms-linear-gradient(45deg, #005298 0%,#7f00a3 100%);
+    background: linear-gradient(45deg, #005298 0%,#7f00a3 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005298', endColorstr='#7f00a3',GradientType=1 );
+}
+
+.lily {
+    background: #171717;
+    background: #fff;
+}
+
+.intranet .iPad, 
+.intranet .iPad span,
+.intranet .iPad:before {
+    background: transparent;
+    border-color: rgba(255,255,255,0.1);
+}
+
+.lily .iPad, 
+.lily .iPad span,
+.lily .iPad:before {
+    background: transparent;
+    border-color: rgba(0,0,0,0.1);
+}
+
+.content {
+    float: left;
+    max-width: 28.488em;
+    line-height: 1.728em;
+}
+
+.awwesome .content {
+       margin-top: 1em;
+}
+
+.iPhone + .content {
+    xpadding-left: 50px
+}
+
+.iPad {
+    background: #fff;
+    position: relative;
+    display: block;
+    xclear: both;
+    float: left;
+    border: 1px solid rgba(0,0,0,.1);
+    
+    padding: 15px 50px;
+    xmax-width: 620px;
+    margin: 0;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+}
+
+.iPad:before {
+    content: '';
+    border: 1px solid rgba(0,0,0,.1);
+    position: absolute;
+    top: 50%;
+    display: block;
+    background: #fff;
+    
+    right: 21px;
+    margin: -3px auto 0;
+    height: 7px;
+    width: 7px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.iPad img {
+    height: auto;
+    background: #000;
+    display: block;
+    margin: 0 auto;
+        
+    padding: 2px;
+    width: 516px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;    
+}
+
+.iPad span {
+    content: '';
+    position: absolute;
+    top: 50%;
+    display: block;
+    background: #fff;
+    border: 1px solid rgba(0,0,0,.1);
+    
+    left: 7px;
+    margin: -17px auto 0;
+    height: 35px;
+    width: 35px;
+    -webkit-border-radius: 27px;
+    -moz-border-radius: 27px;
+    border-radius: 27px;
+
+}
+
+.iPhone {
+    clear: right;
+    float: right;
+    background: #fff;
+    position: relative;
+    display: block;
+    border: 1px solid rgba(0,0,0,.1);
+    width: 360px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    
+    margin: 0 auto;
+    clear: both;
+    float: none;
+    width: 260px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+
+.iPhone:before {
+    content: '';
+    display: block;
+    background: #fff;
+    margin: 25px auto 0;
+    height: 14px;
+    width: 14px;
+    border: 1px solid rgba(0,0,0,.1);
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    
+    margin: 15px auto 10px;
+    height: 8px;
+    width: 8px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+
+}
+
+.iPhone img {
+    float: none;
+    padding: 5px;
+    background: #000;
+    display: block;
+    margin: 50px auto 100px;
+    margin: 50px auto 100px;
+    width: 330px;
+    height: 578px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    
+    height: auto;
+    width: 240px;
+    margin: 25px auto 60px;
+    padding: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.iPhone span {
+    content: '';
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+    left: 0;
+    display: block;
+    background: #fff;
+    margin: 0 auto;
+    height: 70px;
+    width: 70px;
+    border: 1px solid rgba(0,0,0,.1);
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    
+    bottom: 10px;
+    height: 40px;
+    width: 40px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.iPhone:after {
+    content: '';
+    display: block;
+    background: #fff;
+    position: absolute;
+    top: 35px;
+    right: 0;
+    left: 0;
+    margin: 15px auto 0;
+    height: 10px;
+    width: 70px;
+    border: 1px solid rgba(0,0,0,.1);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    
+    top: 15px;
+    margin: 15px auto 0;
+    height: 6px;
+    width: 50px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+}
+
+header,
+footer {
+	line-height: 1;
+    padding: 2em 0;
+}
+
+footer {
+padding: 1.618em 0;
+text-align: center;
+position: relative;	
+background: #262626;
+color: #767676;
+line-height: 1;
+padding: 1em 0;
+text-align: center;    
+}
+
+footer p:first-child {
+    margin: 0 0 2.618em;
+}
+
+footer p {
+    font-size: 1em;
+	margin: 0;
+    line-height: 1.618em;
+    padding: 0 1.618em;
+}
+
+footer a {
+    border: none;
+}
+
+.cta {
+    border: 2px solid #333;
+    padding: .5em 1em;
+    border-radius: 40px;
+    -webkit-border-radius:40px;
+    -moz-border-radius:40px;
+    font-weight: 500;
+    color: #333;
+    display: inline-block;
+}
+
+header .cta {
+    text-transform: none;
+}
+
+.intro .cta {
+    float: none;
+    display: inline-block;
+    margin: 0;
+}
+
+a {
+    color: rgb(77, 155, 208);    
+	text-decoration: none;
+    border-bottom: 1px solid rgb(77, 155, 208);
+}
+
+.scroll {
+    border: none;
+    display: inline-block;
+    height: 44px;
+    width:44px;
+    line-height: 48px;
+    font-size: 1.2em;
+    background:#222;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -22px;
+}
+
+.pure-g img {
+    width: 100%;
+    height: auto;
+}
+
+.intro {
+    display: table;
+    overflow: hidden;
+    width: 100%;
+    padding: 0 0 1em;
+    position: relative;
+}
+
+.cta {
+    text-transform: uppercase;
+}
+
+.branding {
+    margin: 1em 0;
+    padding: 2em 0 0;
+}
+
+.branding div,
+.about div,
+.intranet + section div,
+.lily + section div {
+    padding: 1em;
+    max-width: 28.488em;
+    margin: 0 auto;
+}
+
+.intranet + section div,
+.lily + section div {
+    padding: 1em;
+}
+
+.lily + section div {
+    border-top: 1px solid #1f1f1f;
+    padding: 2em 0 0;
+}
+
+.intranet + section,
+.lily + section {
+    background: #f4f4f4;
+    xmargin-top: -152px;
+    position: relative;
+    color: #999999;
+    text-align: center;
+    padding: 0;
+}
+
+.lily + section {
+    background:#171717;
+    color:#5a5a5a;
+}
+
+.lily + section h2 {color: #fff;}
+.intranet + section h2 {color: #444;}
+
+section p {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.728em;
+}
+
+.branding {
+    background:#111;
+    text-align: center;
+}
+
+.branding img {
+    height: 44px;
+}
+
+.branding h2 {
+    color: #fff;
+}
+
+.branding p {
+    color: #5a5a5a;
+}
+
+.talk {
+    display: table;
+    overflow: hidden;
+    width: 100%;
+}
+
+.talk,
+.social {
+    text-align: center;
+}
+
+.social-icons {
+    padding: 0.5em;
+    display: inline-block;
+    font-size: 1.618em;
+}
+
+.linkedin {color: #0077b5;}
+.instagram {color: #3f729b;}
+.twitter {color: #55acee;}
+.dribbble {color: #ea4c89;}
+
+header {
+    width: 100%;
+    background: #fff;
+    text-align: center;
+}
+
+.avatar {
+    text-align: center;
+     height: 40px;
+    border-radius: 20px;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+}
+
+header h3 {
+    line-height: 40px;
+    margin: 0;
+}
+
+.wrap {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.intro .wrap h1 {
+    font-size: 1em;
+    padding: 2em 1em 0;
+    line-height: 1.2;
+}
+
+.intro .wrap p {
+    margin: 0 auto;
+    max-width: 17em;
+}
+
+@media screen and (min-width: 35.5em) {
+    
+section .floatLeft {float: left;}
+section .floatRight {float: right;}
+    
+.avatar {
+ height: 60px;
+border-radius: 30px;
+-webkit-border-radius:30px;
+-moz-border-radius:30px;
+}
+
+h2,
+h3 {
+font-size: 1.44em;
+}
+
+.multi-column {
+-webkit-column-count: 3;
+-moz-column-count: 3;
+column-count: 3;  
+-webkit-column-gap: 4em; 
+-moz-column-gap: 4em; 
+column-gap: 4em;
+padding: 3em 4em 4em;
+}
+
+.multi-column p {padding: 0 0 2em;}
+
+.lily + section .multi-column {
+-webkit-column-count: 2;
+-moz-column-count: 2; 
+column-count: 2; 
+-webkit-column-gap: 8em; 
+-moz-column-gap: 8em; 
+column-gap: 8em;
+padding: 5em 5em 0;
+}
+
+.lily + section {padding-bottom: 5em;}
+
+.branding div,
+.about div,
+.intranet + section div,
+.lily + section div {
+    padding: 8em 0;
+    max-width: 28.488em;
+}
+    
+.intranet .iPad,
+.lily .iPad {
+    xmax-width: 650px;
+    xmax-width: 620px;
+    max-width: 678px;
+}
+    
+.awwesome .iPad {
+    xmax-width: 650px;
+    max-width: 678px;
+    margin: 0 0 0 -260px;
+    }
+    
+.iPad {
+    float: none;
+padding: 35px 100px;
+
+-webkit-border-radius: 50px;
+-moz-border-radius: 50px;
+border-radius: 50px;    
+width: 100%;
+max-width: 1238px;
+margin: 15px 0 35px 0;    
+}
+    
+.iPad:before {
+right: 43px;
+margin: -7px auto 0;
+height: 14px;
+width: 14px;
+-webkit-border-radius: 7px;
+-moz-border-radius: 7px;
+border-radius: 7px;
+}
+    
+.iPad img {
+    xheight: 428px;
+    padding: 5px;
+    width: 1034px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+    
+.iPad span {    
+    left: 25px;
+    margin: -25px auto 0;
+    height: 50px;
+    width: 50px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    
+}
+
+.iPhone + .content {padding-left: 50px;}
+    
+.intranet + section div,
+.lily + section div {
+    padding: 3em 2em 0em;
+}    
+    
+.intranet + section,
+.lily + section {
+margin-top: -156px;
+}
+
+.branding {margin: 5em 0;}
+
+.awwesome .content {
+margin-top: 150px;
+padding: 0 0 0 50px;
+}
+
+section p {
+font-size: 1.2em;
+line-height: 1.728em;
+}
+
+.intro {padding: 8em 0 5em;}
+
+.intro p {
+font-weight: 500;
+font-size: 1.2em;
+}
+
+article {padding: 3em 0;}
+
+header h3 {float: left;}
+
+.intro .wrap h1 {
+font-size: 1.618em;
+max-width: 16.612em;
+margin: 0 auto 1em;
+padding: 0 1em;
+line-height: 1.618em;
+}
+
+.cta {
+float: right;
+margin-right: 2em;
+}
+
+footer {padding: 3em 0;}
+    
+.social-icons {padding: 1em;}
+    
+}
+
+.social-icons {color: #fff;}
+
+@charset "UTF-8";
+/*!
+  Ionicons, v2.0.0
+  Created by Ben Sperry for the Ionic Framework, http://ionicons.com/
+  https://twitter.com/benjsperry  https://twitter.com/ionicframework
+  MIT License: https://github.com/driftyco/ionicons
+
+  Android-style icons originally built by Google’s
+  Material Design Icons: https://github.com/google/material-design-icons
+  used under CC BY http://creativecommons.org/licenses/by/4.0/
+  Modified icons to fit ionicon’s grid from original.
+*/
+@font-face { font-family: "Ionicons"; src: url("../f/ionicons.eot?v=2.0.0"); src: url("../f/ionicons.eot?v=2.0.0#iefix") format("embedded-opentype"), url("../f/ionicons.ttf?v=2.0.0") format("truetype"), url("../f/ionicons.woff?v=2.0.0") format("woff"), url("../f/ionicons.svg?v=2.0.0#Ionicons") format("svg"); font-weight: normal; font-style: normal; }
+
+.ion, .ionicons, .ion-social-twitter:before, .ion-social-twitter-outline:before,
+.ion-social-instagram:before, .ion-social-instagram-outline:before,.ion-social-linkedin:before, .ion-social-linkedin-outline:before, .ion-social-dribbble:before, .ion-social-dribbble-outline:before { display: inline-block; font-family: "Ionicons"; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; text-rendering: auto; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+.ion-social-twitter:before { content: "\f243"; }
+.ion-social-twitter-outline:before { content: "\f242"; }
+.ion-social-instagram:before { content: "\f351"; }
+.ion-social-instagram-outline:before { content: "\f350"; }
+.ion-social-linkedin:before { content: "\f239"; }
+.ion-social-linkedin-outline:before { content: "\f238"; }
+.ion-social-dribbble:before { content: "\f22d"; }
+.ion-social-dribbble-outline:before { content: "\f22c"; }
