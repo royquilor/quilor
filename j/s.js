@@ -1,4 +1,3 @@
-
 count = 0
 
 $('document').ready(function(){
@@ -38,4 +37,4 @@ $('document').ready(function(){
 	// Kick off one resize to fix all videos on page load
 	}).resize();
 		
-})
+});

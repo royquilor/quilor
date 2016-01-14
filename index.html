@@ -49,20 +49,42 @@
     </header>
     <section class="talk">
         <article>
-            <figure>
-                <div class='embed-container'><iframe src='https://player.vimeo.com/video/130532021?title=0&byline=0&portrait=0' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div> 
-            </figure>
+                <figure>
+                    <div class='embed-container'>
+    <!--                    <iframe id="thevideo" src='https://player.vimeo.com/video/130532021?title=0&byline=0&portrait=0' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>-->
+                        <iframe id="thevideo" src='https://player.vimeo.com/video/130532021?api=1&title=0&byline=0&portrait=0' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                    </div> 
+                </figure> 
+                    <dl>
+                        <dt>00:07</dt>
+                        <dd><a href="#" data-seek="7.397" class="timecode">Awkward moment</a></dd>
+                        <dt>01:16</dt>
+                        <dd><a href="#" data-seek="76.191" class="timecode">Good old days</a></dd>
+                        <dt>04:13</dt>
+                        <dd><a href="#" data-seek="253.266" class="timecode">Influence</a></dd>
+                        <dt>16:52</dt>
+                        <dd><a href="#" data-seek="1012.391" class="timecode">Old portfolio</a></dd>
+                        <dt>21:40</dt>
+                        <dd><a href="#" data-seek="1299.905" class="timecode">Side projects</a></dd>
+                        <dt>37:15</dt>
+                        <dd><a href="#" data-seek="2235.209" class="timecode">Justify</a></dd>
+                        <dt>43:04</dt>
+                        <dd><a href="#" data-seek="2583.65" class="timecode">Be nice</a></dd>
+                        <dt>44:30</dt>
+                        <dd><a href="#" data-seek="2670.939" class="timecode">Do</a></dd>
+                    </dl> 
+<!--            <hr>-->
             <div class="center-column">
                 <h2>Get to know me first</h2>
-                <p>Dare to watch my first ever public talk at <a href="https://www.futurerising.com/talk/video/roy-quilor-freelancer-designer-founder-awwesome" target="_blank">FutureRising </a> in the University of West London. Hear my story on becoming a Web Designer, with lots of awkward moments, and how you could do it too.</p>
-            </div>
+                <p>Dare to watch my first ever public talk at <a href="https://www.futurerising.com/talk/video/roy-quilor-freelancer-designer-founder-awwesome" target="_blank">FutureRising </a> in the University of West London. Hear my story on becoming a Web Designer, with lots of awkward moments.</p>
+            </div>    
         </article>    
     </section>
     <section class="awwesome">
         <article>
             <figure>
             <div class="iPad white">
-                <a href="http://quilor.com/i/awwesome-web-large.jpg">
+                <a href="http://www.awwesome.com" target="_blank">
                     <picture>
                         <source srcset="i/awwesome-web-large.jpg" media="(min-width: 680px)">
                         <source srcset="i/awwesome-web-small.jpg">
@@ -180,16 +202,18 @@
             </div>    
         </article>
     </section>
-    <section class="intranet-video align-center black">
-            <video width="1280" height="720" title="Intranet" preload="auto" autoplay controls>
+    <section class="intranet-video black align-center">
+        <figure>
+            <video width="1280" height="720" title="Intranet" preload="auto" controls>
                 <source src="v/intranet.mp4" />
             </video>
+        </figure>
     </section>
     <section class="lily">
         <article>
             <figure>
                 <div class="iPad white">
-                    <a href="http://quilor.com/i/lily-quilor-large.jpg">
+                    <a href="http://www.lilyquilor.com" target="_blank">
                         <picture>
                             <source srcset="i/lily-quilor-large.jpg" media="(min-width: 680px)">
                             <source srcset="i/lily-quilor-small.jpg">
@@ -229,6 +253,10 @@
     </footer>
 </body>
   
-  <script src="j/s.js"></script>
   
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="http://a.vimeocdn.com/js/froogaloop2.min.js?97273-1352487961"></script>  
+  <script src="j/chapters.js"></script>     
+  <script src="j/s.js"></script>
+     
 </html>
