@@ -130,7 +130,7 @@ section .float-right {
 figure {
     max-width: 880px;
     margin: 0 auto;
-    padding: 0; 
+    padding: 1em; 
     overflow: hidden;
 }
 
@@ -515,7 +515,7 @@ header p {
 }
 
 .max-width .multi-column {
-    max-width: 80em;
+    max-width: 880px;
 }
 
 .branding {text-align: center;}
@@ -525,7 +525,10 @@ header p {
     margin: 0 auto;
 }
 
-.talk article {}  
+dl,
+figcaption {
+display: none;
+}
 
 @media screen and (min-width: 35.5em) {
     
@@ -539,6 +542,11 @@ header p {
 }
 
 @media screen and (min-width: 48em) {
+
+dl,
+figcaption {
+    display: block;
+}    
 
 .talk {padding: 0 0 5em; }    
 
@@ -572,7 +580,7 @@ padding-top: 0
 .center-column h2,
 .center-column p {
 text-align: center;
-max-width: 34.488em;
+max-width: 27.488em;
 margin-left: auto;
 margin-right: auto;
 }    
@@ -668,6 +676,10 @@ font-size: 1.2em;
 }
     
 figure {padding: 5em 0 0;}
+    figcaption {
+        text-align: center;
+        padding: 1em;
+    }
 .intranet-video figure {padding: 0;}    
 
 footer {
