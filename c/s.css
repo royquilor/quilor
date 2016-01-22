@@ -127,7 +127,7 @@ section .float-right {
     clear: none;
 }
 
-figure {
+article figure {
     max-width: 880px;
     margin: 0 auto;
     padding: 1em; 
@@ -675,12 +675,19 @@ font-weight: 500;
 font-size: 1.2em;
 }
     
-figure {padding: 5em 0 0;}
+figure {
+padding: 5em 0 0;
+    margin: 0 auto;
+}
+    
     figcaption {
         text-align: center;
         padding: 1em;
     }
-.intranet-video figure {padding: 0;}    
+.intranet-video figure {
+    padding: 0;
+    margin: 0 auto;
+}    
 
 footer {
 margin-top:3em;

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAOA,CAAE,CACA,UAAU,CAAE,UAAU,CAGxB,IAAK,CACH,UAAU,CAZM,IAAI,CAapB,OAAO,CAZC,IAAI,CAcd,IAAK,CACH,OAAO,CAfC,IAAI,CAgBZ,UAAU,CAAE,KAAK,CAGnB,CAAE,CACA,KAAK,CAnBC,OAAO,CAoBb,eAAe,CAAE,IAAI,CACrB,eAAiB,CACf,KAAK,CAAE,OAAmB",
+"sources": ["../global.scss"],
+"names": [],
+"file": "global.css"
+}
