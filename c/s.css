@@ -14,12 +14,12 @@ margin-bottom: 1.3em;
 html {font-size: 1em;}
 
 .pure-g [class *="pure-u"] {
-    font-family: avenir, "avenir next", "helvetica neue", helvetica, arial, sans-serif;  
+    font-family: 'Karla','helvetica neue', helvetica, arial, sans-serif;  
 }
 
 body {
   background-color: white;
-  font-family: adobe-garamond-pro,georgia, serif;     
+  font-family: 'Karla','helvetica neue', helvetica, arial, sans-serif;      
   font-weight: 500;
   line-height: 1.45;
   color: #222;
@@ -29,9 +29,11 @@ body {
 
 h1, h2, h3, h4 {
   margin: 1.414em 0 0.5em;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.2;
-  font-family: "Helvetica Neue",Arial,sans-serif;    
+  font-family: 'Montserrat','Helvetica Neue',Arial,sans-serif;    
+  letter-spacing: 0.1em;    
+  text-transform: uppercase;
 }
 
 h1 {
@@ -40,14 +42,12 @@ h1 {
 }
 
 h2 {
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 h3 {
     font-size: 0.833em;
     margin: 0;
-    text-transform: uppercase;
-    letter-spacing: 1px;
 }
 
 p {font-size: 1em;}
@@ -57,7 +57,13 @@ small, .font_small {font-size: 0.833em;}
 a {
     color: rgb(77, 155, 208);    
 	text-decoration: none;
-    border-bottom: 1px solid rgb(77, 155, 208);
+    background: rgba(77, 155, 208,.1);
+}
+
+.black a,
+footer p a,
+#console a {
+    background: none;
 }
 
 header p {
@@ -65,7 +71,12 @@ header p {
     font-size: 1em;
 }
 
-hr {clear: both;border-color:#eee;}
+hr {
+    clear: both;
+    border: 1px solid rgba(0,0,0,0.2);
+    width:2rem;
+    margin: 5em auto 0;
+}
 
 dl {
     max-width: 880px;
@@ -90,11 +101,12 @@ dt {
     clear: both;
     margin-bottom: 1.44em;
     margin-bottom: 1.728em;
-    font-family: "helvetica neue",arial,sans-serif;
     color: #bcbcbc;
 }
 
 .align-center {text-align: center;}
+.float-left {float:left;}
+.float-right {float:right;}
 
 img,
 iframe {
@@ -110,7 +122,7 @@ section .multi-column {
     column-gap: 1em;
     xmax-width: 80em!important;
     margin: 0 auto;
-    padding: 0 1em;
+    padding: 0 2em;
 }
 
 section .multi-column h3 {text-align: left;}
@@ -127,33 +139,15 @@ section .float-right {
     clear: none;
 }
 
+figure {
+    margin: 0;
+}
+
 article figure {
     max-width: 880px;
     margin: 0 auto;
-    padding: 1em; 
+    padding: 1em 0; 
     overflow: hidden;
-}
-
-.talk figure {
-/*
-    max-width: 100%;
-    width: 66.6667%;
-    margin: 0;
-    float: left;
-*/
-}
-
-.chapters {
-/*
-   width: 33.3333%;
-   float: left;
-    xbackground: #f3f3f3;
-*/
-}
-
-.chapters a {
-    xcolor: #222;
-    xborder: 0;
 }
 
 .embed-container { 
@@ -177,6 +171,25 @@ article figure {
 video {
     max-width: 100%;
     height: auto;
+}
+
+.passion {
+background: #e53935; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #e53935 , #e35d5b); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #e53935 , #e35d5b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+.leaf {
+background: #1D976C; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #1D976C , #93F9B9); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #1D976C , #93F9B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.friday {
+background: #83a4d4; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #83a4d4 , #b6fbff); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #83a4d4 , #b6fbff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */            
 }
 
 .awwesome {
@@ -285,6 +298,10 @@ background: linear-gradient(to left, #B24592 , #F15F79); /* W3C, IE 10+/ Edge, F
     -moz-border-radius: 27px;
     border-radius: 27px;
 
+}
+
+.gridscores .iPad {
+    max-width: 678px;
 }
 
 .iPhone {
@@ -410,7 +427,7 @@ footer {
 padding: 1.618em 0;
 text-align: center;
 position: relative;	
-background: #262626;
+xbackground: #262626;
 color: #555;
 line-height: 1;
 padding: 1em 0;
@@ -422,11 +439,14 @@ footer p:first-child {margin: 0 0 2.618em;}
 footer p {
     font-size: 1em;
 	margin: 0;
-    line-height: 1.618em;
-    padding: 0 1.618em;
+    line-height: 1em;
+    padding: 0 1em;
 }
 
-footer a {border: none;}
+footer a {
+    xborder: none;
+    font-size: 2.074em;
+}
 
 .pure-g img {
     width: 100%;
@@ -492,7 +512,7 @@ header h1 {
 
 header p {
     margin: 0 auto;
-    max-width: 18em;
+    padding: 0 2em;
     line-height: 1.44em;
 }
 
@@ -510,12 +530,13 @@ header p {
 }
 .center-column h2,
 .center-column p {
-    padding: 0 1em;
+    padding: 0 2em;
     text-align: left;
 }
 
 .max-width .multi-column {
     max-width: 880px;
+    max-width:1180px;
 }
 
 .branding {text-align: center;}
@@ -530,7 +551,38 @@ figcaption {
 display: none;
 }
 
+#code {
+    border-radius: 5px;
+    max-width: 750px;
+    margin: 0 auto;
+    padding-top: 15px;
+    font-size: 30px;
+    background: #ccc;
+    height: 630px;
+    font-family: 'Monaco', 'Courier New';
+    text-align: left;
+    font-size: 13px;
+    color: #fafafa;
+}
+
+#console {
+    max-width: 670px;
+    padding: 1.3em;
+    height: 610px;
+    margin: 0 auto;
+    background: #383737;
+}
+
 @media screen and (min-width: 35.5em) {
+    
+    h1, h2, h3, h4 {
+     letter-spacing: 0.2em;   
+    }
+    
+    #console {
+    padding: 40px;
+    height: 550px;    
+    }
     
     dl {
     padding: 2em 0;
@@ -542,6 +594,13 @@ display: none;
 }
 
 @media screen and (min-width: 48em) {
+    
+header p {max-width: 18em;}
+    
+article figure {padding: 5em 0;}
+    
+.talk article figure {padding: 4em 0 0;}
+.awwesome article figure {padding: 5em 0 4.5em;}    
 
 dl,
 figcaption {
@@ -556,11 +615,11 @@ z-index: 1;
 padding: 0 0 3em;
 }
     
-.black,
-.white {
+.center-column.black,
+.center-column.white {
 padding-top: 3em;
 }
-
+    
 .max-width.black,
 .max-width.white,
 .intranet-video.black {
@@ -569,7 +628,8 @@ padding-top: 0
     
 .awwesome .center-column,
 .intranet .center-column,
-.lily .center-column {
+.lily .center-column,
+.gridscores .center-column {
     margin-top: -166px;
 }    
 
@@ -580,7 +640,7 @@ padding-top: 0
 .center-column h2,
 .center-column p {
 text-align: center;
-max-width: 27.488em;
+max-width: 31.488em;
 margin-left: auto;
 margin-right: auto;
 }    
@@ -592,7 +652,7 @@ border-radius: 30px;
 -moz-border-radius:30px;
 }
 
-h2 {font-size: 1.44em;}
+h2 {xfont-size: 1.2em;}
   
 .branding img {margin: 5em 0 3em;}
 
@@ -664,7 +724,7 @@ padding: 0 2em 0;
 }    
   
 section p {
-font-size: 1.44em;    
+font-size: 1.2em;    
 line-height: 1.728em;
 }
 
@@ -690,11 +750,35 @@ padding: 5em 0 0;
 }    
 
 footer {
-margin-top:3em;
-padding: 3em 0;
+xmargin-top:3em;
+padding: 0 1em 3em;
 }
     
 .social-icons {padding: 1em;}
+
+.gridscores .iPhone,
+.gridscores .xiPad,
+.gridscores .apple-watch-container {
+position: absolute;
+}
+    
+    .gridscores .iPad {
+        margin-bottom: 0;
+    }
+    
+    .gridscores figure {
+        position: relative;
+        padding-bottom: 0;
+    }
+    .gridscores .iPhone {
+        bottom: 0;
+        left: 50%;
+    }
+    .gridscores .apple-watch-container {
+        bottom: 166px;
+        left: 50%;
+        margin-left: -115px;
+    }
     
 }
 
@@ -755,3 +839,62 @@ padding: 0 1em 0;
 .ion-social-linkedin-outline:before { content: "\f238"; }
 .ion-social-dribbble:before { content: "\f22d"; }
 .ion-social-dribbble-outline:before { content: "\f22c"; }
+
+.apple-watch{
+    background:#e2e2e2;
+    width:230px;
+    height:269px;
+    border-radius:43px;
+    padding:8px;
+    box-sizing:border-box;
+    border:1px solid #bcbcbc;
+    position:relative;
+    xmargin-right:13px;
+    float: left;
+}
+
+.apple-watch::before{
+    content:'';
+    display:block;
+    width:16px;
+    height:41px;
+    border-radius:45% 7px 7px 45%;
+    position:absolute;
+    right:-13px;
+    top:62px;
+    background:#e2e2e2;
+    border:1px solid #bcbcbc;
+}
+
+.apple-watch::after{
+    content:'';
+    display:block;
+    width:5px;
+    height:67px;
+    border-radius:8px 3px 3px 8px;
+    position:absolute;
+    right:-5px;
+    top:140px;
+    background:#e2e2e2;
+    border:1px solid #bcbcbc;
+}
+
+.apple-watch,
+.apple-watch::before,
+.apple-watch::after {
+    background: transparent;
+    border:1px solid rgba(255,255,255,.3);
+}
+
+.apple-watch__screen{
+    background:#030303;
+    height:100%;
+    border-radius:35px;
+    box-sizing:border-box;
+    padding:28px;
+    overflow:hidden;}
+
+.apple-watch__screen img{
+    border-radius:5px;
+    height:100%;
+}
