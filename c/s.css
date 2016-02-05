@@ -11,10 +11,21 @@ margin-bottom: 1.3em;
 
 */
 
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 html {font-size: 1em;}
 
 .pure-g [class *="pure-u"] {
     font-family: 'Karla','helvetica neue', helvetica, arial, sans-serif;  
+}
+
+.pure-g {
+    max-width: 1180px;
+    margin: 0 auto;
 }
 
 body {
@@ -125,8 +136,13 @@ section .multi-column {
     padding: 0 2em;
 }
 
-section .multi-column h3 {text-align: left;}
-section .multi-column p {
+section .multi-column h3,
+.l-box h3 {
+    text-align: left;
+}
+
+section .multi-column p,
+.pure-g .l-box p {
     font-size: 1em;
     padding: 0;
     line-height: 1.44em;
@@ -301,7 +317,7 @@ background: linear-gradient(to left, #B24592 , #F15F79); /* W3C, IE 10+/ Edge, F
 }
 
 .gridscores .iPad {
-    max-width: 678px;
+    xmax-width: 678px;
 }
 
 .iPhone {
@@ -430,7 +446,7 @@ position: relative;
 xbackground: #262626;
 color: #555;
 line-height: 1;
-padding: 1em 0;
+padding: 1em 2em;
 text-align: center;    
 }
 
@@ -440,11 +456,9 @@ footer p {
     font-size: 1em;
 	margin: 0;
     line-height: 1em;
-    padding: 0 1em;
 }
 
 footer a {
-    xborder: none;
     font-size: 2.074em;
 }
 
@@ -493,6 +507,7 @@ section p {
     padding: 0.5em;
     display: inline-block;
     font-size: 1.618em;
+    background: none;
 }
 
 .linkedin {color: #0077b5;}
@@ -530,7 +545,7 @@ header p {
 }
 .center-column h2,
 .center-column p {
-    padding: 0 2em;
+    xpadding: 0 2em;
     text-align: left;
 }
 
@@ -558,7 +573,7 @@ display: none;
     padding-top: 15px;
     font-size: 30px;
     background: #ccc;
-    height: 630px;
+    xheight: 630px;
     font-family: 'Monaco', 'Courier New';
     text-align: left;
     font-size: 13px;
@@ -566,14 +581,34 @@ display: none;
 }
 
 #console {
-    max-width: 670px;
+    xmax-width: 670px;
     padding: 1.3em;
-    height: 610px;
+    xheight: 610px;
     margin: 0 auto;
     background: #383737;
 }
 
+.about {
+    border-top: 1px solid #eee;
+}
+
+.l-box {padding: 1em 2em;}
+
+.l-box.center-column {padding: 1em 2em 0;}
+
+.awwesome .l-box.center-column.black {padding: 1em 2em;}
+
+.lily .pure-g .l-box {padding: 1em 2em 0;}
+
 @media screen and (min-width: 35.5em) {
+    
+.l-box {padding: 2em;}
+
+.l-box.center-column {padding: 3em 2em 0;}
+
+.awwesome .l-box.center-column.black {padding: 3em 2em;}
+
+.lily .pure-g .l-box {padding: 1em 2em 0;}
     
     h1, h2, h3, h4 {
      letter-spacing: 0.2em;   
@@ -581,7 +616,7 @@ display: none;
     
     #console {
     padding: 40px;
-    height: 550px;    
+    xheight: 550px;    
     }
     
     dl {
@@ -595,10 +630,13 @@ display: none;
 
 @media screen and (min-width: 48em) {
     
-header p {max-width: 18em;}
+header p {max-width: 18em;padding: 0;}
     
 article figure {padding: 5em 0;}
-    
+    .mobile article figure {padding: 5em 0 0;}
+    .gains.mobile article figure {
+    padding: 5em 0;    
+    }
 .talk article figure {padding: 4em 0 0;}
 .awwesome article figure {padding: 5em 0 4.5em;}    
 
@@ -612,12 +650,12 @@ figcaption {
 .center-column {
 position: relative;
 z-index: 1;
-padding: 0 0 3em;
+xpadding: 0 0 3em;
 }
     
 .center-column.black,
 .center-column.white {
-padding-top: 3em;
+xpadding-top: 3em;
 }
     
 .max-width.black,
@@ -634,6 +672,7 @@ padding-top: 0
 }    
 
 .talk .center-column {margin-top: 0;}
+.about {margin-top: 4em;}    
     
 .intranet-video {line-height: 0;}    
     
@@ -654,12 +693,12 @@ border-radius: 30px;
 
 h2 {xfont-size: 1.2em;}
   
-.branding img {margin: 5em 0 3em;}
+.branding img {margin: 1em 0 3em;}
 
 .intranet .iPad,
 .lily .iPad,
 .awwesome .iPad {
-    max-width: 678px;
+    xmax-width: 678px;
 }
     
 .iPad {
@@ -749,10 +788,7 @@ padding: 5em 0 0;
     margin: 0 auto;
 }    
 
-footer {
-xmargin-top:3em;
-padding: 0 1em 3em;
-}
+footer {padding: 3em 2em;}
     
 .social-icons {padding: 1em;}
 
@@ -788,7 +824,7 @@ section .float-left {float: left;}
 section .float-right {float: right;} 
     
 dl {
-padding: 3em 0;
+padding: 3em 0 0;
 -webkit-column-count: 4;
 -moz-column-count: 4;
 column-count: 4;     
