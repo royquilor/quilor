@@ -1,11 +1,11 @@
 module.exports = function(grunt) {
 
-    // 1. All configuration goes here 
+    // 1. All configuration goes here
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
             // 2. Configuration for concatinating files goes here.
-            concat: {   
+            concat: {
                 dist: {
                     src: [
                         'js/chapters.js',
@@ -36,16 +36,17 @@ module.exports = function(grunt) {
                         style: 'compressed'
                     },
                     files: {
-                        'c/build/global.css': 'c/global.scss'
+                        'c/build/global.css': ['c/global.scss'],
+                        'c/build/s.css': ['c/s.scss']
                     }
-                } 
+                }
             },
             cssmin: {
                 combine: {
                     files: {
-                        'c/build/global-min.css': ['c/normalize.css', 'c/s.css']
+                        'c/build/global-min.css': ['c/libs/normalize.css','c/build/global.css','c/build/s.css']
                     }
-                }  
+                }
             },
             watch: {
                 options: {
@@ -56,16 +57,30 @@ module.exports = function(grunt) {
                     tasks: ['concat', 'uglify'],
                     options: {
                         spawn: false,
-                    },
+                    }
                 },
-            css: {
-                files: ['c/*.scss', 'c/*.css'],
-                tasks: ['sass', 'cssmin'],
-                options: {
+                css: {
+                    files: ['c/*.scss'],
+                    tasks: ['sass', 'cssmin'],
+                    options: {
+                        spawn: false,
+                    }
+                },
+                images: {
+                  files: ['i/*.{png,jpg,gif}'],
+                  tasks: ['imagemin'],
+                  options: {
                     spawn: false,
+                  }
+                },
+                html: {
+                  files: ['*.html'],
+                  tasks: [],
+                  options: {
+                    spawn: false
+                  }
                 }
-            }    
-        }    
+              }
 
     });
 
