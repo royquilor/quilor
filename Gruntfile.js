@@ -1,4 +1,8 @@
+/* globals module, require */
+
 module.exports = function(grunt) {
+
+    "use strict";
 
     // 1. All configuration goes here
     grunt.initConfig({
@@ -14,85 +18,67 @@ module.exports = function(grunt) {
                     dest: 'js/build/production.js'
                 }
             },
+
             uglify: {
                 build: {
                     src: 'js/build/production.js',
                     dest: 'js/build/production.min.js'
                 }
             },
-            imagemin: {
-                dynamic: {
-                    files: [{
-                        expand: true,
-                        cwd: 'i/',
-                        src: ['**/*.{png,jpg,gif}'],
-                        dest: 'i/build/'
-                    }]
-                }
-            },
+
             sass: {
                 dist: {
                     options: {
-                        style: 'compressed'
+                        style: 'compressed',
+                        require: 'susy'
                     },
                     files: {
-                        'c/build/global.css': ['c/global.scss'],
-                        'c/build/s.css': ['c/s.scss']
+                        'css/global.css': ['sass/global.scss']
                     }
                 }
             },
+
             cssmin: {
                 combine: {
                     files: {
-                        'c/build/global-min.css': ['c/libs/normalize.css','c/build/global.css','c/build/s.css']
+                        'css/global-min.css': ['css/global.css']
                     }
                 }
             },
+
+            shell: {
+              jekyllServe: {
+                command: "jekyll serve"
+              },
+              jekyllBuild: {
+                command: "jekyll build"
+              }
+            },
+
             watch: {
                 options: {
                     livereload: true,
                 },
-                scripts: {
+                site: {
+                  files: ['index.html'],
+                  tasks: ['shell:jekyllBuild']
+                },
+                js: {
                     files: ['js/*.js'],
-                    tasks: ['concat', 'uglify'],
-                    options: {
-                        spawn: false,
-                    }
+                    tasks: ['concat', 'uglify', 'shell:jekyllBuild']
                 },
                 css: {
-                    files: ['c/*.scss'],
-                    tasks: ['sass', 'cssmin'],
-                    options: {
-                        spawn: false,
-                    }
-                },
-                images: {
-                  files: ['i/*.{png,jpg,gif}'],
-                  tasks: ['imagemin'],
-                  options: {
-                    spawn: false,
-                  }
-                },
-                html: {
-                  files: ['*.html'],
-                  tasks: [],
-                  options: {
-                    spawn: false
-                  }
+                    files: ['sass/*.scss'],
+                    tasks: ['sass', 'cssmin', 'shell:jekyllBuild']
                 }
               }
-
     });
 
     // 3. Where we tell Grunt we plan to use this plug-in.
-    grunt.loadNpmTasks('grunt-contrib-concat');
-    grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-imagemin');
-    grunt.loadNpmTasks('grunt-contrib-sass');
-    grunt.loadNpmTasks('grunt-contrib-cssmin');
-    grunt.loadNpmTasks('grunt-contrib-watch');
+    require("load-grunt-tasks")(grunt);
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['concat', 'uglify', 'sass', 'cssmin', 'imagemin', 'watch']);
+    grunt.registerTask("serve", ["shell:jekyllServe"]);
+    grunt.registerTask('default', ['concat', 'uglify', 'sass', 'cssmin', 'shell:jekyllBuild', 'watch']);
 
 };
