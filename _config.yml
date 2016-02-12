@@ -22,7 +22,7 @@ exclude: [
   .gitignore,
   .DS_Store,
   CNAME,
-  scss,
+  sass,
   .sass-cache,
   package.json,
   Gruntfile.js,

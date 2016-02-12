@@ -117,21 +117,20 @@
     position: relative;
     display: block;
     border: 1px solid rgba(0,0,0,.1);
-    width: 360px;
-    @include rounded(50px);
 
     margin: 0 auto 1em;
     clear: both;
     float: none;
-    // width: 260px;
-    // @include rounded(30px);
+    width: 260px;
+    @include rounded(30px);
 
       @media screen and (min-width: $width-large) {
 
+        width: 360px;
+        @include rounded(50px);
         margin: 0 15px;
 
           .gains & {
-            xmargin-left: -8em;
             z-index: 3;
             margin: 0;
           }
@@ -154,74 +153,88 @@
           .mobile &:last-child {z-index: 1;}
 
       }
+
         img {
             float: none;
-            padding: 5px;
             background: #000;
             display: block;
-            margin: 50px auto 100px;
-            width: 330px;
-            height: 578px;
-            @include rounded(4px);
+            height: auto;
+            width: 240px;
+            margin: 25px auto 60px;
+            padding: 2px;
+            @include rounded(2px);
 
-            // height: auto;
-            // width: 240px;
-            // margin: 25px auto 60px;
-            // padding: 2px;
-            // @include rounded(2px);
+            @media screen and (min-width: $width-large) {
+              margin: 50px auto 100px;
+              padding: 5px;
+              width: 330px;
+              height: 578px;
+              @include rounded(4px);
+            }
         }
+
         span {
             content: '';
             position: absolute;
-            bottom: 15px;
             right: 0;
             left: 0;
             display: block;
             background: #fff;
             margin: 0 auto;
-            height: 70px;
-            width: 70px;
             border: 1px solid rgba(0,0,0,.1);
-            @include rounded(35px);
+            bottom: 10px;
+            height: 40px;
+            width: 40px;
+            @include rounded(20px);
 
-            // bottom: 10px;
-            // height: 40px;
-            // width: 40px;
-            // @include rounded(20px);
+            @media screen and (min-width: $width-large) {
+              bottom: 15px;
+              height: 70px;
+              width: 70px;
+              @include rounded(35px);
+            }
         }
+
         &::before {
             content: '';
             display: block;
             background: #fff;
-            margin: 25px auto 0;
-            height: 14px;
-            width: 14px;
             border: 1px solid rgba(0,0,0,.1);
-            @include rounded(7px);
 
-            // margin: 15px auto 10px;
-            // height: 8px;
-            // width: 8px;
-            // @include rounded(4px);
+            margin: 15px auto 10px;
+            height: 8px;
+            width: 8px;
+            @include rounded(4px);
+
+            @media screen and (min-width: $width-large) {
+              margin: 25px auto 0;
+              height: 14px;
+              width: 14px;
+              @include rounded(7px);
+            }
         }
+
         &::after {
             content: '';
             display: block;
             background: #fff;
             position: absolute;
-            top: 35px;
             right: 0;
             left: 0;
-            margin: 15px auto 0;
-            height: 10px;
-            width: 70px;
             border: 1px solid rgba(0,0,0,.1);
 
-            // top: 15px;
-            // margin: 15px auto 0;
-            // height: 6px;
-            // width: 50px;
+            top: 15px;
+            margin: 15px auto 0;
+            height: 6px;
+            width: 50px;
             @include rounded(5px);
+            
+            @media screen and (min-width: $width-large) {
+              top: 35px;
+              margin: 15px auto 0;
+              height: 10px;
+              width: 70px;
+            }
         }
 }
 
