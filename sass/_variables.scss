@@ -2,15 +2,20 @@ $font-stack:                Karla, helvetica neue, helvetica, arial, sans-serif;
 $font-heading:              'Helvetica Neue', Arial, sans-serif;
 
 $color-border:              #e8ecef;
-$color-background:          #fff;
+$color-background:          #ffffff;
 $color-background-alt:      #f5f7f9;
 $color-text:                #222;
 $color-text-alt:            #bcbcbc;
-$color-darken:              darken( $color-text, 10% );
 $color-lighten:             lighten( $color-text, 40% );
 $color-lighten-alt:         lighten( $color-text, 60% );
 $color-link:                rgb(77, 155, 208);
 $color-link-background:     rgba(77, 155, 208,.1);
+$blue:                      #4d9bd0;
+$red:                       #f44336;
+$white:                     #ffffff;
+$color-darken:              darken( $white, 10% );
+$color-darken-alt:          darken( $white, 40% );
+
 
 $color-plane:               #4d9bd0;
 $color-linkedin:            #0077b5;

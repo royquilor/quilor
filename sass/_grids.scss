@@ -13,6 +13,11 @@ $susy: (
 
 .grid-1 {@include container(1320px);}
 .gains .grid-1 {@include container(860px);}
+.about {background: $blue;}
+
+.about p {
+  color: $color-darken;
+}
 
 .gridscores .grid-1-4,
 .lily .grid-1-4 {

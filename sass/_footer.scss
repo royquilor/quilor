@@ -2,8 +2,12 @@ footer {
   text-align: center;
   position: relative;
   color: #555;
-  line-height: 1;
+  line-height: 2em;
   padding: 1em 2em;
+
+    em {
+      color: $red;
+    }
 
   @media screen and (min-width: $width-medium) {
     padding: 3em 2em;
@@ -12,14 +16,18 @@ footer {
     p {
       font-size: 1em;
       margin: 0;
-      line-height: 1em;
     }
 
-    a {
-      background: none;
-      display:inline-block;
-      font-size: 4em;
-      margin-bottom: 0.5em;
-    }
+}
 
+a.top {
+  background: none;
+  color: $white;
+  display:inline-block;
+  font-size: 4em;
+  margin-top: .5em;
+}
+
+.about h2 {
+  color: $white;
 }
