@@ -48,7 +48,10 @@ h3 {
     margin: 0;
 }
 
-p { font-size: 1em; }
+p {
+  font-size: 1em;
+  color: $color-lighten;
+}
 
 small,
 .font_small {
@@ -80,7 +83,7 @@ li {
   @media screen and (min-width: $width-medium) {
     padding: 0;
   }
-  
+
 }
 
 li p {

@@ -6,6 +6,9 @@ $color-background:          #fff;
 $color-background-alt:      #f5f7f9;
 $color-text:                #222;
 $color-text-alt:            #bcbcbc;
+$color-darken:              darken( $color-text, 10% );
+$color-lighten:             lighten( $color-text, 40% );
+$color-lighten-alt:         lighten( $color-text, 60% );
 $color-link:                rgb(77, 155, 208);
 $color-link-background:     rgba(77, 155, 208,.1);
 
