@@ -2,7 +2,7 @@ footer {
   text-align: center;
   position: relative;
   color: #555;
-  line-height: 2em;
+  xline-height: 2em;
   padding: 1em 2em;
 
     em {
@@ -15,7 +15,7 @@ footer {
 
     p {
       font-size: 1em;
-      margin: 0;
+      xmargin: 0;
     }
 
 }
@@ -40,4 +40,57 @@ a.top {
   h2 {
   color: $white;
   }
+}
+
+form {
+
+  @include cf();
+
+  @media screen and (min-width: $width-medium) {
+    @include container(440px);
+    margin:1em auto;
+  }
+
+}
+
+input {
+  background: $color-link-background;
+  -webkit-appearance: none;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  margin: 1em 0 0;
+  border-radius: 4px 0 0 4px;
+  float: left;
+  border-width: 0;
+  width: 100%;
+
+    @media screen and (min-width: $width-medium) {
+      width: 67%;
+      margin-top: 0;
+    }
+}
+
+input:focus {
+  outline: none;
+  color: $blue;
+}
+
+input[type="submit"] {
+  color: $white;
+  background: $blue;
+    border-radius: 0 4px 4px 0;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    @media screen and (min-width: $width-medium) {
+      width: 33%;
+    }
+
+
+}
+
+input[type="submit"]:hover {
+    background: $color-darken;
+    @include transition(all 0.3s ease-in-out);
 }

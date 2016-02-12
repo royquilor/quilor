@@ -133,6 +133,7 @@
           .gains & {
             z-index: 3;
             margin: 0;
+            
           }
           .gains &:first-child {
             z-index: 1;
@@ -228,7 +229,7 @@
             height: 6px;
             width: 50px;
             @include rounded(5px);
-            
+
             @media screen and (min-width: $width-large) {
               top: 35px;
               margin: 15px auto 0;

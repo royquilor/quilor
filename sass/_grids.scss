@@ -50,7 +50,11 @@ $susy: (
     .apple-watch-container {
     position: absolute;
     bottom: 0;
-    right: 0;
+    left: 0;
+      @media screen and (min-width: $width-large) {
+        right: 0;
+        left: auto;
+      }
     }
 
     .grid-1-4 {

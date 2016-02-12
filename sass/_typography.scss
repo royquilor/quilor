@@ -25,6 +25,12 @@ a {
 color: $color-link;
 text-decoration: none;
 background: $color-link-background;
+@include transition(all 0.1s ease-in-out);
+
+  &:hover {
+  background:rgba(77, 155, 208,.2);
+  }
+
 }
 
 h1, h2, h3, h4 {
@@ -122,9 +128,23 @@ li p {
     @media screen and (min-width: $width-medium) {
       padding: 1em;
     }
+
+    i,
+    i:before {
+      @include transition(all 0.2s ease-in-out);
+    }
 }
 
-.ion-ios-paperplane:hover { color:$color-plane; }
+.ion-ios-paperplane:hover {
+  opacity: .5;
+
+}
+
+.ion-ios-paperplane:hover:before {
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg); /* Safari */
+  transform: rotate(90deg);
+}
 .ion-social-linkedin:hover { color:$color-linkedin; }
 .ion-social-twitter:hover { color:$color-twitter; }
 .ion-social-instagram:hover { color:$color-instagram; }
