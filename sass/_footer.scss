@@ -28,6 +28,16 @@ a.top {
   margin-top: .5em;
 }
 
-.about h2 {
+.about {
+
+  background: $blue;
+
+  p {
+    color: $white;
+    font-weight: 500;
+  }
+
+  h2 {
   color: $white;
+  }
 }
