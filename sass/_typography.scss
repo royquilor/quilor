@@ -66,13 +66,35 @@ hr {
 }
 
 ol {
+  counter-reset:li;
   margin: 0;
   padding: 0;
 }
 
 ol li {
-  list-style-type: none;
+  xlist-style-type: none;
 
+}
+
+ol > li {
+    // position:relative; /* Create a positioning context */
+    // margin:0 0 6px 2em; /* Give each list item a left margin to make room for the numbers */
+    // padding:4px 8px; /* Add some spacing around the content */
+    list-style:none; /* Disable the normal item numbering */
+}
+ol > li:before {
+    content:counter(li)".";
+    counter-increment:li;
+    font-weight: 600;
+    float: left;
+    line-height: 1.2;
+    font-size: .833em;
+    font-family:$font-heading;
+    padding-right: .3em;
+}
+
+ol > li:after {
+  content: ".";
 }
 
 h2,
@@ -92,7 +114,7 @@ li p {
 
 .social-icons {
     color: #555;
-    padding: 0.5em;
+    padding: 0.3em;
     display: inline-block;
     font-size: 2em;
     background: none;
