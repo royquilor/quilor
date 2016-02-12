@@ -2,7 +2,9 @@
 
 I love simple, clean minimal sites including the code.
 
-Chris Coyier is an inspiration to [learn grunt](https://24ways.org/2013/grunt-is-not-weird-and-hard/)
+Chris Coyier is an inspiration:
+* [Grunt is not weird and hard](https://24ways.org/2013/grunt-is-not-weird-and-hard/)  
+* [Tour site progress built jekyll grunt sass svg system](https://css-tricks.com/video-screencasts/screencast-134-tour-site-progress-built-jekyll-grunt-sass-svg-system/)
 
 You'll need two command line tabs open:
 
