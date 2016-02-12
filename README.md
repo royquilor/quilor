@@ -1,29 +1,12 @@
-# README #
+# Roy Quilor's new minimal portfolio website made with Jekyll, Sass, Susy via Grunt #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+I love simple, clean minimal sites including the code.
 
-### What is this repository for? ###
+Chris Coyier is an inspiration to [learn grunt](https://24ways.org/2013/grunt-is-not-weird-and-hard/)
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+You'll need two command line tabs open:
 
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+1. Type `grunt serve` into one and it'll run the server.
+2. Type `grunt` into the second one which will do everything and kick off the watching
+3. Go to [localhost:4000](http://localhost:4000/)
+4. Might as well kick on the [LiveReload browser extension](http://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions-)
