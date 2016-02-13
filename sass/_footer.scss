@@ -15,18 +15,50 @@ footer {
 
     p {
       font-size: 1em;
-      xmargin: 0;
     }
 
 }
 
-a.top {
+.hand {
   background: none;
   color: $white;
   display:inline-block;
   font-size: 4em;
   margin-top: .5em;
+
+  &:hover {
+    top:-3px;
+    position: relative;
+    @include transition(all 0.3s ease-in-out);
+
+  }
+
+  :before {
+    content:"☝";
+    display: inline-block;
+    font-style: normal;
+  }
+
 }
+
+.write i:before {
+  content:"✍";
+  display: inline-block;
+  font-style: normal;
+}
+
+.righthand i:before {
+  display: inline-block;
+  font-style: normal;
+  content:"☞";
+}
+
+.victory i:before {
+  display: inline-block;
+  font-style: normal;
+  content:"✌";
+}
+
 
 .about {
 

@@ -1,8 +1,8 @@
 jQuery(function ($) { // Document Ready (important!)
-  
+
   // Get the video element that we wish to control
   var iframe = document.getElementById('thevideo');
-  
+
   // Initialize Froogaloop (linked .js.min file) on the captured video
   var player = $f(iframe);
 
@@ -16,4 +16,18 @@ jQuery(function ($) { // Document Ready (important!)
     player.api('seekTo', seekVal);
   });
 
+});
+
+
+$('.mail').hover(function(){
+  $('.hand').toggleClass('write');
+  // $('.hand').toggleClass('hand write');
+});
+
+$('.linkedin, .twitter, .dribbble, .instagram').hover(function(){
+  $('.hand').toggleClass('righthand');
+});
+
+$('.button').hover(function(){
+  $('.hand').toggleClass('victory');
 });
