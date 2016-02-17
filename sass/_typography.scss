@@ -66,8 +66,10 @@ small,
 
 hr {
     clear: both;
-    border: 1px solid rgba(0,0,0,0.0);
-    width:100%;
+    border: 0;
+    height: 1px;
+    background: transparent;
+    xwidth:100%;
     margin: 0 auto 2em;
 }
 
@@ -75,11 +77,6 @@ ol {
   counter-reset:li;
   margin: 0;
   padding: 0;
-}
-
-ol li {
-  xlist-style-type: none;
-
 }
 
 ol > li {
@@ -97,10 +94,6 @@ ol > li:before {
     font-size: .833em;
     font-family:$font-heading;
     padding-right: .3em;
-}
-
-ol > li:after {
-  content: ".";
 }
 
 h2,
@@ -129,18 +122,21 @@ li p {
       padding: 1em;
     }
 
-    i,
-    i:before {
-      @include transition(all 0.2s ease-in-out);
-    }
 }
 
-.ion-ios-paperplane:hover:before {
-  -ms-transform: rotate(90deg);
-  -webkit-transform: rotate(90deg); /* Safari */
-  transform: rotate(90deg);
+svg {
+  height: 28px;
 }
-.ion-social-linkedin:hover { color:$color-linkedin; }
-.ion-social-twitter:hover { color:$color-twitter; }
-.ion-social-instagram:hover { color:$color-instagram; }
-.ion-social-dribbble:hover { color:$color-dribbble; }
+
+.fill-white path,
+.fill-white circle {fill: $white;}
+
+.fill-black path,
+.fill-black circle {fill: $color-lighten;}
+
+.mail:hover path { fill:$color-link; }
+.linkedin:hover path { fill:$color-linkedin; }
+.twitter:hover path { fill:$color-twitter; }
+.instagram:hover path,
+.instagram:hover circle {fill:$color-instagram;}
+.dribbble:hover path { fill:$color-dribbble; }

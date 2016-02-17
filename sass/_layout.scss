@@ -48,6 +48,11 @@ padding: 3em 0;
 
     @media screen and (min-width: $width-medium) {
       padding: 8em 0;
+
+      &.about {
+        padding: 5em 0 2em;
+      }
+
     }
 
     p {
@@ -66,6 +71,10 @@ padding: 3em 0;
 .centered {
 
     text-align: left;
+
+    .about & {
+      text-align: center;
+    }
 
     @media screen and (min-width: $width-medium) {
 

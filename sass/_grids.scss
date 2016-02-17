@@ -21,6 +21,15 @@ $susy: (
   @include suffix(0em);
 }
 
+.hidden {
+  visibility: hidden;
+}
+
+.blank {
+  @include absolutecenter();
+  border: 0;
+}
+
 @media screen and (min-width: $width-medium) {
   .grid-1-2 li,
   .grid-3-4 li,
@@ -48,13 +57,13 @@ $susy: (
     }
 
     .apple-watch-container {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-      @media screen and (min-width: $width-large) {
-        right: 0;
-        left: auto;
-      }
+      position: absolute;
+      bottom: 0;
+      left: 0;
+        @media screen and (min-width: $width-large) {
+          right: 0;
+          left: auto;
+        }
     }
 
     .grid-1-4 {
@@ -111,7 +120,8 @@ $susy: (
 }
 
 .awwesome,
-.lily {
+.lily,
+.about {
   background: $color-background-alt;
 }
 

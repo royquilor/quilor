@@ -1,4 +1,6 @@
-$font-stack:                Karla, helvetica neue, helvetica, arial, sans-serif;
+@import url(https://fonts.googleapis.com/css?family=Karla:400,700);
+
+$font-stack:                Karla, Arial, sans-serif;
 $font-heading:              'Helvetica Neue', Arial, sans-serif;
 
 $color-border:              #e8ecef;
@@ -15,7 +17,9 @@ $red:                       #f44336;
 $white:                     #ffffff;
 $color-darken:              darken( $blue, 10% );
 $color-saturate:            shade( $blue, 50% );
-
+$color-border-1:            1px solid rgba(0,0,0,.1);
+$color-border-2:            1px solid rgba(0,0,0,.2);
+$color-border-3:            1px solid rgba(0,0,0,.3);
 
 $color-plane:               #4d9bd0;
 $color-linkedin:            #0077b5;
