@@ -171,7 +171,7 @@
           .mobile & {
             border: $color-border-2;
             margin-right: -6em;
-            margin-right: -12em;
+            margin-right: -10em;
             z-index: 2;
 
             & span,
@@ -203,7 +203,7 @@
             &::after {
               border: inherit;
             }
-            
+
           }
 
         }
