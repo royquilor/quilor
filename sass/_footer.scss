@@ -57,15 +57,16 @@ form {
   }
 }
 input {
-  background: $color-sky-blue;
   -webkit-appearance: none;
+  background: $color-white;
+  border: $color-black-1;
+  border-right:0;
   height: 50px;
   line-height: 50px;
   padding: 0 20px;
   margin: 1em 0 0;
   border-radius: 4px;
   float: left;
-  border-width: 0;
   width: 100%;
     @media screen and (min-width: $width-medium) {
       border-radius: 4px 0 0 4px;
@@ -74,13 +75,15 @@ input {
     }
   &:focus {
     outline: none;
-    color: $color-shakespeare-blue;
-    border: 1px solid $color-sky-blue-2;
-    @include transition(all 0.3s ease-in-out);
+    color: $color-mine-shaft;
+    border: 1px solid $color-shakespeare-blue;
+    border-right:0;
+    @include transition(all 150ms ease-in-out);
   }
   &[type="submit"] {
-    color: $color-white;
-    background: $color-shakespeare-blue;
+    color: $color-shakespeare-blue;
+    background: $color-white;
+    border: 1px solid $color-shakespeare-blue;
     border-radius: 4px;
     font-weight: 600;
     text-transform: uppercase;
@@ -88,13 +91,12 @@ input {
         border-radius: 0 4px 4px 0;
         width: 33%;
       }
-      &:hover {
-        background: $color-darken;
-        @include transition(all 0.3s ease-in-out);
-      }
+      &:hover,
       &:active {
-        background: $color-darken;
-        @include transition(all 0.3s ease-in-out);
+        @include transition(all 150ms ease-in-out);
+        color: $color-white;
+        background: $color-shakespeare-blue;
+        border: 1px solid $color-shakespeare-blue;
       }
   }
 }

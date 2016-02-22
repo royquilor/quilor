@@ -215,8 +215,8 @@ header p {
 }
 .hand,
 svg {
-  -webkit-animation-duration: .3s;
-  animation-duration: .3s;
+  -webkit-animation-duration: 150ms;
+  animation-duration: 150ms;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }

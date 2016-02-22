@@ -12,7 +12,10 @@ description: Roy Quilor is a Product Designer currently based in the UK.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://quilor.com" # the base hostname & protocol for your site
 twitter_username: royquilor
+dribbble_username: royquilor
+instagram_username: royquilor
 github_username:  royquilor
+linkedin_username: roy-quilor-0b78559
 
 exclude: [
   .git,
