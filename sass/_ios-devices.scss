@@ -1,223 +1,171 @@
-.iphone.white,
-.iphone.white span,
-.iphone.white:before,
-.iphone.white:after,
-.ipad.white,
-.ipad.white span,
-.ipad.white:before {
-    xbackground: transparent;
-    xborder-color: rgba(255,255,255,0.3);
+.ipad {
+  background: $color-white;
+  position: relative;
+  display: block;
+  float: left;
+  border: $color-black-1;
+  padding: 15px 50px;
+  margin: 0;
+  @include rounded(25px);
+    @media screen and (min-width: $width-medium) {
+      float: none;
+      padding: 35px 100px;
+      width: 100%;
+      max-width: 1238px;
+      margin: 15px auto 35px;
+      margin: 0;
+      @include rounded(50px);
+    }
+    @media screen and (min-width: $width-large) {
+      .gridscores &,
+      .lily & {
+        left: -8em;
+      }
+    }
+    img {
+      height: auto;
+      background: $color-black;
+      display: block;
+      margin: 0 auto;
+      padding: 2px;
+      width: 516px;
+      @include rounded(2px);
+        @media screen and (min-width: $width-medium) {
+          padding: 5px;
+          width: 1034px;
+          @include rounded(4px);
+        }
+    }
+    span {
+      content: '';
+      position: absolute;
+      top: 50%;
+      display: block;
+      background: $color-white;
+      border: $color-black-1;
+      left: 7px;
+      margin: -17px auto 0;
+      height: 35px;
+      width: 35px;
+      @include rounded(27px);
+        @media screen and (min-width: $width-medium) {
+          left: 25px;
+          margin: -25px auto 0;
+          height: 50px;
+          width: 50px;
+          @include rounded(35px);
+        }
+    }
+    &::before {
+      content: '';
+      border: $color-black-1;
+      position: absolute;
+      top: 50%;
+      display: block;
+      background: $color-white;
+      right: 21px;
+      margin: -3px auto 0;
+      height: 7px;
+      width: 7px;
+      @include rounded(3px);
+        @media screen and (min-width: $width-medium) {
+          right: 43px;
+          margin: -7px auto 0;
+          height: 14px;
+          width: 14px;
+          @include rounded(7px);
+        }
+    }
 }
-
-.iphone.fade,
-.iphone.fade span,
-.iphone.fade:before,
-.iphone.fade:after,
 .ipad.fade,
 .ipad.fade span,
 .ipad.fade:before {
-    background: transparent;
-    border-color: rgba(0,0,0,0.1);
-}
-
-.ipad {
-    background: $color-background;
-    position: relative;
-    display: block;
-    float: left;
-    border: $color-border-1;
-    padding: 15px 50px;
-    margin: 0;
-    @include rounded(25px);
-
-      @media screen and (min-width: $width-medium) {
-        float: none;
-        padding: 35px 100px;
-        width: 100%;
-        max-width: 1238px;
-        margin: 15px auto 35px;
-        margin: 0;
-        @include rounded(50px);
-      }
-
-      @media screen and (min-width: $width-large) {
-        .gridscores &,
-        .lily & {
-          left: -8em;
-        }
-      }
-
-      img {
-          height: auto;
-          background: #000;
-          display: block;
-          margin: 0 auto;
-          padding: 2px;
-          width: 516px;
-          @include rounded(2px);
-
-            @media screen and (min-width: $width-medium) {
-              padding: 5px;
-              width: 1034px;
-              @include rounded(4px);
-            }
-
-      }
-
-      span {
-          content: '';
-          position: absolute;
-          top: 50%;
-          display: block;
-          background: #fff;
-          border: $color-border-1;
-          left: 7px;
-          margin: -17px auto 0;
-          height: 35px;
-          width: 35px;
-          @include rounded(27px);
-
-          @media screen and (min-width: $width-medium) {
-            left: 25px;
-            margin: -25px auto 0;
-            height: 50px;
-            width: 50px;
-            @include rounded(35px);
-          }
-      }
-
-      &::before {
-          content: '';
-          border: $color-border-1;
-          position: absolute;
-          top: 50%;
-          display: block;
-          background: #fff;
-          right: 21px;
-          margin: -3px auto 0;
-          height: 7px;
-          width: 7px;
-          @include rounded(3px);
-
-          @media screen and (min-width: $width-medium) {
-            right: 43px;
-            margin: -7px auto 0;
-            height: 14px;
-            width: 14px;
-            @include rounded(7px);
-          }
-      }
-
+  background: transparent;
+  border-color: $color-black-1;
 }
 
 .iphone {
-    clear: right;
-    float: right;
-    background: #fff;
-    position: relative;
-    display: block;
-    border: $color-border-1;
-
-    margin: 0 auto 1em;
-    clear: both;
-    float: none;
-    width: 260px;
-    @include rounded(30px);
-
-      @media screen and (min-width: $width-large) {
-
-        width: 360px;
-        @include rounded(50px);
-        margin: 0 15px;
-
-          .gains & {
-            border: $color-border-3;
-            z-index: 3;
-            margin: 0;
-
-            & span,
-            &::before,
+  background: $color-white;
+  position: relative;
+  display: block;
+  border: $color-black-1;
+  margin: 0 auto 1em;
+  clear: both;
+  float: none;
+  width: 260px;
+  @include rounded(30px);
+    @media screen and (min-width: $width-large) {
+      width: 360px;
+      @include rounded(50px);
+      margin: 0 15px;
+        .gains & {
+          border: $color-black-3;
+          z-index: 3;
+          margin: 0;
+          & span,
+          &::before,
             &::after {
               border: inherit;
             }
-
           }
           .gains &:first-child {
-            border: $color-border-1;
+            border: $color-black-1;
             z-index: 1;
             margin-right: -7em;
-
             & span,
             &::before,
             &::after {
               border: inherit;
             }
-
           }
-
           .gains &:last-child {
-            border: $color-border-1;
+            border: $color-black-1;
             z-index: 2;
             margin-left: -7em;
-
             & span,
             &::before,
             &::after {
               border: inherit;
             }
-
           }
-
           .mobile & {
-            border: $color-border-2;
-            margin-right: -6em;
-            margin-right: -10em;
+            border: $color-black-2;
+            margin-right: -11em;
             z-index: 2;
-
             & span,
             &::before,
             &::after {
               border: inherit;
             }
-
           }
-
           .mobile &:first-child {
-            border: $color-border-3;
+            border: $color-black-3;
             z-index: 3;
-
             & span,
             &::before,
             &::after {
               border: inherit;
             }
-
           }
-
           .mobile &:last-child {
-            border: $color-border-1;
+            border: $color-black-1;
             z-index: 1;
-
             & span,
             &::before,
             &::after {
               border: inherit;
             }
-
           }
-
         }
-
         img {
-            float: none;
-            background: #000;
-            display: block;
-            height: auto;
-            width: 240px;
-            margin: 25px auto 60px;
-            padding: 2px;
-            @include rounded(2px);
-
+          float: none;
+          background: $color-black;
+          display: block;
+          height: auto;
+          width: 240px;
+          margin: 25px auto 60px;
+          padding: 2px;
+          @include rounded(2px);
             @media screen and (min-width: $width-large) {
               margin: 50px auto 100px;
               padding: 5px;
@@ -226,21 +174,19 @@
               @include rounded(4px);
             }
         }
-
         span {
-            content: '';
-            position: absolute;
-            right: 0;
-            left: 0;
-            display: block;
-            background: #fff;
-            margin: 0 auto;
-            border: $color-border-1;
-            bottom: 10px;
-            height: 40px;
-            width: 40px;
-            @include rounded(20px);
-
+          content: '';
+          position: absolute;
+          right: 0;
+          left: 0;
+          display: block;
+          background: $color-white;
+          margin: 0 auto;
+          border: $color-black-1;
+          bottom: 10px;
+          height: 40px;
+          width: 40px;
+          @include rounded(20px);
             @media screen and (min-width: $width-large) {
               bottom: 15px;
               height: 70px;
@@ -248,18 +194,15 @@
               @include rounded(35px);
             }
         }
-
         &::before {
-            content: '';
-            display: block;
-            background: #fff;
-            border: $color-border-1;
-
-            margin: 15px auto 10px;
-            height: 8px;
-            width: 8px;
-            @include rounded(4px);
-
+          content: '';
+          display: block;
+          background: $color-white;
+          border: $color-black-1;
+          margin: 15px auto 10px;
+          height: 8px;
+          width: 8px;
+          @include rounded(4px);
             @media screen and (min-width: $width-large) {
               margin: 25px auto 0;
               height: 14px;
@@ -267,22 +210,19 @@
               @include rounded(7px);
             }
         }
-
         &::after {
-            content: '';
-            display: block;
-            background: #fff;
-            position: absolute;
-            right: 0;
-            left: 0;
-            border: $color-border-1;
-
-            top: 15px;
-            margin: 15px auto 0;
-            height: 6px;
-            width: 50px;
-            @include rounded(5px);
-
+          content: '';
+          display: block;
+          background: $color-white;
+          position: absolute;
+          right: 0;
+          left: 0;
+          border: $color-black-1;
+          top: 15px;
+          margin: 15px auto 0;
+          height: 6px;
+          width: 50px;
+          @include rounded(5px);
             @media screen and (min-width: $width-large) {
               top: 35px;
               margin: 15px auto 0;
@@ -291,58 +231,50 @@
             }
         }
 }
-
 .apple-watch {
-    background:#e2e2e2;
-    background: #fff;
-    width:230px;
-    height:269px;
-    @include rounded(43px);
-    padding:8px;
-    box-sizing:border-box;
-    border:1px solid #bcbcbc;
-    position:relative;
-    float: left;
-
+  background: $color-white;
+  width:230px;
+  height:269px;
+  @include rounded(43px);
+  padding:8px;
+  box-sizing:border-box;
+  border: $color-black-3;
+  position:relative;
+  float: left;
     &::before {
-        content:'';
-        display:block;
-        width:16px;
-        height:41px;
-        border-radius:45% 7px 7px 45%;
-        position:absolute;
-        right:-13px;
-        top:62px;
-        background:#e2e2e2;
-        background:#fff;
-        border:1px solid #bcbcbc;
+      content:'';
+      display:block;
+      width:16px;
+      height:41px;
+      border-radius:45% 7px 7px 45%;
+      position:absolute;
+      right:-13px;
+      top:62px;
+      background:inherit;
+      border: inherit;
     }
-
     &::after {
-        content:'';
-        display:block;
-        width:5px;
-        height:67px;
-        border-radius:8px 3px 3px 8px;
-        position:absolute;
-        right:-5px;
-        top:140px;
-        background:#e2e2e2;
-        background:#fff;
-        border:1px solid #bcbcbc;
+      content:'';
+      display:block;
+      width:5px;
+      height:67px;
+      border-radius:8px 3px 3px 8px;
+      position:absolute;
+      right:-5px;
+      top:140px;
+      background:inherit;
+      border: inherit;
     }
 }
-
 .apple-watch__screen {
-    background:#030303;
-    height:100%;
-    @include rounded(35px);
-    box-sizing:border-box;
-    padding:28px;
-    overflow:hidden;
-
+  background: $color-black;
+  height:100%;
+  @include rounded(35px);
+  box-sizing:border-box;
+  padding:28px;
+  overflow:hidden;
     img {
-        @include rounded(5px);
-        height:100%;
+      @include rounded(5px);
+      height:100%;
     }
 }

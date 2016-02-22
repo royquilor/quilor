@@ -24,6 +24,7 @@ html {
 
 body {
   margin: 0;
+  cursor: default;
 }
 
 /* HTML5 display definitions
@@ -430,4 +431,17 @@ table {
 td,
 th {
   padding: 0;
+}
+
+/* Text selection colors
+   ========================================================================== */
+
+::selection {
+background:#ffffc4;
+color:#181818;
+}
+
+::-moz-selection {
+background:#ffffc4;
+color:#181818;
 }

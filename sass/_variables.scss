@@ -1,26 +1,24 @@
 @import url(https://fonts.googleapis.com/css?family=Karla:400,700);
 
-$font-stack:                Karla, Arial, sans-serif;
+$font-body:                 Karla, Arial, sans-serif;
 $font-heading:              'Helvetica Neue', Arial, sans-serif;
 
 $color-border:              #e8ecef;
-$color-background:          #ffffff;
-$color-background-alt:      #f5f7f9;
-$color-text:                #222;
-$color-text-alt:            #bcbcbc;
-$color-lighten:             lighten( $color-text, 40% );
-$color-lighten-alt:         lighten( $color-text, 60% );
-$color-link:                rgb(77, 155, 208);
-$color-link-background:     rgba(77, 155, 208,.1);
-$blue:                      #4d9bd0;
-$red:                       #f44336;
-$white:                     #ffffff;
-$color-darken:              darken( $blue, 10% );
-$color-saturate:            shade( $blue, 50% );
-$color-border-1:            1px solid rgba(0,0,0,.1);
-$color-border-2:            1px solid rgba(0,0,0,.2);
-$color-border-3:            1px solid rgba(0,0,0,.3);
-
+$color-white:               #ffffff;
+$color-athens-gray:         #f5f7f9;
+$color-mine-shaft:          #222222;
+$color-lighten:             lighten( $color-mine-shaft, 40% );
+$color-lighten-alt:         lighten( $color-mine-shaft, 60% );
+$color-sky-blue:            rgba(77, 155, 208,.1);
+$color-sky-blue-2:          rgba(77, 155, 208,.2);
+$color-pomegranate:         #f44336;
+$color-shakespeare-blue:    #4D9BD0;
+$color-darken:              darken( $color-shakespeare-blue, 10% );
+$color-saturate:            shade( $color-shakespeare-blue, 50% );
+$color-black:               #000000;
+$color-black-1:             1px solid rgba(0,0,0,0.1);
+$color-black-2:             1px solid rgba(0,0,0,0.2);
+$color-black-3:             1px solid rgba(0,0,0,0.3);
 $color-plane:               #4d9bd0;
 $color-linkedin:            #0077b5;
 $color-twitter:             #55acee;
