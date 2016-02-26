@@ -1,38 +1,29 @@
 header {
-  width: 100%;
-  background: $color-white;
-  line-height: 1;
-  padding: 2em 0 1em;
-  text-align: center;
-    h1 {
-      line-height: 1;
-    }
-    img {
+
+      img {
       -webkit-animation-name: fadeIn;
       animation-name: fadeIn;
+      display: block;
       text-align: center;
       height: 40px;
+      margin: 0 auto .5rem;
       @include rounded(20px);
         @media screen and (min-width: $width-medium) {
           height: 60px;
           @include rounded(30px);
         }
       }
-      p {
+
+      h1 {
         color: $color-mine-shaft;
-        margin: 0 auto;
-        padding: 0 2em;
-        line-height: 1.44em;
         -webkit-animation-name: fadeIn;
         animation-name: fadeIn;
-        -webkit-animation-delay:.5s;
-          @media screen and (min-width: $width-medium) {
-            max-width: 18em;
-            padding: 0;
-            font-size: 1.2em;
-          }
+        -webkit-animation-delay:300ms;
+        max-width: 20rem;
+        @media screen and (min-width: $width-medium) {
+         max-width: 22rem
+        }
+
       }
-      @media screen and (min-width: $width-medium) {
-        padding: 10em 0 2em;
-      }
+
 }

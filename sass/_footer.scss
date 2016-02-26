@@ -1,9 +1,7 @@
 footer {
   text-align: center;
-  position: relative;
-  color: #555;
-  line-height: 2em;
-  padding: 1em 2em;
+  line-height: 2;
+  padding: 1rem 2rem;
     svg {
       height: 11px;
       width: 16px;
@@ -17,19 +15,15 @@ footer {
         animation-name: pulse;
       }
     }
-    p {
-      padding:0;
-      font-size: 1em;
-    }
     @media screen and (min-width: $width-medium) {
-      padding: 3em 2em;
+      padding: 3rem 2rem;
     }
 }
 .hand {
   background: none;
   display:inline-block;
-  font-size: 4em;
-  margin-top: .5em;
+  font-size: 4rem;
+  margin-top: .5rem;
   :before {
     content:"☝";
     display: inline-block;
@@ -52,23 +46,23 @@ footer {
 form {
   @include cf();
   @media screen and (min-width: $width-medium) {
-    @include container(580px);
-    margin:1em auto;
+    @include container(48em);
+    margin:1rem auto
   }
 }
 input {
   -webkit-appearance: none;
   background: $color-white;
   border: $color-black-1;
-  border-right:0;
   height: 50px;
   line-height: 50px;
-  padding: 0 20px;
-  margin: 1em 0 0;
+  padding: 0 1rem;
+  margin: 0 0 1rem;
   border-radius: 4px;
   float: left;
   width: 100%;
     @media screen and (min-width: $width-medium) {
+      border-right: 0;
       border-radius: 4px 0 0 4px;
       width: 67%;
       margin-top: 0;
@@ -109,6 +103,6 @@ input {
     display: inline-block;
     text-align: center;
     float: left;
-    margin: 1em 0;
+    margin: 1rem 0;
   }
 }

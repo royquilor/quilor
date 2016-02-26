@@ -100,7 +100,7 @@
       margin: 0 15px;
         .gains & {
           border: $color-black-3;
-          z-index: 3;
+          xz-index: 3;
           margin: 0;
           & span,
           &::before,
@@ -110,7 +110,7 @@
           }
           .gains &:first-child {
             border: $color-black-1;
-            z-index: 1;
+            z-index: -1;
             margin-right: -7em;
             & span,
             &::before,
@@ -120,7 +120,7 @@
           }
           .gains &:last-child {
             border: $color-black-1;
-            z-index: 2;
+            z-index: -1;
             margin-left: -7em;
             & span,
             &::before,
@@ -231,6 +231,7 @@
             }
         }
 }
+
 .apple-watch {
   background: $color-white;
   width:230px;

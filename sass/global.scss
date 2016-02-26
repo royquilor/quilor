@@ -1,10 +1,10 @@
 @import "normalize";
-@import "variables";
+@import "vars";
 @import "mixins";
-@import "typography";
-@import "grids";
+@import "type";
+@import "grid";
 @import "header";
 @import "layout";
 @import "footer";
-@import "ios-devices";
+@import "ios";
 @import "animations";

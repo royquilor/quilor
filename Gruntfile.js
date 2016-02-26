@@ -58,6 +58,7 @@ module.exports = function(grunt) {
             watch: {
                 options: {
                     livereload: true,
+                    //browserSync: true,
                 },
                 site: {
                   files: ['index.html'],
@@ -71,7 +72,24 @@ module.exports = function(grunt) {
                     files: ['sass/*.scss'],
                     tasks: ['sass', 'cssmin', 'shell:jekyllBuild']
                 }
-              }
+            },
+
+            browserSync: {
+              default_options: {
+                bsFiles: {
+                    src: [
+                       'css/*.css',
+                       '*.html'
+                    ]
+                },
+                options: {
+                   watchTask: true,
+                   server: {
+                     baseDir: "_site"
+                   }
+                 }
+               }  
+            }  
     });
 
     // 3. Where we tell Grunt we plan to use this plug-in.
@@ -79,6 +97,6 @@ module.exports = function(grunt) {
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
     grunt.registerTask("serve", ["shell:jekyllServe"]);
-    grunt.registerTask('default', ['concat', 'uglify', 'sass', 'cssmin', 'shell:jekyllBuild', 'watch']);
+    grunt.registerTask('default', ['concat', 'uglify', 'sass', 'cssmin', 'shell:jekyllBuild','browserSync','watch']);
 
 };
