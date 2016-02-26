@@ -71,7 +71,9 @@ input {
     outline: none;
     color: $color-mine-shaft;
     border: 1px solid $color-shakespeare-blue;
-    border-right:0;
+     @media screen and (min-width: $width-medium) {
+      border-right:0 
+     }
     @include transition(all 150ms ease-in-out);
   }
   &[type="submit"] {

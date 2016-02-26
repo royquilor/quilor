@@ -11,12 +11,12 @@ Scale
 */
 
 body {
-  font-family: $font-body;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
-  color: $color-mine-shaft;
-  text-rendering: optimizeLegibility;
+ font-family: $font-body;
+ font-size: 16px;
+ font-weight: 400;
+ line-height: 1.5; 
+ color: $color-mine-shaft;
+ text-rendering: optimizeLegibility;
 }
 
 @media screen and (min-width: $width-medium){
@@ -43,20 +43,21 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  font-weight: 600;
-  line-height: 1.2;
-  font-family: $font-heading;
+ margin-top: 0; 
+ margin-bottom: 1rem;
+ font-weight: 600;
+ line-height: 1.2;
+ font-family: $font-heading;
 }
 
 h1 {
-  font-family: $font-body;
-  font-size: 1em;
-  font-weight: 400;
-  line-height: 1.5;
-  text-align: center;
-  margin: 4rem auto 0;
+ font-family: $font-body; 
+ font-size: 1em;
+ font-weight: 400;
+ line-height: 1.5;
+ text-align: center;
+ margin: 4rem auto 0;
+ padding: 0 0.5rem;
 }
 
 @media screen and (min-width: $width-medium){
@@ -68,35 +69,35 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5rem;
-  margin-top: 1rem;
+ font-size: 1.5rem;
+ margin-top: 1rem;
 }
 
 h3 {
-  font-size: 1.25rem;
+ font-size: 1.25rem;
 }
 
 p {
-  margin-top: 0;
-  margin-bottom: 1rem;
+ margin-top: 0;
+ margin-bottom: 1rem;
 }
 
 small {
-  font-size: 0.875rem;
+ font-size: 0.875rem;
 }
 
 hr {
-  clear: both;
-  border: 0;
-  height: 1px;
-  background: transparent;
-  margin: 0 auto 2rem;
+ clear: both;
+ border: 0;
+ height: 1px;
+ background: transparent;
+ margin: 0 auto 2rem;
 }
 
 ol {
-  counter-reset:li;
-  margin: 0;
-  padding: 0;
+ counter-reset:li;
+ margin: 0;
+ padding: 0;
 }
 
 ol > li {
