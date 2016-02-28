@@ -42,7 +42,6 @@ function debounce(func, wait, immediate) {
 $('.mail').hover(function(){
   $('.hand').toggleClass('write');
   $('.hand i').toggleClass('bounceIn animated');
-  // $('.hand').toggleClass('hand write');
 });
 
 $('.linkedin, .twitter, .dribbble, .instagram').hover(function(){
@@ -54,7 +53,7 @@ $('.button').hover(function(){
 });
 
 $(document).ready(function() {
-    $('.gridscores .ipad, .gridscores .apple-watch-container, .awwesome .ipad, .branding picture, .mobile .iphone, .intranet .ipad, .intranet figure, .lily .ipad, .talk figure').addClass("hidden");
+    $('.gridscores .ipad, .gridscores .iwatch, .awwesome .ipad, .branding picture, .mobile .iphone, .intranet .ipad, .intranet figure, .lily .ipad, .talk figure').addClass("hidden");
 });
 
 // Animation
@@ -80,7 +79,7 @@ $(window).scroll(function() {
       $(this).addClass("fadeInLeft");
     }
   });
-  $('.gridscores .apple-watch-container').each(function(){
+  $('.gridscores .iwatch').each(function(){
   var imagePos = $(this).offset().top;
     if (imagePos < topOfWindow+500) {
       $(this).addClass("fadeInLeft");

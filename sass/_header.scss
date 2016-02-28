@@ -1,29 +1,16 @@
-header {
+.top {
 
-      img {
-      -webkit-animation-name: fadeIn;
-      animation-name: fadeIn;
-      display: block;
-      text-align: center;
-      height: 40px;
-      margin: 0 auto .5rem;
-      @include rounded(20px);
-        @media screen and (min-width: $width-medium) {
-          height: 60px;
-          @include rounded(30px);
-        }
-      }
+ padding: 5em 0 3em;
+ text-align: center;
 
-      h1 {
-        color: $color-mine-shaft;
-        -webkit-animation-name: fadeIn;
-        animation-name: fadeIn;
-        -webkit-animation-delay:300ms;
-        max-width: 20rem;
-        @media screen and (min-width: $width-medium) {
-         max-width: 22rem
-        }
+ @media screen and (min-width: $mw-m) {
+  padding: 6em 0 0;
+ }
 
-      }
+ img {
+ height: 60px;
+ margin: 0 0 1rem;
+ @include rounded(30px);
+ }
 
 }

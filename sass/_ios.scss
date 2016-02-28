@@ -1,22 +1,20 @@
 .ipad {
-  background: $color-white;
+  background: $white;
   position: relative;
   display: block;
   float: left;
-  border: $color-black-1;
+  border: $black-1;
   padding: 15px 50px;
-  margin: 0;
+  margin: 0 0 2rem;
   @include rounded(25px);
-    @media screen and (min-width: $width-medium) {
+    @media screen and (min-width: $mw-m) {
       float: none;
       padding: 35px 100px;
       width: 100%;
       max-width: 1238px;
-      margin: 15px auto 35px;
-      margin: 0;
       @include rounded(50px);
     }
-    @media screen and (min-width: $width-large) {
+    @media screen and (min-width: $mw-l) {
       .gridscores &,
       .lily & {
         left: -8em;
@@ -24,13 +22,13 @@
     }
     img {
       height: auto;
-      background: $color-black;
+      background: $black;
       display: block;
       margin: 0 auto;
       padding: 2px;
       width: 516px;
       @include rounded(2px);
-        @media screen and (min-width: $width-medium) {
+        @media screen and (min-width: $mw-m) {
           padding: 5px;
           width: 1034px;
           @include rounded(4px);
@@ -41,14 +39,14 @@
       position: absolute;
       top: 50%;
       display: block;
-      background: $color-white;
-      border: $color-black-1;
+      background: $white;
+      border: $black-1;
       left: 7px;
       margin: -17px auto 0;
       height: 35px;
       width: 35px;
       @include rounded(27px);
-        @media screen and (min-width: $width-medium) {
+        @media screen and (min-width: $mw-m) {
           left: 25px;
           margin: -25px auto 0;
           height: 50px;
@@ -58,17 +56,17 @@
     }
     &::before {
       content: '';
-      border: $color-black-1;
+      border: $black-1;
       position: absolute;
       top: 50%;
       display: block;
-      background: $color-white;
+      background: $white;
       right: 21px;
       margin: -3px auto 0;
       height: 7px;
       width: 7px;
       @include rounded(3px);
-        @media screen and (min-width: $width-medium) {
+        @media screen and (min-width: $mw-m) {
           right: 43px;
           margin: -7px auto 0;
           height: 14px;
@@ -81,55 +79,44 @@
 .ipad.fade span,
 .ipad.fade:before {
   background: transparent;
-  border-color: $color-black-1;
+  border-color: $black-1;
 }
 
 .iphone {
-  background: $color-white;
+  background: $white;
   position: relative;
   display: block;
-  border: $color-black-1;
-  margin: 0 auto 1em;
+  border: $black-1;
+  margin: 0 auto 2rem;
   clear: both;
   float: none;
   width: 260px;
   @include rounded(30px);
-    @media screen and (min-width: $width-large) {
+    @media screen and (min-width: $mw-l) {
       width: 360px;
       @include rounded(50px);
       margin: 0 15px;
         .gains & {
-          border: $color-black-3;
-          xz-index: 3;
-          margin: 0;
+          border: $black-3;
+          margin: 0 0 2rem;
           & span,
           &::before,
-            &::after {
+          &::after {
               border: inherit;
             }
           }
           .gains &:first-child {
-            border: $color-black-1;
+            border: $black-1;
             z-index: -1;
             margin-right: -7em;
-            & span,
-            &::before,
-            &::after {
-              border: inherit;
-            }
           }
           .gains &:last-child {
-            border: $color-black-1;
+            border: $black-1;
             z-index: -1;
             margin-left: -7em;
-            & span,
-            &::before,
-            &::after {
-              border: inherit;
-            }
           }
           .mobile & {
-            border: $color-black-2;
+            border: $black-2;
             margin-right: -11em;
             z-index: 2;
             & span,
@@ -139,34 +126,24 @@
             }
           }
           .mobile &:first-child {
-            border: $color-black-3;
+            border: $black-3;
             z-index: 3;
-            & span,
-            &::before,
-            &::after {
-              border: inherit;
-            }
           }
           .mobile &:last-child {
-            border: $color-black-1;
+            border: $black-1;
             z-index: 1;
-            & span,
-            &::before,
-            &::after {
-              border: inherit;
-            }
           }
         }
         img {
           float: none;
-          background: $color-black;
+          background: $black;
           display: block;
           height: auto;
           width: 240px;
           margin: 25px auto 60px;
           padding: 2px;
           @include rounded(2px);
-            @media screen and (min-width: $width-large) {
+            @media screen and (min-width: $mw-l) {
               margin: 50px auto 100px;
               padding: 5px;
               width: 330px;
@@ -180,14 +157,14 @@
           right: 0;
           left: 0;
           display: block;
-          background: $color-white;
+          background: $white;
           margin: 0 auto;
-          border: $color-black-1;
+          border: $black-1;
           bottom: 10px;
           height: 40px;
           width: 40px;
           @include rounded(20px);
-            @media screen and (min-width: $width-large) {
+            @media screen and (min-width: $mw-l) {
               bottom: 15px;
               height: 70px;
               width: 70px;
@@ -197,13 +174,13 @@
         &::before {
           content: '';
           display: block;
-          background: $color-white;
-          border: $color-black-1;
+          background: $white;
+          border: $black-1;
           margin: 15px auto 10px;
           height: 8px;
           width: 8px;
           @include rounded(4px);
-            @media screen and (min-width: $width-large) {
+            @media screen and (min-width: $mw-l) {
               margin: 25px auto 0;
               height: 14px;
               width: 14px;
@@ -213,17 +190,17 @@
         &::after {
           content: '';
           display: block;
-          background: $color-white;
+          background: $white;
           position: absolute;
           right: 0;
           left: 0;
-          border: $color-black-1;
+          border: $black-1;
           top: 15px;
           margin: 15px auto 0;
           height: 6px;
           width: 50px;
           @include rounded(5px);
-            @media screen and (min-width: $width-large) {
+            @media screen and (min-width: $mw-l) {
               top: 35px;
               margin: 15px auto 0;
               height: 10px;
@@ -232,16 +209,21 @@
         }
 }
 
-.apple-watch {
-  background: $color-white;
+.iwatch {
+  background: $white;
   width:230px;
   height:269px;
   @include rounded(43px);
   padding:8px;
   box-sizing:border-box;
-  border: $color-black-3;
+  border: $black-3;
   position:relative;
   float: left;
+
+  a {
+   background: none;
+  }
+
     &::before {
       content:'';
       display:block;
@@ -267,8 +249,8 @@
       border: inherit;
     }
 }
-.apple-watch__screen {
-  background: $color-black;
+.iwatch__screen {
+  background: #111;
   height:100%;
   @include rounded(35px);
   box-sizing:border-box;

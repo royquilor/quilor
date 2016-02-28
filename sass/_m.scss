@@ -1,6 +1,5 @@
 @mixin rounded($radius) {
     -webkit-border-radius:  $radius;
-        -moz-border-radius: $radius;
              border-radius: $radius;
 }
 @mixin cf() {
@@ -28,11 +27,4 @@
     left:50%;
     transform: translate(-50%,-50%);
   }
-}
-@mixin transition($args...) {
-  -webkit-transition: $args;
-  -moz-transition: $args;
-  -ms-transition: $args;
-  -o-transition: $args;
-  transition: $args;
 }

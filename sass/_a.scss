@@ -206,17 +206,10 @@
     transform: translate3d(5px, 0, 0);
   }
 }
-header img,
-header p {
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
 .hand,
 svg {
-  -webkit-animation-duration: 150ms;
-  animation-duration: 150ms;
+  -webkit-animation-duration: .2s;
+  animation-duration: .2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -253,8 +246,8 @@ svg {
 .write,
 .righthand,
 .victory {
-  -webkit-animation-duration: 200ms;
-  animation-duration: 200ms;
+  -webkit-animation-duration: .2s;
+  animation-duration: .2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -289,3 +282,17 @@ a:hover svg {
   -webkit-transform-origin: center bottom;
   transform-origin: center bottom;
 }
+
+header img,
+h1 {
+ -webkit-animation-name: fadeIn; 
+ animation-name: fadeIn;
+ -webkit-animation-fill-mode:both;
+ animation-fill-mode: both; 
+ -webkit-animation-duration: .2s;
+}
+
+h1 {
+ -webkit-animation-delay: .3s;
+}
+

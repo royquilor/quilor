@@ -2,23 +2,25 @@ footer {
   text-align: center;
   line-height: 2;
   padding: 1rem 2rem;
-    svg {
-      height: 11px;
-      width: 16px;
-      path {
-        fill: $color-pomegranate;
-      }
-      &:hover {
-        -webkit-animation-iteration-count: infinite;
-        animation-iteration-count: infinite;
-        -webkit-animation-name: pulse;
-        animation-name: pulse;
-      }
-    }
-    @media screen and (min-width: $width-medium) {
+    @media screen and (min-width: $mw-m) {
       padding: 3rem 2rem;
     }
 }
+
+footer svg {
+ height: 11px;
+ width: 16px;
+ path {
+  fill: $red;
+  }
+  &:hover {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  }
+}
+
 .hand {
   background: none;
   display:inline-block;
@@ -45,15 +47,15 @@ footer {
 }
 form {
   @include cf();
-  @media screen and (min-width: $width-medium) {
+  @media screen and (min-width: $mw-m) {
     @include container(48em);
     margin:1rem auto
   }
 }
 input {
   -webkit-appearance: none;
-  background: $color-white;
-  border: $color-black-1;
+  background: $white;
+  border: $black-1;
   height: 50px;
   line-height: 50px;
   padding: 0 1rem;
@@ -61,7 +63,7 @@ input {
   border-radius: 4px;
   float: left;
   width: 100%;
-    @media screen and (min-width: $width-medium) {
+    @media screen and (min-width: $mw-m) {
       border-right: 0;
       border-radius: 4px 0 0 4px;
       width: 67%;
@@ -69,30 +71,32 @@ input {
     }
   &:focus {
     outline: none;
-    color: $color-mine-shaft;
-    border: 1px solid $color-shakespeare-blue;
-     @media screen and (min-width: $width-medium) {
-      border-right:0 
+    color: $black;
+    border: 1px solid $blue;
+    transition: .2s;
+
+     @media screen and (min-width: $mw-m) {
+      border-right:0
      }
-    @include transition(all 150ms ease-in-out);
+
   }
   &[type="submit"] {
-    color: $color-shakespeare-blue;
-    background: $color-white;
-    border: 1px solid $color-shakespeare-blue;
+    color: $blue;
+    background: $white;
+    border: 1px solid $blue;
     border-radius: 4px;
     font-weight: 600;
     text-transform: uppercase;
-      @media screen and (min-width: $width-medium) {
+      @media screen and (min-width: $mw-m) {
         border-radius: 0 4px 4px 0;
         width: 33%;
       }
       &:hover,
       &:active {
-        @include transition(all 150ms ease-in-out);
-        color: $color-white;
-        background: $color-shakespeare-blue;
-        border: 1px solid $color-shakespeare-blue;
+        transition: .2s;
+        color: $white;
+        background: $blue;
+        border: 1px solid $blue;
       }
   }
 }
