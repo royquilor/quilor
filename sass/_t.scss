@@ -11,10 +11,11 @@ Scale
 */
 
 body {
- font-family: $font-body;
- font-size: 16px;
- font-weight: 400;
- line-height: 1.5;
+ // font-family: $f-b;
+ // font-size: 16px;
+ // font-weight: 400;
+ // line-height: 1.5;
+ font: normal 16px/1.5 $f-b;
  color: $black;
  text-rendering: optimizeLegibility;
 }
@@ -29,7 +30,7 @@ a {
 color: $blue;
 text-decoration: none;
 background: $sky-blue;
-transition: 0.1s;
+transition: all .1s ease-in;
   &:hover {
   background: $dark-blue;
   }
@@ -44,17 +45,19 @@ h6 {
  margin: 0 0 1rem;
  font-weight: 500;
  line-height: 1.2;
- font-family: $font-heading;
+ font-family: $f-h;
+ // font: bold 1.2/1rem $f-h;
 }
 
 h1 {
- font-family: $font-body;
+ font-family: $f-b;
  font-size: 1.25rem;
  font-weight: 400;
  line-height: 1.5;
+ // font: normal 1.5/1.25rem $f-b;
  text-align: center;
  margin: 0 auto;
- max-width: 20em;
+ max-width: 22em;
 }
 
 h2 {
@@ -62,16 +65,29 @@ h2 {
  margin: 0 0 1rem;
 }
 
+.about h2 {
+ margin: 0 0 3rem;
+}
+
 h3 {
  font-size: 1.25rem;
  margin:0 0 .5rem;
 }
 
+.clients h3 {
+ margin: 1rem 0 3rem;
+ text-align: center;
+ @media screen and (min-width: $mw-m) {
+  margin: 0 0 3rem;
+ }
+}
+
 h4 {
-  font-size: 2rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: $gray;
+ font-size: 2rem;
+ font-weight: 400;
+ line-height: 1.5;
+ // font: normal 1.5/2rem;
+ color: $gray;
 }
 
 p,
@@ -113,6 +129,10 @@ padding:0 0.5rem;
   }
 }
 
+.about p {
+ margin: 0 0 2rem;
+}
+
 ul {
  list-style-type:none;
  margin: 0;
@@ -132,23 +152,29 @@ svg {
   fill: $gray;
 }
 
-.mail:hover path {
+// .mail:hover path
+.mail path {
   fill:$blue;
 }
 
-.linkedin:hover path {
+// .linkedin:hover path
+.linkedin path {
   fill:$linkedin;
 }
 
-.twitter:hover path {
+// .twitter:hover path
+.twitter path {
   fill:$twitter;
 }
 
-.instagram:hover path,
-.instagram:hover circle {
+// .instagram:hover path,
+// .instagram:hover circle
+.instagram path,
+.instagram circle {
   fill:$instagram;
 }
 
-.dribbble:hover path {
+// .dribbble:hover path
+.dribbble path {
   fill:$dribbble;
 }

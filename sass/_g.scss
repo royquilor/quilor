@@ -11,12 +11,21 @@ $susy: (
   gutter-position: inside,
 );
 
+.hidden {
+  visibility: hidden;
+}
+
 .grid-1 {
   @include container(1320px);
+  //@include container($mw-xl);
 }
 
 .gains .grid-1 {
-  @include container(840px);
+ @include container(830px);
+
+ @media screen and (min-width: $mw-xl) {
+  @include container(1145px);
+ }
 }
 
 .gridscores .grid-1-4,
@@ -26,13 +35,9 @@ $susy: (
   @include suffix(0em);
 }
 
-.hidden {
-  visibility: hidden;
-}
-
 .blank {
-  @include absolutecenter();
   border: 0;
+  @include absolutecenter();
 }
 
 @media screen and (min-width: $mw-m) {
@@ -41,34 +46,31 @@ $susy: (
   .grid-3-4 li,
   .grid-2-3 li {
     @include gallery (6 of 12);
-    padding-right: 2rem;
-    padding-bottom: 1rem;
-    padding-left: 2rem;
+    // padding-right: 2rem;
+    // padding-bottom: 1rem;
+    // padding-left: 2rem;
+    padding: 0 2rem 1rem 2rem;
   }
 
   .gains li {
     @include gallery (4 of 12);
-    padding-right: 2rem;
-    padding-bottom: 1rem;
-    padding-top: 2rem;
-    padding-left: 2rem;
+    // padding-right: 2rem;
+    // padding-bottom: 1rem;
+    // padding-top: 2rem;
+    // padding-left: 2rem;
+    padding: 2rem 2rem 1rem 2rem;
   }
 
-  .gridscores {
-    .grid-3-4 {
-    position: relative;
-    }
-
-    .grid-1-4 {
-      @include span(nobreak);
-    }
+  .gridscores .grid-1-4 {
+    @include span(nobreak);
   }
 
   .lily .grid-1-4 {
     @include span(nobreak);
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 2rem;
+    // padding-left: 2rem;
+    // padding-right: 2rem;
+    // padding-top: 2rem;
+    padding: 2rem 2rem 0 2rem;
   }
 
   .gridscores .grid-1-4,
@@ -81,11 +83,6 @@ $susy: (
 }
 
 @media screen and (min-width: $mw-l) {
-
-  .iwatch {
-   margin-left: -15em;
-   margin-top: 1.5em;
-  }
 
   .grid-1-2 {
     @include span(6 of 12);
@@ -116,6 +113,7 @@ $susy: (
      }
      ul {
       @include container(1180px);
+      //@include container($mw-xl);
      }
   }
   .mobile .iphone {
@@ -136,22 +134,31 @@ $susy: (
 }
 
 dl {
-  max-width: 880px;
-  margin: 0 auto;
-  padding: 1rem 0;
-  -webkit-column-count: 1;
-  column-count: 1;
-  -webkit-column-gap: 1rem;
-  column-gap: 1rem;
+
   display: none;
-    @media screen and (min-width: $mw-s) {
-      padding: 2rem 0;
-      -webkit-column-count: 2;
-      column-count: 2;
-    }
+
+  @include container(540px);
+
     @media screen and (min-width: $mw-l) {
       display: block;
-      -webkit-column-count: 4;
-      column-count: 4;
     }
+}
+
+dt {
+ text-align: right;
+}
+
+dt,
+dd {
+ @include gallery (3 of 12);
+}
+
+.clients ul {
+ @include container(540px);
+}
+
+.clients li {
+ @include gallery (6 of 12);
+ text-align: center;
+ font-size: .875rem;
 }

@@ -1,6 +1,11 @@
-$font-body:     SF UI Text, Helvetica Neue, Arial, sans-serif;
-$font-heading:  SF UI Display, Helvetica Neue, Arial, sans-serif;
+$f-b:   SF UI Text, Helvetica Neue, Arial, sans-serif;
+$f-h:   SF UI Display, Helvetica Neue, Arial, sans-serif;
 
-$mw-s:          35.5em;
-$mw-m:          48em;
-$mw-l:          64em;
+$mw-xs: 30em; // 480px;
+$mw-s:  35.5em; // 568px
+$mw-m:  48em; // 768px
+$mw-l:  64em; // 1024px
+$mw-xl: 86.375em; // 1382px;
+
+// $mw-s:          37.5em; // 600px;
+// $mw-l:          62em; // 992px;

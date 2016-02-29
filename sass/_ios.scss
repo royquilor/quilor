@@ -1,263 +1,321 @@
-.ipad {
-  background: $white;
-  position: relative;
-  display: block;
-  float: left;
-  border: $black-1;
-  padding: 15px 50px;
-  margin: 0 0 2rem;
-  @include rounded(25px);
-    @media screen and (min-width: $mw-m) {
-      float: none;
-      padding: 35px 100px;
-      width: 100%;
-      max-width: 1238px;
-      @include rounded(50px);
-    }
-    @media screen and (min-width: $mw-l) {
-      .gridscores &,
-      .lily & {
-        left: -8em;
-      }
-    }
-    img {
-      height: auto;
-      background: $black;
-      display: block;
-      margin: 0 auto;
-      padding: 2px;
-      width: 516px;
-      @include rounded(2px);
-        @media screen and (min-width: $mw-m) {
-          padding: 5px;
-          width: 1034px;
-          @include rounded(4px);
-        }
-    }
-    span {
-      content: '';
-      position: absolute;
-      top: 50%;
-      display: block;
-      background: $white;
-      border: $black-1;
-      left: 7px;
-      margin: -17px auto 0;
-      height: 35px;
-      width: 35px;
-      @include rounded(27px);
-        @media screen and (min-width: $mw-m) {
-          left: 25px;
-          margin: -25px auto 0;
-          height: 50px;
-          width: 50px;
-          @include rounded(35px);
-        }
-    }
-    &::before {
-      content: '';
-      border: $black-1;
-      position: absolute;
-      top: 50%;
-      display: block;
-      background: $white;
-      right: 21px;
-      margin: -3px auto 0;
-      height: 7px;
-      width: 7px;
-      @include rounded(3px);
-        @media screen and (min-width: $mw-m) {
-          right: 43px;
-          margin: -7px auto 0;
-          height: 14px;
-          width: 14px;
-          @include rounded(7px);
-        }
-    }
-}
-.ipad.fade,
-.ipad.fade span,
-.ipad.fade:before {
-  background: transparent;
-  border-color: $black-1;
+.browser {
+ padding: 5px;
+ background: #111;
+ margin: 0 0 2rem;
+ border-radius: 5px;
+ @include container($mw-l);
+
+ img {
+  vertical-align: bottom;
+ }
+
 }
 
 .iphone {
-  background: $white;
-  position: relative;
+ background: $white;
+ position: relative;
+ display: block;
+ border: $black-1;
+ margin: 0 auto 2rem;
+ clear: both;
+ float: none;
+ width: 260px;
+ border-radius: 30px;
+
+ &::before {
+  content: '';
   display: block;
+  background: $white;
   border: $black-1;
-  margin: 0 auto 2rem;
-  clear: both;
-  float: none;
-  width: 260px;
-  @include rounded(30px);
-    @media screen and (min-width: $mw-l) {
-      width: 360px;
-      @include rounded(50px);
-      margin: 0 15px;
-        .gains & {
-          border: $black-3;
-          margin: 0 0 2rem;
-          & span,
-          &::before,
-          &::after {
-              border: inherit;
-            }
-          }
-          .gains &:first-child {
-            border: $black-1;
-            z-index: -1;
-            margin-right: -7em;
-          }
-          .gains &:last-child {
-            border: $black-1;
-            z-index: -1;
-            margin-left: -7em;
-          }
-          .mobile & {
-            border: $black-2;
-            margin-right: -11em;
-            z-index: 2;
-            & span,
-            &::before,
-            &::after {
-              border: inherit;
-            }
-          }
-          .mobile &:first-child {
-            border: $black-3;
-            z-index: 3;
-          }
-          .mobile &:last-child {
-            border: $black-1;
-            z-index: 1;
-          }
-        }
-        img {
-          float: none;
-          background: $black;
-          display: block;
-          height: auto;
-          width: 240px;
-          margin: 25px auto 60px;
-          padding: 2px;
-          @include rounded(2px);
-            @media screen and (min-width: $mw-l) {
-              margin: 50px auto 100px;
-              padding: 5px;
-              width: 330px;
-              height: 578px;
-              @include rounded(4px);
-            }
-        }
-        span {
-          content: '';
-          position: absolute;
-          right: 0;
-          left: 0;
-          display: block;
-          background: $white;
-          margin: 0 auto;
-          border: $black-1;
-          bottom: 10px;
-          height: 40px;
-          width: 40px;
-          @include rounded(20px);
-            @media screen and (min-width: $mw-l) {
-              bottom: 15px;
-              height: 70px;
-              width: 70px;
-              @include rounded(35px);
-            }
-        }
-        &::before {
-          content: '';
-          display: block;
-          background: $white;
-          border: $black-1;
-          margin: 15px auto 10px;
-          height: 8px;
-          width: 8px;
-          @include rounded(4px);
-            @media screen and (min-width: $mw-l) {
-              margin: 25px auto 0;
-              height: 14px;
-              width: 14px;
-              @include rounded(7px);
-            }
-        }
-        &::after {
-          content: '';
-          display: block;
-          background: $white;
-          position: absolute;
-          right: 0;
-          left: 0;
-          border: $black-1;
-          top: 15px;
-          margin: 15px auto 0;
-          height: 6px;
-          width: 50px;
-          @include rounded(5px);
-            @media screen and (min-width: $mw-l) {
-              top: 35px;
-              margin: 15px auto 0;
-              height: 10px;
-              width: 70px;
-            }
-        }
+  margin: 15px auto 10px;
+  height: 8px;
+  width: 8px;
+  border-radius: 4px;
+
+  @media screen and (min-width: $mw-l) {
+   margin: 25px auto 0;
+   height: 14px;
+   width: 14px;
+   border-radius: 7px;
+  }
+ }
+
+ &::after {
+  content: '';
+  display: block;
+  background: $white;
+  position: absolute;
+  right: 0;
+  left: 0;
+  border: $black-1;
+  top: 15px;
+  margin: 15px auto 0;
+  height: 6px;
+  width: 50px;
+  border-radius: 5px;
+
+  @media screen and (min-width: $mw-l) {
+   top: 35px;
+   //margin: 15px auto 0;
+   height: 10px;
+   width: 70px;
+  }
+ }
+
+}
+
+.iphone img {
+ float: none;
+ background: $black;
+ display: block;
+ height: auto;
+ width: 240px;
+ margin: 25px auto 60px;
+ padding: 2px;
+ border-radius: 2px;
+
+ @media screen and (min-width: $mw-l) {
+  margin: 50px auto 100px;
+  padding: 5px;
+  width: 330px;
+  height: 578px;
+  border-radius: 4px;
+ }
+
+}
+
+.iphone span {
+ content: '';
+ position: absolute;
+ right: 0;
+ left: 0;
+ display: block;
+ background: $white;
+ margin: 0 auto;
+ border: $black-1;
+ bottom: 10px;
+ height: 40px;
+ width: 40px;
+ border-radius: 20px;
+
+ @media screen and (min-width: $mw-l) {
+  bottom: 15px;
+  height: 70px;
+  width: 70px;
+  border-radius: 35px;
+ }
+}
+
+@media screen and (min-width: $mw-l) {
+
+ .iphone {
+  width: 360px;
+  margin: 0 15px;
+  border-radius: 50px;
+ }
+
+ .gains .iphone {
+  border: $black-3;
+  margin: 0 0 2rem;
+  // transition: all .2s ease-in;
+  & span,
+  &::before,
+  &::after {
+    border: inherit;
+  }
+  &:first-child,
+  &:last-child {
+   border: $black-1;
+   margin-right: -7em;
+  }
+  &:last-child {
+   margin-left: -7em;
+   z-index: -1;
+  }
+ }
+
+ .mobile .iphone {
+ border: $black-2;
+ margin-right: -11em;
+ z-index: 2;
+
+  & span,
+  &::before,
+  &::after {
+   border: inherit;
+  }
+  &:first-child {
+   border: $black-3;
+   z-index: 3;
+  }
+  &:last-child {
+   border: $black-1;
+   z-index: 1;
+  }
+ }
+
+}
+
+@media screen and (min-width: $mw-xl) {
+
+  .gains .iphone:first-child,
+  .gains .iphone:last-child {
+   margin: 0 1rem;
+   // left: 0;
+   // right: 0;
+   // transition: all .2s ease-in;
+  }
+
+}
+
+@media screen and (min-width: $mw-l) {
+ .mobile .iphone {
+  margin-right: -9em;
+ }
+}
+
+@media screen and (min-width: $mw-xl) {
+ .mobile .iphone {
+  margin-right: -5em;
+ }
 }
 
 .iwatch {
-  background: $white;
-  width:230px;
-  height:269px;
-  @include rounded(43px);
-  padding:8px;
-  box-sizing:border-box;
-  border: $black-3;
-  position:relative;
-  float: left;
+ background: $white;
+ width:230px;
+ height:269px;
+ padding:8px;
+ border: $black-3;
+ position:relative;
+ float: left;
+ border-radius: 43px;
 
-  a {
-   background: none;
-  }
+ a {
+  background: none;
+ }
 
-    &::before {
-      content:'';
-      display:block;
-      width:16px;
-      height:41px;
-      border-radius:45% 7px 7px 45%;
-      position:absolute;
-      right:-13px;
-      top:62px;
-      background:inherit;
-      border: inherit;
-    }
-    &::after {
-      content:'';
-      display:block;
-      width:5px;
-      height:67px;
-      border-radius:8px 3px 3px 8px;
-      position:absolute;
-      right:-5px;
-      top:140px;
-      background:inherit;
-      border: inherit;
-    }
+ &::before {
+  content:'';
+  display:block;
+  width:16px;
+  height:41px;
+  border-radius:45% 7px 7px 45%;
+  position:absolute;
+  right:-13px;
+  top:62px;
+  background:inherit;
+  border: inherit;
+ }
+
+ &::after {
+  content:'';
+  display:block;
+  width:5px;
+  height:67px;
+  border-radius:8px 3px 3px 8px;
+  position:absolute;
+  right:-5px;
+  top:140px;
+  background:inherit;
+  border: inherit;
+ }
+
 }
+
 .iwatch__screen {
-  background: #111;
+ background: #111;
+ height:100%;
+ padding:28px;
+ overflow:hidden;
+ border-radius: 35px;
+
+ img {
   height:100%;
-  @include rounded(35px);
-  box-sizing:border-box;
-  padding:28px;
-  overflow:hidden;
-    img {
-      @include rounded(5px);
-      height:100%;
-    }
+  border-radius: 5px;
+ }
+
 }
+
+// .ipad {
+//   background: $white;
+//   position: relative;
+//   display: block;
+//   float: left;
+//   border: $black-1;
+//   padding: 15px 50px;
+//   margin: 0 0 2rem;
+//   border-radius: 25px;
+//     @media screen and (min-width: $mw-m) {
+//       float: none;
+//       padding: 35px 100px;
+//       width: 100%;
+//       max-width: 1238px;
+//       border-radius: 50px;
+//     }
+//     @media screen and (min-width: $mw-l) {
+//       .gridscores &,
+//       .lily & {
+//         left: -8em;
+//       }
+//     }
+//     img {
+//       height: auto;
+//       background: $black;
+//       display: block;
+//       margin: 0 auto;
+//       padding: 2px;
+//       width: 516px;
+//       border-radius: 2px;
+//         @media screen and (min-width: $mw-m) {
+//           padding: 5px;
+//           width: 1034px;
+//           border-radius: 4px;
+//         }
+//     }
+//     span {
+//       content: '';
+//       position: absolute;
+//       top: 50%;
+//       display: block;
+//       background: $white;
+//       border: $black-1;
+//       left: 7px;
+//       margin: -17px auto 0;
+//       height: 35px;
+//       width: 35px;
+//       border-radius: 27px;
+//         @media screen and (min-width: $mw-m) {
+//           left: 25px;
+//           margin: -25px auto 0;
+//           height: 50px;
+//           width: 50px;
+//           border-radius: 35px;
+//         }
+//     }
+//     &::before {
+//       content: '';
+//       border: $black-1;
+//       position: absolute;
+//       top: 50%;
+//       display: block;
+//       background: $white;
+//       right: 21px;
+//       margin: -3px auto 0;
+//       height: 7px;
+//       width: 7px;
+//       border-radius: 3px;
+//         @media screen and (min-width: $mw-m) {
+//           right: 43px;
+//           margin: -7px auto 0;
+//           height: 14px;
+//           width: 14px;
+//           border-radius: 7px;
+//         }
+//     }
+// }
+// .ipad.fade,
+// .ipad.fade span,
+// .ipad.fade:before {
+//   background: transparent;
+//   border-color: $black-1;
+// }

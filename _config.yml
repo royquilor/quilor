@@ -6,9 +6,9 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Roy Quilor - Product Designer
+title: Roy Quilor - Designer who loves simple designs, css and html.
 email: roy@quilor.com
-description: Roy Quilor is a Product Designer currently based in the UK.
+description: Roy Quilor - Designer who loves simple designs, css and html. Currently based in Hertford, UK.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://quilor.com" # the base hostname & protocol for your site
 twitter_username: royquilor

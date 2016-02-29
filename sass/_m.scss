@@ -1,7 +1,3 @@
-@mixin rounded($radius) {
-    -webkit-border-radius:  $radius;
-             border-radius: $radius;
-}
 @mixin cf() {
   *zoom: 1;
   &:before, &:after {
@@ -12,6 +8,7 @@
     clear: both;
   }
 }
+
 @mixin absolutecenter($axis: "both"){
   position:absolute;
   @if $axis == "y"{

@@ -206,6 +206,7 @@
     transform: translate3d(5px, 0, 0);
   }
 }
+
 .hand,
 svg {
   -webkit-animation-duration: .2s;
@@ -213,6 +214,7 @@ svg {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
+
 .fadeIn,
 .fadeInLeft,
 .fadeInRight,
@@ -224,25 +226,30 @@ svg {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
+
 .gains .iphone {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
 }
+
 .gains .iphone,
 .mobile .iphone:first-child {
   -webkit-animation-delay: .5s;
           animation-delay: .5s;
 }
+
 .gains .iphone:first-child,
 .mobile .iphone {
   -webkit-animation-delay: .8s;
           animation-delay: .8s;
 }
+
 .gains .iphone:last-child,
 .mobile .iphone:last-child {
   -webkit-animation-delay: 1.1s;
           animation-delay: 1.1s;
 }
+
 .write,
 .righthand,
 .victory {
@@ -251,31 +258,40 @@ svg {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
+
 a:hover svg {
   -webkit-animation-name: pulse;
   animation-name: pulse;
 }
+
 .hand:hover {
   -webkit-transform: translate3d(0, -10px, 0);
   transform: translate3d(0, -10px, 0);
   background: none;
 }
+
 .lefthand {
+
   margin-bottom:0.4em;
+
     &:hover {
     -webkit-transform: translate3d(-10px, 0, 0);
     transform: translate3d(-10px, 0, 0);
     background: none;
     }
+
 }
+
 .write {
   -webkit-animation-name: shake;
   animation-name: shake;
 }
+
 .righthand {
   -webkit-transform: translate3d(10px, 0, 0);
   transform: translate3d(10px, 0, 0);
 }
+
 .victory {
   -webkit-animation-name: bounce;
   animation-name: bounce;
@@ -283,16 +299,15 @@ a:hover svg {
   transform-origin: center bottom;
 }
 
-header img,
+.top img,
 h1 {
- -webkit-animation-name: fadeIn; 
+ -webkit-animation-name: fadeIn;
  animation-name: fadeIn;
  -webkit-animation-fill-mode:both;
- animation-fill-mode: both; 
+ animation-fill-mode: both;
  -webkit-animation-duration: .2s;
 }
 
 h1 {
  -webkit-animation-delay: .3s;
 }
-

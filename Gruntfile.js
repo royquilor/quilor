@@ -74,6 +74,33 @@ module.exports = function(grunt) {
                 }
             },
 
+            htmlmin: {                                     // Task
+              dist: {                                      // Target
+                options: {                                 // Target options
+                  removeComments: true,
+                  collapseWhitespace: true
+                },
+                files: {                                   // Dictionary of files
+                  '_site/htmlmin/index.html': '_site/index.html',     // 'destination': 'source'
+                }
+              }
+            },
+
+            critical: {
+                test: {
+                    options: {
+                        base: './',
+                        css: [
+                            '_site/css/global.css'
+                        ],
+                        width: 320,
+                        height: 70
+                    },
+                    src: '_site/index.html',
+                    dest: '_site/critical/index.html'
+                }
+            },
+
             browserSync: {
               default_options: {
                 bsFiles: {
@@ -88,8 +115,8 @@ module.exports = function(grunt) {
                      baseDir: "_site"
                    }
                  }
-               }  
-            }  
+               }
+            }
     });
 
     // 3. Where we tell Grunt we plan to use this plug-in.
@@ -97,6 +124,6 @@ module.exports = function(grunt) {
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
     grunt.registerTask("serve", ["shell:jekyllServe"]);
-    grunt.registerTask('default', ['concat', 'uglify', 'sass', 'cssmin', 'shell:jekyllBuild','browserSync','watch']);
+    grunt.registerTask('default', ['concat', 'uglify', 'sass', 'cssmin', 'shell:jekyllBuild','browserSync','watch','htmlmin','critical']);
 
 };

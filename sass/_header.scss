@@ -8,9 +8,9 @@
  }
 
  img {
- height: 60px;
- margin: 0 0 1rem;
- @include rounded(30px);
+  height: 60px;
+  margin: 0 0 1rem;
+  border-radius: 30px;
  }
 
 }
