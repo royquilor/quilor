@@ -1,133 +1,123 @@
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+/**
+* TODO: merge with header and layout
+*/
+
 footer {
-  text-align: center;
-  line-height: 2;
-  padding: 1rem 2rem;
-    @media screen and (min-width: $mw-m) {
-      padding: 3rem 2rem;
-    }
+    text-align: center;
+    line-height: 2;
+    padding: 1rem 2rem;
+        @media screen and (min-width: $mw-m) {
+            padding: 3rem 2rem;
+        }
 }
 
 footer svg {
- height: 11px;
- width: 16px;
- path {
-  fill: $red;
-  }
-  &:hover {
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-name: pulse;
-  animation-name: pulse;
-  }
+    height: 11px;
+    width: 16px;
+        path {
+            fill: $red;
+        }
+        &:hover {
+            -webkit-animation-iteration-count: infinite;
+                    animation-iteration-count: infinite;
+                       -webkit-animation-name: pulse;
+                               animation-name: pulse;
+        }
 }
 
 .hand {
- background: none;
- display:inline-block;
- font-size: 4rem;
- margin-top: .5rem;
-
- :before {
-  content:"☝";
-  display: inline-block;
-  font-style: normal;
- }
-
+    background: none;
+    display:inline-block;
+    font-size: 4rem;
+    margin-top: .5rem;
+        :before {
+            content:"☝";
+            display: inline-block;
+            font-style: normal;
+        }
 }
 
 .hand i:before {
- display: inline-block;
- font-style: normal;
+    display: inline-block;
+    font-style: normal;
 }
 
-.write i:before {
-  content:"✍";
-}
-
-.righthand i:before {
-  content:"☞";
-}
-
-.victory i:before {
-  content:"✌";
-}
+.write i:before { content:"✍"; }
+.righthand i:before { content:"☞"; }
+.victory i:before { content:"✌"; }
 
 form {
-
-  @include cf();
-
-  @media screen and (min-width: $mw-m) {
-   margin:1rem auto;
-   @include container(48em);
-  }
-
+    @include cf();
+        @media screen and (min-width: $mw-m) {
+            @include container(48em);
+                margin:1rem auto;
+            }
 }
 
 input {
- -webkit-appearance: none;
- background: $white;
- border: $black-1;
- height: 50px;
- line-height: 48px;
- padding: 0 1rem;
- margin: 0 0 1rem;
- border-radius: 4px;
- float: left;
- width: 100%;
+    -webkit-appearance: none;
+    background: $white;
+    border: $black-1;
+    height: 50px;
+    line-height: 48px;
+    padding: 0 1rem;
+    margin: 0 0 1rem;
+    border-radius: 4px;
+    float: left;
+    width: 100%;
+        @media screen and (min-width: $mw-m) {
+            border-right: 0;
+            border-radius: 4px 0 0 4px;
+            width: 67%;
+            margin-top: 0;
+        }
 
-  @media screen and (min-width: $mw-m) {
-   border-right: 0;
-   border-radius: 4px 0 0 4px;
-   width: 67%;
-   margin-top: 0;
-  }
-
-  &:focus {
-   outline: none;
-   color: $black;
-   border: 1px solid $blue;
-   transition: all .2s ease-in;
-
-    @media screen and (min-width: $mw-m) {
-     border-right:0;
-    }
-  }
-
-  &[type="submit"] {
-   color: $blue;
-   background: $white;
-   border: 1px solid $blue;
-   border-radius: 4px;
-   font-weight: 600;
-   text-transform: uppercase;
-
-    @media screen and (min-width: $mw-m) {
-      border-radius: 0 4px 4px 0;
-      width: 33%;
+    &:focus {
+        outline: none;
+        color: $black;
+        border: 1px solid $blue;
+        transition: all .2s ease-in;
+            @media screen and (min-width: $mw-m) {
+                border-right:0;
+            }
     }
 
-    &:hover,
-    &:active {
-      transition: .2s;
-      color: $white;
-      background: $blue;
-      border: 1px solid $blue;
-    }
-  }
+    &[type="submit"] {
+        color: $blue;
+        background: $white;
+        border: 1px solid $blue;
+        border-radius: 4px;
+        font-weight: 600;
+        text-transform: uppercase;
+            @media screen and (min-width: $mw-m) {
+                border-radius: 0 4px 4px 0;
+                width: 33%;
+            }
 
+        &:hover,
+        &:active {
+            transition: .2s;
+            color: $white;
+            background: $blue;
+            border: 1px solid $blue;
+        }
+    }
 }
 
 .social {
- padding: 0;
- @include cf();
+    @include cf();
+    padding: 0;
 
-  a {
-   background: none;
-   width: 20%;
-   display: inline-block;
-   text-align: center;
-   float: left;
-   margin: 1rem 0;
-  }
-
+    a {
+        background: none;
+        width: 20%;
+        display: inline-block;
+        text-align: center;
+        float: left;
+        margin: 1rem 0;
+    }
 }

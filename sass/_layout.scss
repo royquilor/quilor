@@ -1,97 +1,93 @@
-img,
-iframe {
-  max-width: 100%;
-}
+/* ==========================================================================
+   Layout
+   ========================================================================== */
 
+/**
+* TODO: merge with header and footer
+*/
+
+img,
+iframe,
 video {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 figure {
- padding: 0;
- @include container(992px);
-
-  @media screen and (min-width: $mw-m) {
-    margin: 0 auto;
-  }
-
+    @include container(992px);
+    padding: 0;
+        @media screen and (min-width: $mw-m) {
+            margin: 0 auto;
+        }
 }
 
 figcaption {
- display: none;
- color: $gray;
-
-  @media screen and (min-width: $mw-l) {
-   display: block;
-   text-align: center;
-   padding: 1rem;
-  }
-
+    display: none;
+    color: $gray;
+        @media screen and (min-width: $mw-l) {
+            display: block;
+            text-align: center;
+            padding: 1rem;
+        }
 }
 
 section {
- border-bottom: 1px solid $mid-gray;
- padding: 3rem 0;
- @include cf();
-
-  @media screen and (min-width: $mw-m) {
-    padding: 8rem 0;
-  }
-
+    @include cf();
+    border-bottom: 1px solid $mid-gray;
+    padding: 3rem 0;
+        @media screen and (min-width: $mw-m) {
+            padding: 8rem 0;
+        }
 }
 
 @media screen and (min-width: $mw-m) {
- .about {
-  padding: 7rem 0 2rem;
- }
+    .about {
+        padding: 7rem 0 2rem;
+    }
 }
 
 main header,
 .centered {
- text-align: left;
- padding: 0;
+    text-align: left;
+    padding: 0;
 }
 
 .awwesome header {
- max-width: 26em;
+    max-width: 26em;
 }
 
 .talk header {
- max-width: 29em;
+    max-width: 29em;
 }
 
 .about header,
 .about .centered {
- text-align: center;
+    text-align: center;
 }
 
 @media screen and (min-width: $mw-m) {
-
- main header,
- .centered {
-  text-align: center;
-  margin-bottom: 2rem;
-  padding: 0;
-  // @include container(35.488em);
-  @include container($mw-s);
- }
-
+    main header,
+    .centered {
+        @include container($mw-s);
+        text-align: center;
+        margin-bottom: 2rem;
+        padding: 0;
+    }
 }
 
 .embed-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  max-width: 100%;
-   iframe,
-   object,
-   embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-   }
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+        iframe,
+        object,
+        embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
 }

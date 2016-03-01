@@ -1,164 +1,132 @@
-// Requirements
-// ============
+/* ==========================================================================
+   Grid
+   ========================================================================== */
+
+/**
+* TODO: Explore toast grid http://daneden.github.io/Toast/
+*/
 
 @import "susy";
 
 $susy: (
-  columns: 12,
-  gutters: 1/4,
-  math: fluid,
-  output: float,
-  gutter-position: inside,
+    columns: 12,
+    gutters: 1/4,
+    math: fluid,
+    output: float,
+    gutter-position: inside,
 );
 
+/**
+* TODO: using hidden for the images and animations on scroll. Should refactor
+* to alter the css properties instead of adding remove class.
+*/
+
 .hidden {
-  visibility: hidden;
+    visibility: hidden;
 }
 
 .grid-1 {
-  @include container(1320px);
-  //@include container($mw-xl);
+    @include container(1320px);
 }
 
 .gains .grid-1 {
- @include container(830px);
-
- @media screen and (min-width: $mw-xl) {
-  @include container(1145px);
- }
+    @include container(830px);
+        @media screen and (min-width: $mw-xl) {
+            @include container(1145px);
+        }
 }
 
 .gridscores .grid-1-4,
 .lily .grid-1-4 {
-  @include span(break);
-  @include prefix(0em);
-  @include suffix(0em);
+    @include span(break);
+    @include prefix(0em);
+    @include suffix(0em);
 }
 
 .blank {
-  border: 0;
-  @include absolutecenter();
+    @include absolutecenter();
+    border: 0;
 }
 
 @media screen and (min-width: $mw-m) {
 
-  .grid-1-2 li,
-  .grid-3-4 li,
-  .grid-2-3 li {
-    @include gallery (6 of 12);
-    // padding-right: 2rem;
-    // padding-bottom: 1rem;
-    // padding-left: 2rem;
-    padding: 0 2rem 1rem 2rem;
-  }
+    .grid-1-2 li,
+    .grid-3-4 li,
+    .grid-2-3 li {
+        @include gallery (6 of 12);
+        padding: 0 2rem 1rem 2rem;
+    }
 
-  .gains li {
-    @include gallery (4 of 12);
-    // padding-right: 2rem;
-    // padding-bottom: 1rem;
-    // padding-top: 2rem;
-    // padding-left: 2rem;
-    padding: 2rem 2rem 1rem 2rem;
-  }
+    .gains li {
+        @include gallery (4 of 12);
+        padding: 2rem 2rem 1rem 2rem;
+    }
 
-  .gridscores .grid-1-4 {
-    @include span(nobreak);
-  }
+    .gridscores .grid-1-4 {
+        @include span(nobreak);
+    }
 
-  .lily .grid-1-4 {
-    @include span(nobreak);
-    // padding-left: 2rem;
-    // padding-right: 2rem;
-    // padding-top: 2rem;
-    padding: 2rem 2rem 0 2rem;
-  }
+    .lily .grid-1-4 {
+        @include span(nobreak);
+        padding: 2rem 2rem 0 2rem;
+    }
 
-  .gridscores .grid-1-4,
-  .branding .grid-1-3,
-  .mobile .grid-1-4,
-  .intranet .grid-1-4 {
-    padding: 2em;
-  }
-
+    .gridscores .grid-1-4,
+    .branding .grid-1-3,
+    .mobile .grid-1-4,
+    .intranet .grid-1-4 {
+        padding: 2em;
+    }
 }
 
 @media screen and (min-width: $mw-l) {
 
-  .grid-1-2 {
-    @include span(6 of 12);
-  }
+    .grid-1-2 { @include span(6 of 12); }
+    .grid-1-3 { @include span(3 of 12); }
+    .grid-2-3 { @include span(9 of 12); }
+    .grid-1-4 { @include span(3 of 12); }
+    .grid-3-4 { @include span(9 of 12); }
 
-  .grid-1-3 {
-    @include span(3 of 12);
-  }
+    .mobile .iphone { @include span(ftl nobreak); }
+    .branding .grid-2-3 { @include span(rtl nobreak); }
+    .intranet .grid-3-4 { @include span(rtl nobreak); }
 
-  .grid-2-3 {
-    @include span(9 of 12);
-  }
-
-  .grid-1-4 {
-    @include span(3 of 12);
-  }
-
-  .grid-3-4 {
-    @include span(9 of 12);
-  }
-
-  .gains {
-    .iphone {
-     @include span(ftl nobreak);
-     }
-    .grid-2-3 {
-     @include span(rtl nobreak);
-     }
-     ul {
-      @include container(1180px);
-      //@include container($mw-xl);
-     }
-  }
-  .mobile .iphone {
-    @include span(ftl nobreak);
-  }
-  .branding .grid-2-3 {
-    @include span(rtl nobreak);
-  }
-  .intranet .grid-3-4 {
-    @include span(rtl nobreak);
-  }
+    .gains {
+        .iphone { @include span(ftl nobreak); }
+        .grid-2-3 { @include span(rtl nobreak); }
+         ul { @include container(1180px); }
+    }
 }
 
 .awwesome,
 .lily,
 .about {
-  background: $light-gray;
+    background: $light-gray;
 }
 
 dl {
-
-  display: none;
-
-  @include container(540px);
-
-    @media screen and (min-width: $mw-l) {
-      display: block;
-    }
+    @include container(540px);
+    display: none;
+        @media screen and (min-width: $mw-l) {
+            display: block;
+        }
 }
 
 dt {
- text-align: right;
+    text-align: right;
 }
 
 dt,
 dd {
- @include gallery (3 of 12);
+    @include gallery (3 of 12);
 }
 
 .clients ul {
- @include container(540px);
+    @include container(540px);
 }
 
 .clients li {
- @include gallery (6 of 12);
- text-align: center;
- font-size: .875rem;
+    @include gallery (6 of 12);
+    text-align: center;
+    font-size: .875rem;
 }

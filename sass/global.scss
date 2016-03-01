@@ -1,4 +1,20 @@
-@import "n"; 
+/* ==========================================================================
+   Yes, I'm an arsehole.
+   ========================================================================== */
+
+/**
+* I've been using VIM lately, hence the short names for the imports, can you
+* guess what they are?
+*
+* TODO: Find a quicker way to find files in Vim, rather than typing out the
+*   whole filename. So _v.scss is a lot quicker than _variables.scss
+*
+* 4 spaces for indentation, 1 level for nesting, readability over nesting when
+* hard to read.
+* css reference https://github.com/necolas/idiomatic-css
+*/
+
+@import "n";
 @import "c";
 @import "v";
 @import "m";

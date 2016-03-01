@@ -64,14 +64,14 @@ var myEfficientFn = debounce(function() {
 $(window).scroll(function() {
 
   var topOfWindow = $(window).scrollTop();
-  var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
-
-  $('gridscores .browser').each(function(e) {
-      if(!isMobile) {
-          e.preventDefault();
-          $(this).addClass("fadeInLeft");
-      }
-  });
+  // var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
+  //
+  // $('gridscores .browser').each(function(e) {
+  //     if(!isMobile) {
+  //         e.preventDefault();
+  //         $(this).addClass("fadeInLeft");
+  //     }
+  // });
 
   $('.gridscores .browser').each(function(){
   var imagePos = $(this).offset().top;

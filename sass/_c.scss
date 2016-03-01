@@ -1,15 +1,24 @@
-$white:        #FFFFFF;
-$gray:         #AAAAAA;
+/* ==========================================================================
+   Colors some from the Morpheus of CSS http://mrmrs.cc http://clrs.cc
+   ========================================================================== */
+
+/**
+* TODO: merge with variables, possible to limit to 3 colors? play with rgba
+* for lighter and darker versions. Remove social colors and put inline.
+*/
+
+$white:        #ffffff;
+$gray:         #aaaaaa;
 $mid-gray:     #e8ecef;
 $light-gray:   #f5f7f9;
 $black:        #333333;
 $black-1:      1px solid rgba(0,0,0,0.1);
 $black-2:      1px solid rgba(0,0,0,0.2);
 $black-3:      1px solid rgba(0,0,0,0.3);
-$blue:         #4D9BD0;
+$blue:         #4d9bd0;
 $sky-blue:     rgba(77, 155, 208,.1);
 $dark-blue:    rgba(77, 155, 208,.2);
-$red:          #FF4136;
+$red:          #ff4136;
 $linkedin:     #0077b5;
 $twitter:      #55acee;
 $instagram:    #3f729b;
