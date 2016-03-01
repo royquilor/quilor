@@ -74,16 +74,12 @@ module.exports = function(grunt) {
                 }
             },
 
-            htmlmin: {                                     // Task
-              dist: {                                      // Target
-                options: {                                 // Target options
-                  removeComments: true,
-                  collapseWhitespace: true
-                },
-                files: {                                   // Dictionary of files
-                  '_site/htmlmin/index.html': '_site/index.html',     // 'destination': 'source'
+            a11y: {
+                dev: {
+                    options: {
+                        urls: ['_site/index.html']
+                    }
                 }
-              }
             },
 
             critical: {
@@ -97,8 +93,20 @@ module.exports = function(grunt) {
                         height: 70
                     },
                     src: '_site/index.html',
-                    dest: '_site/critical/index.html'
+                    dest: 'critical/index.html'
                 }
+            },
+
+            htmlmin: {                                     // Task
+              dist: {                                      // Target
+                options: {                                 // Target options
+                  removeComments: true,
+                  collapseWhitespace: true
+                },
+                files: {                                   // Dictionary of files
+                  'htmlmin/index.html': 'critical/index.html',     // 'destination': 'source'
+                }
+              }
             },
 
             browserSync: {
@@ -124,6 +132,6 @@ module.exports = function(grunt) {
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
     grunt.registerTask("serve", ["shell:jekyllServe"]);
-    grunt.registerTask('default', ['concat', 'uglify', 'sass', 'cssmin', 'shell:jekyllBuild','browserSync','watch','htmlmin','critical']);
+    grunt.registerTask('default', ['concat', 'uglify', 'sass', 'cssmin', 'shell:jekyllBuild', 'browserSync', 'a11y', 'watch', 'htmlmin', 'critical']);
 
 };

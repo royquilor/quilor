@@ -58,6 +58,11 @@ form {
             }
 }
 
+label {
+    display: block;   
+    margin: 0 0 1rem;
+}
+
 input {
     -webkit-appearance: none;
     background: $white;

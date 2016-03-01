@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "devDependencies": {
     "grunt": "~0.4.2",
+    "grunt-a11y": "^0.1.4",
     "grunt-browser-sync": "^2.2.0",
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-cssmin": "^0.14.0",
