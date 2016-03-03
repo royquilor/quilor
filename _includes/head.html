@@ -1,16 +1,8 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta charset="UTF-8">
-    <title>
-        {% if page.title %}
-        {{ page.title }}
-        {% else %}
-        Default Page Title
-        {% endif %}
-    </title>
-        {% if page.description %}
-            <meta name="description" content="{{ page.description}}" />
-        {% endif %}
+    <title>{% if page.title %}{{ page.title }}{% else %}Default Page Title{% endif %}</title>
+    {% if page.description %}<meta name="description" content="{{ page.description}}" />{% endif %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/public/apple-touch-icon-precomposed.png">
     <link rel="shortcut icon" href="{{ site.baseurl }}/public/favicon.ico">

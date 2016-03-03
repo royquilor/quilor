@@ -94,7 +94,7 @@ $susy: (
     .gains {
         .iphone { @include span(ftl nobreak); }
         .grid-2-3 { @include span(rtl nobreak); }
-         ul { @include container(1180px); }
+        ul { @include container(1180px); }
     }
 }
 

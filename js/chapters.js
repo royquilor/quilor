@@ -53,7 +53,7 @@ $('.button').hover(function(){
 });
 
 $(document).ready(function() {
-    $('.gridscores .browser, .gridscores .iwatch, .awwesome .browser, .branding picture, .mobile .iphone, .intranet .browser, .intranet figure, .lily .browser, .talk figure').addClass("hidden");
+    $('.gridscores .browser, .gridscores .iwatch, .awwesome .browser, .branding picture, .mobile .iphone, .intranet .browser, .intranet figure, .lily .browser').addClass("hidden");
 });
 
 // Animation
@@ -121,12 +121,12 @@ $(window).scroll(function() {
       $(this).addClass("fadeInLeft");
     }
   });
-  $('.talk figure').each(function(){
-  var imagePos = $(this).offset().top;
-    if (imagePos < topOfWindow+500) {
-      $(this).addClass("fadeIn");
-    }
-  });
+  // $('.talk figure').each(function(){
+  // var imagePos = $(this).offset().top;
+  //   if (imagePos < topOfWindow+500) {
+  //     $(this).addClass("fadeIn");
+  //   }
+  // });
 });
 
 }, 100);

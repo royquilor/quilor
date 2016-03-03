@@ -1,14 +1,26 @@
 /* globals module, require */
 
+"use strict";
+
 module.exports = function(grunt) {
 
-    "use strict";
+    // 3. Where we tell Grunt we plan to use this plug-in.
+    require("load-grunt-tasks")(grunt);
 
     // 1. All configuration goes here
     grunt.initConfig({
-        pkg: grunt.file.readJSON('package.json'),
+        // pkg: grunt.file.readJSON('package.json'),
 
             // 2. Configuration for concatinating files goes here.
+
+            // uncss: {
+            //     dist: {
+            //         files: {
+            //             'tidy/global-min.css': 'index.html'
+            //         }
+            //     }
+            // },
+
             concat: {
                 dist: {
                     src: [
@@ -33,15 +45,23 @@ module.exports = function(grunt) {
                         require: 'susy'
                     },
                     files: {
-                        'css/global.css': ['sass/global.scss']
+                        'css/global.css': 'sass/global.scss'
                     }
                 }
             },
 
+            // processhtml: {
+            //     dist: {
+            //         files: {
+            //             'tidy/index.html': 'index.html'
+            //         }
+            //     }
+            // },
+
             cssmin: {
                 combine: {
                     files: {
-                        'css/global-min.css': ['css/global.css']
+                        'css/global-min.css': 'css/global.css'
                     }
                 }
             },
@@ -74,6 +94,52 @@ module.exports = function(grunt) {
                 }
             },
 
+
+    	    // pageres: {
+            //   screenshot: {
+            // 	options: {
+            //       urls: 'awwesome.com',
+            //       sizes: ['1200x800', '800x600', '320x658'],
+            //       dest: 'dist',
+            //       crop: true
+            //     }
+            //   }
+	        // },
+
+            // breakshots: {
+            //     options: {},
+            //         files: {
+            //         'breakshots/': ['index.html']
+            //     },
+            // },
+
+
+            // responsive_images: {
+            //     dev: {
+            //         options: {
+            //             sizes: [{
+            //                 width: 320,
+            //                 quality: 100
+            //             },{
+            //                 name: 'medium',
+            //                 width: 640,
+            //                 quality: 100
+            //             },{
+            //                 name: "large",
+            //                 width: 1024,
+            //                 // suffix: "_x2",
+            //                 quality: 100
+            //             }]
+            //         },
+            //             files: [{
+            //             expand: true,
+            //             src: ['**/**/**/*.{jpg,gif,png}'],
+            //             cwd: 'i/',
+            //             dest: 'responsive'
+            //         }]
+            //     }
+            // },
+
             a11y: {
                 dev: {
                     options: {
@@ -85,12 +151,13 @@ module.exports = function(grunt) {
             critical: {
                 test: {
                     options: {
+                        minify: true,
                         base: './',
                         css: [
                             '_site/css/global.css'
                         ],
-                        width: 320,
-                        height: 70
+                        width: 1400,
+                        height: 900
                     },
                     src: '_site/index.html',
                     dest: 'critical/index.html'
@@ -104,10 +171,19 @@ module.exports = function(grunt) {
                   collapseWhitespace: true
                 },
                 files: {                                   // Dictionary of files
-                  'htmlmin/index.html': 'critical/index.html',     // 'destination': 'source'
+                  'htmlmin/index.html': 'critical/index.html'     // 'destination': 'source'
                 }
               }
             },
+
+            // perfbudget: {
+            //   default: {
+            //     options: {
+            //       url: 'http://quilor.com',
+            //       key: 'A.9f24421884cf83340b2b18b8f2d7873a'
+            //     }
+            //   }
+            // },
 
             browserSync: {
               default_options: {
@@ -127,11 +203,28 @@ module.exports = function(grunt) {
             }
     });
 
-    // 3. Where we tell Grunt we plan to use this plug-in.
-    require("load-grunt-tasks")(grunt);
-
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask("serve", ["shell:jekyllServe"]);
-    grunt.registerTask('default', ['concat', 'uglify', 'sass', 'cssmin', 'shell:jekyllBuild', 'browserSync', 'a11y', 'watch', 'htmlmin', 'critical']);
+    grunt.registerTask("serve", [
+        "shell:jekyllServe"
+    ]);
+
+    grunt.registerTask('default', [
+        'concat',
+        'uglify',
+        'sass',
+        'cssmin',
+	    // 'pageres',
+        // 'breakshots',
+        // 'responsive_images',
+        // 'uncss',
+        // 'processhtml',
+        // 'perfbudget',
+        'shell:jekyllBuild',
+        'browserSync',
+        'a11y',
+        'watch',
+        'htmlmin',
+        'critical'
+    ]);
 
 };

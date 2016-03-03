@@ -30,6 +30,11 @@
     width: 260px;
     border-radius: 30px;
 
+    a {
+        background: $white;
+        display: block;
+    }
+
     &::before {
         content: '';
         display: block;
@@ -165,10 +170,20 @@
 }
 
 @media screen and (min-width: $mw-xl) {
+
+    .gains .iphone {
+        border: $black-1;
+    }
+
     .gains .iphone:first-child,
     .gains .iphone:last-child {
         margin: 0 1rem;
     }
+
+    .gains .iphone:last-child {
+        z-index: 0;
+    }
+
     .mobile .iphone {
         margin-right: -5em;
     }

@@ -5,15 +5,20 @@
     "grunt": "~0.4.2",
     "grunt-a11y": "^0.1.4",
     "grunt-browser-sync": "^2.2.0",
-    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-concat": "~1.0.0",
     "grunt-contrib-cssmin": "^0.14.0",
     "grunt-contrib-htmlmin": "^0.6.0",
-    "grunt-contrib-sass": "^0.6.0",
-    "grunt-contrib-uglify": "^0.5.1",
-    "grunt-contrib-watch": "^0.5.3",
+    "grunt-contrib-sass": "^0.9.2",
+    "grunt-contrib-uglify": "^0.11.1",
+    "grunt-contrib-watch": "^0.6.1",
     "grunt-critical": "^0.2.0",
     "grunt-jekyll": "~0.4.1",
-    "grunt-shell": "~0.6.4",
-    "load-grunt-tasks": "~0.2.1"
+    "grunt-pageres": "^2.1.0",
+    "grunt-perfbudget": "^0.1.8",
+    "grunt-processhtml": "^0.3.13",
+    "grunt-responsive-images": "^0.1.7",
+    "grunt-shell": "~1.2.1",
+    "grunt-uncss": "^0.5.0",
+    "load-grunt-tasks": "~3.4.1"
   }
 }
