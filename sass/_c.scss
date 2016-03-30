@@ -15,14 +15,22 @@ $black:        #333333;
 $black-1:      1px solid rgba(0,0,0,0.1);
 $black-2:      1px solid rgba(0,0,0,0.2);
 $black-3:      1px solid rgba(0,0,0,0.3);
-$blue:         #4d9bd0;
+$blue:         #0099F7;
 $sky-blue:     rgba(77, 155, 208,.1);
 $dark-blue:    rgba(77, 155, 208,.2);
-$red:          #ff4136;
+$red:          #e53935;
 $linkedin:     #0077b5;
 $twitter:      #55acee;
 $instagram:    #3f729b;
 $dribbble:     #ea4c89;
+
+$bg-gray: #eeeeee;
+
+.bg-gray {
+  background-color: $bg-gray;
+}
+
+
 //
 // $silver: #DDDDDD;
 // $aqua: #7FDBFF;

@@ -14,7 +14,7 @@ video {
 }
 
 figure {
-    @include container(992px);
+    @include container(700px);
     padding: 0;
         @media screen and (min-width: $mw-m) {
             margin: 0 auto;
@@ -42,7 +42,7 @@ section {
 
 @media screen and (min-width: $mw-m) {
     .about {
-        padding: 7rem 0 2rem;
+        padding: 5rem 0;
     }
 }
 
@@ -52,7 +52,8 @@ main header,
     padding: 0;
 }
 
-.awwesome header {
+.awwesome header,
+.awwesome .centered {
     max-width: 26em;
 }
 
@@ -63,6 +64,16 @@ main header,
 .about header,
 .about .centered {
     text-align: center;
+}
+
+.about .centered {
+    max-width: 24em;
+    margin: 0 auto;
+}
+
+.about img {
+  width: 233px;
+  margin: 2rem auto;
 }
 
 @media screen and (min-width: $mw-m) {

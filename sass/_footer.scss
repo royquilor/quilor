@@ -116,13 +116,12 @@ input {
 .social {
     @include cf();
     padding: 0;
-
+    margin: 0;
     a {
         background: none;
-        width: 20%;
         display: inline-block;
         text-align: center;
-        float: left;
         margin: 1rem 0;
+        padding: .5rem;
     }
 }

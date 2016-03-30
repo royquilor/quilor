@@ -52,83 +52,70 @@ $('.button').hover(function(){
   $('.hand').toggleClass('victory');
 });
 
-$(document).ready(function() {
-    $('.gridscores .browser, .gridscores .iwatch, .awwesome .browser, .branding picture, .mobile .iphone, .intranet .browser, .intranet figure, .lily .browser').addClass("hidden");
-});
+// $(document).ready(function() {
+//     $('.gridscores .browser, .gridscores .iwatch, .awwesome .browser, .branding picture, .mobile .iphone, .intranet .browser, .intranet figure, .lily .browser').addClass("animated hidden");
+// });
 
 // Animation
 
-var myEfficientFn = debounce(function() {
-	// All the taxing stuff you do
-
-$(window).scroll(function() {
-
-  var topOfWindow = $(window).scrollTop();
-  // var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
-  //
-  // $('gridscores .browser').each(function(e) {
-  //     if(!isMobile) {
-  //         e.preventDefault();
-  //         $(this).addClass("fadeInLeft");
-  //     }
-  // });
-
-  $('.gridscores .browser').each(function(){
-  var imagePos = $(this).offset().top;
-    if (imagePos < topOfWindow+500) {
-      $(this).addClass("fadeInLeft");
-    }
-  });
-  $('.gridscores .iwatch').each(function(){
-  var imagePos = $(this).offset().top;
-    if (imagePos < topOfWindow+500) {
-      $(this).addClass("fadeInLeft");
-    }
-  });
-  $('.awwesome .browser').each(function(){
-  var imagePos = $(this).offset().top;
-    if (imagePos < topOfWindow+500) {
-      $(this).addClass("fadeInUp");
-    }
-  });
-  $('.branding picture').each(function(){
-  var imagePos = $(this).offset().top;
-    if (imagePos < topOfWindow+900) {
-      $(this).addClass("fadeIn");
-    }
-  });
-  $('.mobile .iphone').each(function(){
-  var imagePos = $(this).offset().top;
-    if (imagePos < topOfWindow+900) {
-      $(this).addClass("fadeInLeft");
-    }
-  });
-  $('.intranet .browser').each(function(){
-  var imagePos = $(this).offset().top;
-    if (imagePos < topOfWindow+500) {
-      $(this).addClass("fadeInRight");
-    }
-  });
-  $('.intranet figure').each(function(){
-  var imagePos = $(this).offset().top;
-    if (imagePos < topOfWindow+500) {
-      $(this).addClass("fadeIn");
-    }
-  });
-  $('.lily .browser').each(function(){
-  var imagePos = $(this).offset().top;
-    if (imagePos < topOfWindow+500) {
-      $(this).addClass("fadeInLeft");
-    }
-  });
-  // $('.talk figure').each(function(){
-  // var imagePos = $(this).offset().top;
-  //   if (imagePos < topOfWindow+500) {
-  //     $(this).addClass("fadeIn");
-  //   }
-  // });
-});
-
-}, 100);
-
-window.addEventListener('scroll', myEfficientFn);
+// var myEfficientFn = debounce(function() {
+//
+// $(window).scroll(function() {
+//
+//   var topOfWindow = $(window).scrollTop();
+//
+//   var imagePos = $('.animated').offset().top;
+//
+//   $('.gridscores .browser').each(function(){
+//
+//     if (imagePos < topOfWindow+500) {
+//       $(this).addClass("fadeInLeft");
+//     }
+//   });
+//   $('.gridscores .iwatch').each(function(){
+//     var imagePos = $(this).offset().top;
+//     if (imagePos < topOfWindow+500) {
+//       $(this).addClass("fadeInLeft");
+//     }
+//   });
+//   $('.awwesome .browser').each(function(){
+//     var imagePos = $(this).offset().top;
+//     if (imagePos < topOfWindow+500) {
+//       $(this).addClass("fadeInUp");
+//     }
+//   });
+//   $('.branding picture').each(function(){
+//     var imagePos = $(this).offset().top;
+//     if (imagePos < topOfWindow+900) {
+//       $(this).addClass("fadeIn");
+//     }
+//   });
+//   $('.mobile .iphone').each(function(){
+//     var imagePos = $(this).offset().top;
+//     if (imagePos < topOfWindow+900) {
+//       $(this).addClass("fadeInLeft");
+//     }
+//   });
+//   $('.intranet .browser').each(function(){
+//     var imagePos = $(this).offset().top;
+//     if (imagePos < topOfWindow+500) {
+//       $(this).addClass("fadeInRight");
+//     }
+//   });
+//   $('.intranet figure').each(function(){
+//     var imagePos = $(this).offset().top;
+//     if (imagePos < topOfWindow+500) {
+//       $(this).addClass("fadeIn");
+//     }
+//   });
+//   $('.lily .browser').each(function(){
+//     var imagePos = $(this).offset().top;
+//     if (imagePos < topOfWindow+500) {
+//       $(this).addClass("fadeInLeft");
+//     }
+//   });
+// });
+//
+// }, 100);
+//
+// window.addEventListener('scroll', myEfficientFn);

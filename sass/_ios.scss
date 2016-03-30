@@ -7,16 +7,36 @@
 * revert to images. Server requests vs page load
 */
 
+.wrap {
+    background: #fff;
+    margin:1rem 0 0;
+    
+    @media screen and (min-width: $mw-l) {
+        border-radius: 5px;
+    }
+}
+
 .browser {
-    @include container($mw-l);
-    padding: 5px;
-    background: #111;
-    margin: 0 0 2rem;
-    border-radius: 5px;
+    @include container($mw-m);
+    margin: 0 auto 2rem;
 
     img {
         vertical-align: bottom;
     }
+
+    @media screen and (min-width: $mw-l) {
+        margin: 0 0 2rem;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+
+        img {
+            border-radius: 5px;
+        }
+    }
+}
+
+.intranet .browser {
+    border: 1px solid #ddd;
 }
 
 .iphone {

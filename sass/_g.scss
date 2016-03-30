@@ -25,6 +25,12 @@ $susy: (
     visibility: hidden;
 }
 
+.fl-n { float: none; }
+.fl-r { float: right; }
+.fl-l { float: left; }
+
+.al-c { text-align: center; }
+
 .grid-1 {
     @include container(1320px);
 }
@@ -48,6 +54,18 @@ $susy: (
     border: 0;
 }
 
+.csspurge figure,
+.csspurge .browser {
+  max-width: 64rem;
+  border: 0;
+}
+
+@media screen and (min-width: $mw-s) {
+    .misc .grid-1-2 {
+        @include gallery (6 of 12);
+    }
+}
+
 @media screen and (min-width: $mw-m) {
 
     .grid-1-2 li,
@@ -59,7 +77,14 @@ $susy: (
 
     .gains li {
         @include gallery (4 of 12);
-        padding: 2rem 2rem 1rem 2rem;
+        @include gallery (6 of 12);
+        padding: 2rem;
+        margin: 0;
+    }
+
+    .awwesome li {
+        @include gallery (6 of 12);
+        padding: 1rem 1rem 0;
     }
 
     .gridscores .grid-1-4 {
@@ -94,15 +119,22 @@ $susy: (
     .gains {
         .iphone { @include span(ftl nobreak); }
         .grid-2-3 { @include span(rtl nobreak); }
-        ul { @include container(1180px); }
+    }
+
+    .gains ul {
+        @include container(1180px);
+        @include container(800px);
+    }
+
+    .awwesome ul {
+        @include container(700px);
     }
 }
 
-.awwesome,
-.lily,
-.about {
-    background: $light-gray;
-}
+// .misc .grid-1-2 {
+//     float: none;
+//     margin: 0 auto;
+// }
 
 dl {
     @include container(540px);

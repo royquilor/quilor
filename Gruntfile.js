@@ -4,10 +4,10 @@
 
 module.exports = function(grunt) {
 
-    // 3. Where we tell Grunt we plan to use this plug-in.
+    // 1. Where we tell Grunt we plan to use this plug-in.
     require("load-grunt-tasks")(grunt);
 
-    // 1. All configuration goes here
+    // 2. All configuration goes here
     grunt.initConfig({
         // pkg: grunt.file.readJSON('package.json'),
 
@@ -25,7 +25,8 @@ module.exports = function(grunt) {
                 dist: {
                     src: [
                         'js/chapters.js',
-                        'js/s.js'// All JS in the libs folder
+                        'js/s.js',
+                        'js/libs/scrollreveal.min.js'
                     ],
                     dest: 'js/build/production.js'
                 }

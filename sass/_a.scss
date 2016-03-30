@@ -321,15 +321,14 @@ a:hover svg {
     transform-origin: center bottom;
 }
 
-.top img,
 h1 {
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
     -webkit-animation-fill-mode:both;
     animation-fill-mode: both;
-    -webkit-animation-duration: .2s;
+    -webkit-animation-duration: .3s;
 }
 
-h1 {
-    -webkit-animation-delay: .3s;
-}
+// h1 {
+//     -webkit-animation-delay: .3s;
+// }

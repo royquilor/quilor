@@ -21,7 +21,8 @@ Scale
 body {
     font: normal 16px/1.5 $f-b;
     color: $black;
-    text-rendering: optimizeLegibility;
+    // text-rendering: optimizeLegibility;
+    // -webkit-font-smoothing: antialiased;
 }
 
 @media screen and (min-width: $mw-m){
@@ -49,7 +50,7 @@ h6 {
     margin: 0 0 1rem;
     font-weight: 500;
     line-height: 1.2;
-    font-family: $f-h;
+    font-family: $f-b;
 }
 
 h1 {
@@ -58,8 +59,9 @@ h1 {
     font-weight: 400;
     line-height: 1.5;
     text-align: center;
-    margin: 0 auto;
-    max-width: 22em;
+    margin: 2rem auto 0;
+    max-width: 24em;
+    padding: 0 2rem;
 }
 
 h2 {
@@ -124,14 +126,10 @@ dt {
 h2,
 p,
 li {
-    padding:0 0.5rem;
+    padding:0 1rem;
         @media screen and (min-width: $mw-m) {
             padding:0;
         }
-}
-
-.about p {
-    margin: 0 0 2rem;
 }
 
 ul {
@@ -142,6 +140,7 @@ ul {
 
 li p {
     padding:0;
+    font-size: 1rem;
 }
 
 svg {
