@@ -252,28 +252,28 @@ svg {
     animation-fill-mode: both;
 }
 
-.gains .iphone {
--webkit-animation-name: fadeInUp;
-        animation-name: fadeInUp;
-}
-
-.gains .iphone,
-.mobile .iphone:first-child {
-  -webkit-animation-delay: .5s;
-          animation-delay: .5s;
-}
-
-.gains .iphone:first-child,
-.mobile .iphone {
-  -webkit-animation-delay: .8s;
-          animation-delay: .8s;
-}
-
-.gains .iphone:last-child,
-.mobile .iphone:last-child {
-  -webkit-animation-delay: 1.1s;
-          animation-delay: 1.1s;
-}
+// .gains .iphone {
+// -webkit-animation-name: fadeInUp;
+//         animation-name: fadeInUp;
+// }
+//
+// .gains .iphone,
+// .mobile .iphone:first-child {
+//   -webkit-animation-delay: .5s;
+//           animation-delay: .5s;
+// }
+//
+// .gains .iphone:first-child,
+// .mobile .iphone {
+//   -webkit-animation-delay: .8s;
+//           animation-delay: .8s;
+// }
+//
+// .gains .iphone:last-child,
+// .mobile .iphone:last-child {
+//   -webkit-animation-delay: 1.1s;
+//           animation-delay: 1.1s;
+// }
 
 .write,
 .righthand,

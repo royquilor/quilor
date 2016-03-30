@@ -24,7 +24,12 @@ $twitter:      #55acee;
 $instagram:    #3f729b;
 $dribbble:     #ea4c89;
 
-$bg-gray: #eeeeee;
+.fill-dribbble { fill: $dribbble; }
+.fill-twitter { fill: $twitter; }
+.fill-instagram { fill: $instagram; }
+.fill-red { fill: $red;}
+
+$bg-gray: #333;
 
 .bg-gray {
   background-color: $bg-gray;

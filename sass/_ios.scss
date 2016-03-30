@@ -10,14 +10,14 @@
 .wrap {
     background: #fff;
     margin:1rem 0 0;
-    
-    @media screen and (min-width: $mw-l) {
-        border-radius: 5px;
-    }
+
+    // @media screen and (min-width: $mw-l) {
+    //     border-radius: 5px;
+    // }
 }
 
 .browser {
-    @include container($mw-m);
+    // @include container($mw-m);
     margin: 0 auto 2rem;
 
     img {
@@ -216,7 +216,7 @@
     padding:8px;
     border: $black-3;
     position:relative;
-    float: left;
+    xfloat: left;
     border-radius: 43px;
         a {
             background: none;

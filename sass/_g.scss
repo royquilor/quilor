@@ -75,16 +75,11 @@ $susy: (
         padding: 0 2rem 1rem 2rem;
     }
 
-    .gains li {
-        @include gallery (4 of 12);
+    .gains li,
+    .awwesome li {
         @include gallery (6 of 12);
         padding: 2rem;
         margin: 0;
-    }
-
-    .awwesome li {
-        @include gallery (6 of 12);
-        padding: 1rem 1rem 0;
     }
 
     .gridscores .grid-1-4 {
@@ -121,13 +116,9 @@ $susy: (
         .grid-2-3 { @include span(rtl nobreak); }
     }
 
-    .gains ul {
-        @include container(1180px);
-        @include container(800px);
-    }
-
+    .gains ul,
     .awwesome ul {
-        @include container(700px);
+        @include container($mw-m);
     }
 }
 
@@ -137,7 +128,7 @@ $susy: (
 // }
 
 dl {
-    @include container(540px);
+    @include container(32em);
     display: none;
         @media screen and (min-width: $mw-l) {
             display: block;
@@ -154,7 +145,7 @@ dd {
 }
 
 .clients ul {
-    @include container(540px);
+    @include container($mw-s);
 }
 
 .clients li {

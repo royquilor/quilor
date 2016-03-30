@@ -16,5 +16,80 @@ $mw-m:  48em; // 768px
 $mw-l:  64em; // 1024px
 $mw-xl: 86.375em; // 1382px;
 
+a {
+    color: $blue;
+    text-decoration: none;
+    background: $sky-blue;
+    transition: all .1s ease-in;
+        &:hover {
+            background: $dark-blue;
+        }
+}
+
+.social a,
+.hand,
+.hand:hover {
+    background: none;
+}
+
+.top svg {
+  height: 44px;
+}
+
+h1 {
+  max-width: 24em;
+}
+
+img,
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+        iframe,
+        object,
+        embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+}
+
+ul li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
 // $mw-s:          37.5em; // 600px;
 // $mw-l:          62em; // 992px;
+//
+// .measure {
+//   max-width: 30em;
+// }
+//
+// .tc {
+//   text-align: center;
+// }
+//
+// .fr {
+//   float: right;
+// }
+//
+// .fl {
+//   float: left;
+// }

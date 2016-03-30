@@ -1,0 +1,56 @@
+// FORMS
+
+label {
+    display: block;
+    margin: 0 0 1rem;
+}
+
+input {
+    -webkit-appearance: none;
+    background: $white;
+    border: $black-1;
+    height: 50px;
+    line-height: 48px;
+    padding: 0 1rem;
+    margin: 0 0 1rem;
+    border-radius: 4px;
+    float: left;
+    width: 100%;
+        @media screen and (min-width: $mw-m) {
+            border-right: 0;
+            border-radius: 4px 0 0 4px;
+            width: 67%;
+            margin-top: 0;
+        }
+
+    &:focus {
+        outline: none;
+        color: $black;
+        border: 1px solid $blue;
+        transition: all .2s ease-in;
+            @media screen and (min-width: $mw-m) {
+                border-right:0;
+            }
+    }
+
+    &[type="submit"] {
+        color: $blue;
+        background: $white;
+        border: 1px solid $blue;
+        border-radius: 4px;
+        font-weight: 600;
+        text-transform: uppercase;
+            @media screen and (min-width: $mw-m) {
+                border-radius: 0 4px 4px 0;
+                width: 33%;
+            }
+
+        &:hover,
+        &:active {
+            transition: .2s;
+            color: $white;
+            background: $blue;
+            border: 1px solid $blue;
+        }
+    }
+}

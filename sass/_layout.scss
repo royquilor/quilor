@@ -14,11 +14,21 @@ video {
 }
 
 figure {
-    @include container(700px);
+    @include container($mw-m);
     padding: 0;
         @media screen and (min-width: $mw-m) {
             margin: 0 auto;
         }
+}
+@media screen and (min-width: $mw-m) {
+  .awwesome figure {
+    margin-bottom: 4rem
+  }
+}
+
+.talk header,
+.talk figure {
+  max-width: 32em;
 }
 
 figcaption {
@@ -52,25 +62,6 @@ main header,
     padding: 0;
 }
 
-.awwesome header,
-.awwesome .centered {
-    max-width: 26em;
-}
-
-.talk header {
-    max-width: 29em;
-}
-
-.about header,
-.about .centered {
-    text-align: center;
-}
-
-.about .centered {
-    max-width: 24em;
-    margin: 0 auto;
-}
-
 .about img {
   width: 233px;
   margin: 2rem auto;
@@ -79,10 +70,10 @@ main header,
 @media screen and (min-width: $mw-m) {
     main header,
     .centered {
-        @include container($mw-s);
-        text-align: center;
+        @include container($mw-m);
         margin-bottom: 2rem;
-        padding: 0;
+        margin-bottom: 0;
+        padding: 2rem;
     }
 }
 
