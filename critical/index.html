@@ -9,7 +9,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
     <link rel="shortcut icon" href="/public/favicon.ico">
     <style type="text/css">
-.top,h1{text-align:center}figure,figure:after,header,main,section{display:block}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0;font:400 16px/1.5 -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,Ubuntu,segoe ui,arial,sans-serif;color:#333}a{background-color:transparent}img{border:0}svg:not(:root){overflow:hidden}.bg-gray{background-color:#eee}@media screen and (min-width:48em){body{font-size:18px}}a{color:#0099F7;text-decoration:none;background:rgba(77,155,208,.1)}h1{font-family:-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,Ubuntu,segoe ui,arial,sans-serif;font-size:1.25rem;font-weight:400;line-height:1.5;margin:2rem auto 0;max-width:24em;padding:0 2rem}svg{height:28px}.csspurge .browser,.csspurge figure{max-width:64rem;border:0}.top{padding:5em 0 3em}@media screen and (min-width:48em){.top{padding:6em 0}}.top svg{height:44px}iframe,img{max-width:100%;height:auto}figure{margin:1em auto;max-width:700px;padding:0}figure:after{content:" ";clear:both}section{border-bottom:1px solid #e8ecef;padding:3rem 0}section:after,section:before{content:'';display:table}section:after{clear:both}@media screen and (min-width:48em){figure{margin:0 auto}section{padding:8rem 0}}.browser{max-width:48em;margin:0 auto 2rem}.browser:after{content:" ";display:block;clear:both}.browser img{vertical-align:bottom}@media screen and (min-width:64em){.browser{margin:0 0 2rem;border-radius:5px;border:1px solid #ddd}.browser img{border-radius:5px}}
+.link,a{text-decoration:none}.w-100,img{width:100%}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}header,main,section{display:block}a{background-color:transparent}h1{font-size:2em;margin:.67em 0}svg:not(:root){overflow:hidden}body,div,header,html,main,section{box-sizing:border-box}.cf:after,.cf:before{content:" ";display:table}.cf:after{clear:both}.sans-serif{font-family:-apple-system,BlinkMacSystemFont,'avenir next',avenir,helvetica,'helvetica neue',Ubuntu,'segoe ui',arial,sans-serif}.fw4{font-weight:400}.lh-copy{line-height:1.6}.mw8{max-width:64rem}.bg-light-gray{background-color:#eee}.pv4{padding-top:2rem;padding-bottom:2rem}.pv5{padding-top:4rem;padding-bottom:4rem}.ph3{padding-left:1rem;padding-right:1rem}.mb3{margin-bottom:1rem}.tc{text-align:center}.f4{font-size:1.25rem}.center{margin-right:auto;margin-left:auto}@media screen and (min-width:48em){.pv6-ns{padding-top:8rem;padding-bottom:8rem}}a{color:#0099F7;background:rgba(77,155,208,.1)}.top svg{height:44px}iframe,img{height:auto}h1{max-width:24em}img{border:0;display:block}iframe{max-width:100%}
 </style>
 <script id="loadcss">
 (function(u,s){!function(e){"use strict";var n=function(n,t,o){var l,r=e.document,i=r.createElement("link");if(t)l=t;else{var a=(r.body||r.getElementsByTagName("head")[0]).childNodes;l=a[a.length-1]}var d=r.styleSheets;i.rel="stylesheet",i.href=n,i.media="only x",l.parentNode.insertBefore(i,t?l:l.nextSibling);var f=function(e){for(var n=i.href,t=d.length;t--;)if(d[t].href===n)return e();setTimeout(function(){f(e)})};return i.onloadcssdefined=f,f(function(){i.media=o||"all"}),i};"undefined"!=typeof module?module.exports=n:e.loadCSS=n}("undefined"!=typeof global?global:this);for(var i in u){loadCSS(u[i],s);}}(['/css/global-min.css'],document.getElementById("loadcss")));
@@ -20,9 +20,9 @@
     <meta name="google-site-verification" content="iF8L4gANyWgNYCqMjsgxIUjzhZmBoLP-n1WeJWXB8Kw">
 </head>
 
-<body>
-<header class="top" id="top">
-    <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewbox="0 0 72 72">
+<body class="w-100 sans-serif">
+<header class="top tc pv5 pv6-ns" id="top">
+    <svg class="mb3" xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewbox="0 0 72 72">
       <defs>
         <lineargradient id="logo" x1="0%" y1="0%" x2="0%" y2="100%">
           <stop offset="0%" stop-color="#ee5a58"/>
@@ -31,13 +31,13 @@
       </defs>
       <path d="M72 72h-72v-72h72v72zm-18-54h-36v36h18v-18h18v-18z" fill="url(#logo)"/>
     </svg>
-    <h1>I&rsquo;m Roy Quilor, a Designer, Maker and Dreamer beavering away in Hertford, UK. <a href="#contact">Hire me</a></h1>
+    <h1 class="f4 fw4 lh-copy center ph3">I&rsquo;m Roy Quilor, a Designer, Maker and Dreamer beavering away in Hertford, UK. <a class="link" href="#contact">Hire me</a></h1>
 </header>
 
 <main>
-<section class="csspurge bg-gray">
-    <figure>
-        <div class="browser scrollReveal">
+<section class="cf csspurge bg-light-gray pv4 pv6-ns">
+    <div class="mw8 center ph3">
+        <div class="scrollReveal mb3">
             <a title="CSS Purge site" href="http://www.csspurge.com">
                 <picture>
                     <source srcset="i/build/css-purge.jpg" media="(min-width: 680px)">
@@ -46,9 +46,7 @@
                 </picture>
             </a>
         </div>
-    </figure>
-    <figure>
-        <div class="browser scrollReveal">
+        <div class="scrollReveal">
             <a title="CSS Purge site" href="http://www.csspurge.com">
                 <picture>
                     <source srcset="i/build/css-purge-league-2016.png" media="(min-width: 680px)">
@@ -57,15 +55,16 @@
                 </picture>
             </a>
         </div>
-    </figure>
-    <header>
-        <h2>The web is bloated</h2>
-        <p>Is your CSS file size insanely big and still growing? Up to 200kb has been touted as the holy grail. Check solutions, videos and recommended reading.</p>
-        <p><a href="http://www.csspurge.com">csspurge.com →</a></p>
+    </div>
+    <header class="mw7 center pt4 ph3">
+        <h2 class="f3">The web is bloated</h2>
+        <p class="measure lh-copy f5 f4-ns">Is your CSS file size insanely big and still growing? Up to 200kb has been touted as the holy grail. Check solutions, videos and recommended reading.</p>
+        <p class="f5 f4-ns"><a class="link" href="http://www.csspurge.com">csspurge.com →</a></p>
     </header>
 </section>
-<section class="gains">
-    <div class="grid-1">
+<section class="cf gains bb b--light-gray pv4 pv6-ns">
+    <div class="mw9 center ph3 cf">
+      <div class="fl w-33-ns">
         <div class="iphone scrollReveal">
             <a title="Fullsize" href="i/build/3-create-exercise.png">
                 <picture>
@@ -76,6 +75,8 @@
             </a>
             <span></span>
         </div>
+      </div>
+      <div class="fl w-33-ns">
         <div class="iphone scrollReveal">
             <a title="Fullsize" href="i/build/0-startup.png">
                 <picture>
@@ -86,6 +87,8 @@
             </a>
             <span></span>
         </div>
+      </div>
+      <div class="fl w-33-ns">
         <div class="iphone scrollReveal">
             <a title="Fullsize" href="i/build/4-exercise-list.png">
                 <picture>
@@ -96,97 +99,84 @@
             </a>
             <span></span>
         </div>
+      </div>
     </div>
-
-    <hr>
-
-    <header>
-        <h2>Gains app</h2>
-        <p>Another fitness app. Braun products and Dieter Rams influenced my decisions to have as little design as possible. Almost feels like a utility app.</p>
-        <p><a href="https://marvelapp.com/481efgg">Prototype →</a></p>
-    </header>
-    <ul>
-        <li>
-            <h3>Problem</h3>
-            <p>Not writing down my personal best and using notes on my iphone seems disconnected.</p>
-        </li>
-        <li>
-            <h3>Design</h3>
-            <p>Keep it simple, light and MVP. I used elements from ios9 ui kit.</p>
-        </li>
-        <li>&nbsp;</li>
-        <li>
-            <h3>Workflow</h3>
-            <p>Sketch the idea down, use Sketch app to get a rough concept and prototype in Marvel. Repeat the process.</p>
-        </li>
-    </ul>
+    <div class="mw7 center ph3">
+      <header class="pt4">
+          <h2 class="f3">Gains app</h2>
+          <p class="measure lh-copy f5 f4-ns">Another fitness app. Braun products and Dieter Rams influenced my decisions to have as little design as possible. Almost feels like a utility app.</p>
+          <p class="f5 f4-ns"><a class="link" href="https://marvelapp.com/481efgg">Prototype →</a></p>
+      </header>
+      <ul class="pa0 ma0 pt4">
+          <li class="fl w-50-ns pr4">
+              <h3 class="f4 fw6">Problem</h3>
+              <p class="lh-copy">Not writing down my personal best and using notes on my iphone seems disconnected.</p>
+          </li>
+          <li class="fl w-50-ns pr4">
+              <h3 class="f4 fw6">Design</h3>
+              <p class="lh-copy">Keep it simple, light and MVP. I used elements from ios9 ui kit.</p>
+          </li>
+          <li class="fl w-50-ns pr4">
+              <h3 class="f4 fw6">Workflow</h3>
+              <p class="lh-copy">Sketch the idea down, use Sketch app to get a rough concept and prototype in Marvel. Repeat the process.</p>
+          </li>
+      </ul>
+  </div>
 </section>
 
-<section class="gridscores">
-    <div class="grid-1">
-        <div class="grid-3-4">
-            <div class="browser scrollReveal">
-                <a title="Full size" href="i/build/gridscores-ipad.png">
-                    <picture>
-                        <source srcset="i/build/gridscores-ipad.png" media="(min-width: 680px)">
-                        <source srcset="i/build/gridscores-ipad.png">
-                        <img src="i/build/gridscores-ipad.png" alt="Gridscores fixtures">
-                    </picture>
-                </a>
-            </div>
+<section class="gridscores cf pv4 pv6-ns">
+    <div class="mw8 center ph3">
+        <div class="scrollReveal mb5">
+            <a title="Full size" href="i/build/gridscores-ipad.png">
+                <picture>
+                    <source srcset="i/build/gridscores-ipad.png" media="(min-width: 680px)">
+                    <source srcset="i/build/gridscores-ipad.png">
+                    <img src="i/build/gridscores-ipad.png" alt="Gridscores fixtures">
+                </picture>
+            </a>
         </div>
-        <div class="grid-1-4">
-            <h2>Gridscores</h2>
-            <p>Tron, love of the grid, teletext manifested into this
-                <a href="https://youtu.be/xos2MnVxe-c">thing.</a>
+        <div class="cf">
+          <div class="iwatch center scrollReveal">
+              <div class="iwatch__screen">
+                  <a title="Full size" href="i/build/scores.png">
+                      <picture>
+                          <source srcset="i/build/scores.png" media="(min-width: 680px)">
+                          <source srcset="i/build/scores.png">
+                          <img src="i/build/scores.png" alt="Gridscores scores">
+                      </picture>
+                  </a>
+              </div>
+          </div>
+        </div>
+        </div>
+        <div class="cf mw7 center ph3 ph0-ns">
+          <header class="tc pt4">
+            <h2 class="f3">Gridscores</h2>
+            <p class="measure center lh-copy f5 f4-ns">Tron, love of the grid, teletext manifested into this
+                <a class="link" href="https://youtu.be/xos2MnVxe-c">thing.</a>
                 Have you seen weird science?
             </p>
-        </div>
-        <div class="grid-1-4">
-            <div class="iwatch scrollReveal">
-                <div class="iwatch__screen">
-                    <a title="Full size" href="i/build/scores.png">
-                        <picture>
-                            <source srcset="i/build/scores.png" media="(min-width: 680px)">
-                            <source srcset="i/build/scores.png">
-                            <img src="i/build/scores.png" alt="Gridscores scores">
-                        </picture>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <hr>
-
-        <div class="grid-3-4">
-            <ul>
-                <li>
-                    <h3>Goal</h3>
-                    <p>Based on the above, I started to hack a design in code and played with the CSS and HTML to see how it would respond in different screen sizes.</p>
+          </header>
+          <ul class="pa0 ma0 pt4">
+                <li class="fl w-50-ns pr4">
+                    <h3 class="f4 fw6">Goal</h3>
+                    <p class="lh-copy">Based on the above, I started to hack a design in code and played with the CSS and HTML to see how it would respond in different screen sizes.</p>
                 </li>
-                <li>
-                    <h3>Design</h3>
-                    <p>Match of the day in the 80&rsquo;s had a scoreboard text font. I used <a href="http://fontstruct.com/">fontstruct</a> to create the font and converted it to a webfont.</p>
+                <li class="fl w-50-ns pr4">
+                    <h3 class="f4 fw6">Design</h3>
+                    <p class="lh-copy">Match of the day in the 80&rsquo;s had a scoreboard text font. I used <a class="link" href="http://fontstruct.com/">fontstruct</a> to create the font and converted it to a webfont.</p>
                 </li>
-                <li>
-                    <h3>Delight</h3>
-                    <p>I used sound effects for when a goal is scored or when a penalty is missed. I shall upload the video soon. Do you play Football Manager?</p>
+                <li class="fl w-50-ns pr4">
+                    <h3 class="f4 fw6">Delight</h3>
+                    <p class="lh-copy">I used sound effects for when a goal is scored or when a penalty is missed. I shall upload the video soon. Do you play Football Manager?</p>
                 </li>
             </ul>
         </div>
-
-    </div>
-
 </section>
 
-<section class="awwesome bg-gray">
-    <header>
-        <h2>To write or not to write</h2>
-        <p>I started a blog to learn how to write, share my experiences and dabble in Jekyll, Susy, Grunt and Git.</p>
-        <p><a href="http://www.awwesome.com">awwesome.com →</a></p>
-    </header>
-    <figure>
-        <div class="browser scrollReveal">
+<section class="cf awwesome bg-light-gray pv4 pv6-ns">
+  <div class="cf mw7 center ph3">
+      <div class="scrollReveal">
             <a title="Full size" href="http://www.awwesome.com">
                 <picture>
                     <source srcset="i/awwesome/awwesome-home.jpg" media="(min-width: 680px)">
@@ -194,32 +184,34 @@
                     <img src="i/awwesome/awwesome-home.jpg" alt="Awwesome home">
                 </picture>
             </a>
-        </div>
-    </figure>
-    <ul>
-        <li>
-            <h3>Responsive</h3>
-            <p>Keeping the design simple will help it adapt to most of the devices out there. Complex layouts could hinder speed. The technology available now makes it easier to do.</p>
+      </div>
+  </div>
+  <div class="cf mw7 center ph3">
+    <header class="pt4">
+        <h2 class="f3">To write or not to write</h2>
+        <p class="measure lh-copy f5 f4-ns">I started a blog to learn how to write, share my experiences and dabble in Jekyll, Susy, Grunt and Git.</p>
+        <p class="f5 f4-ns"><a class="link" href="http://www.awwesome.com">awwesome.com →</a></p>
+    </header>
+    <ul class="pa0 ma0 pt4">
+        <li class="fl w-50-ns pr4">
+            <h3 class="f4 fw6">Responsive</h3>
+            <p class="lh-copy">Keeping the design simple will help it adapt to most of the devices out there. Complex layouts could hinder speed. The technology available now makes it easier to do.</p>
         </li>
-        <li>
-            <h3>Content is King</h3>
-            <p>The audience wants the words and pictures. Decorating and creating fancy stuff can get in the way of the content. Let the user breathe and minimize distractions.</p>
+        <li class="fl w-50-ns pr4">
+            <h3 class="f4 fw6">Content is King</h3>
+            <p class="lh-copy">The audience wants the words and pictures. Decorating and creating fancy stuff can get in the way of the content. Let the user breathe and minimize distractions.</p>
         </li>
-        <li>
-            <h3>Fat fingers</h3>
-            <p>There is less real estate on the mobile screen. Ensure your links and buttons have enough space so you can touch the target. Cramming information is bad for usability.</p>
+        <li class="fl w-50-ns pr4">
+            <h3 class="f4 fw6">Fat fingers</h3>
+            <p class="lh-copy">There is less real estate on the mobile screen. Ensure your links and buttons have enough space so you can touch the target. Cramming information is bad for usability.</p>
         </li>
     </ul>
+  </div>
 </section>
 
-<section class="branding">
-    <div class="grid-1">
-        <div class="grid-1-3">
-            <h2>Branding</h2>
-            <p>I created the Awwesome logo for the blog, keeping it clean and minimal. I will write about some of my interests: #introvert #design #father #mma #fitness #self-growth</p>
-        </div>
-        <div class="grid-2-3">
-            <div class="browser scrollReveal">
+<section class="cf branding pv4 pv6-ns bb b--light-gray">
+        <div class="cf mw8 center ph3">
+            <div class="scrollReveal">
                 <a title="Full size" href="http://www.quilor.com/i/build/awwesome-slogan.png">
                     <picture>
                         <source srcset="i/build/awwesome-slogan.png" media="(min-width: 680px)">
@@ -229,36 +221,32 @@
                 </a>
             </div>
         </div>
-
-        <hr>
-
-        <div class="grid-2-3">
-            <ul>
-                <li>
-                    <h3>Concept</h3>
-                    <p>My love of simplicity and martial arts led me to the type Knockout by Hoefler &amp; Co. Testing out available names, I added the extra W.</p>
+        <div class="cf mw7 center ph3">
+            <header class="pt4">
+              <h2 cl="">Branding</h2>
+              <p class="measure lh-copy f5 f4-ns">I created the Awwesome logo for the blog, keeping it clean and minimal. I will write about some of my interests: #introvert #design #father #mma #fitness #self-growth</p>
+            </header>
+            <ul class="pa0 ma0 pt4">
+                <li class="fl w-50-ns pr4">
+                    <h3 class="f4 fw6">Concept</h3>
+                    <p class="lh-copy">My love of simplicity and martial arts led me to the type Knockout by Hoefler &amp; Co. Testing out available names, I added the extra W.</p>
                 </li>
-                <li>
-                    <h3>Goals</h3>
-                    <p>Talk about my interests and create a habit of writing articles weekly. My goal is to inspire people and learn about marketing.</p>
+                <li class="fl w-50-ns pr4">
+                    <h3 class="f4 fw6">Goals</h3>
+                    <p class="lh-copy">Talk about my interests and create a habit of writing articles weekly. My goal is to inspire people and learn about marketing.</p>
                 </li>
-                <li>
-                    <h3>MVA</h3>
-                    <p>Minimum viable audience: the blog covers a lot of topics. Once I find my voice, there will be a singular focus, it could be martial arts.</p>
+                <li class="fl w-50-ns pr4">
+                    <h3 class="f4 fw6">MVA</h3>
+                    <p class="lh-copy">Minimum viable audience: the blog covers a lot of topics. Once I find my voice, there will be a singular focus, it could be martial arts.</p>
                 </li>
             </ul>
         </div>
-    </div>
+    
 </section>
 
-<section class="intranet">
-    <div class="grid-1">
-        <div class="grid-1-4">
-            <h2>Intranet</h2>
-            <p>Favourite project from my job, to redesign the company intranet. </p>
-        </div>
-        <div class="grid-3-4">
-            <div class="browser scrollReveal">
+<section class="intranet cf pv4 pv6-ns bg-light-gray">
+        <div class="cf mw8 center ph3">
+            <div class="scrollReveal ba b--black-10">
                 <a title="Full size" href="i/build/intranet-large.jpg">
                     <picture>
                         <source srcset="i/build/intranet-large.jpg" media="(min-width: 680px)">
@@ -268,170 +256,174 @@
                 </a>
             </div>
         </div>
-
-        <hr>
-
-        <div class="grid-3-4">
-            <ul>
-                <li>
-                    <h3>Problems</h3>
-                    <p>The old intranet neglected and the blog unused. To book a holiday you had to email your manager, this system became a burden. Designing for marketers, developers and designers who can be a fickle bunch.</p>
+        <div class="cf mw7 center ph3">
+            <header class="pt4">
+                <h2 class="f3">Intranet</h2>
+                <p class="lh-copy f5 f4-ns">Favourite project from my recent company, to redesign the intranet. </p>
+            </header>
+            <ul class="pa0 ma0 pt4">
+                <li class="fl w-50-ns pr4">
+                    <h3 class="f4 fw6">Problems</h3>
+                    <p class="lh-copy">The old intranet neglected and the blog unused. To book a holiday you had to email your manager, this system became a burden. Designing for marketers, developers and designers who can be a fickle bunch.</p>
                 </li>
-                <li>
-                    <h3>Goals</h3>
-                    <p>Create a modern design to encourage staff to blog. They could book holidays on the intranet, see how many days they have left. You can even nudge the project manager if they haven't responded.</p>
+                <li class="fl w-50-ns pr4">
+                    <h3 class="f4 fw6">Goals</h3>
+                    <p class="lh-copy">Create a modern design to encourage staff to blog. They could book holidays on the intranet, see how many days they have left. You can even nudge the project manager if they haven't responded.</p>
                 </li>
-                <li>
-                    <h3>Constraints</h3>
-                    <p>This was not a priority project since it was not paid work. I worked with a developer and we could not start the code from scratch, causing issues. We shipped it and worked in an agile way to fix them.</p>
+                <li class="fl w-50-ns pr4">
+                    <h3 class="f4 fw6">Constraints</h3>
+                    <p class="lh-copy">This was not a priority project since it was not paid work. I worked with a developer and we could not start the code from scratch, causing issues. We shipped it and worked in an agile way to fix them.</p>
                 </li>
             </ul>
         </div>
-    </div>
-    <figure>
+    <div class="pt4 mw7 center">
         <video class="scrollReveal" width="1280" height="720" title="Intranet" preload="auto" controls>
             <source src="v/intranet.mp4">
         </video>
-    </figure>
-</section>
-
-<section class="misc bg-gray">
-    <header>
-        <h2>Misc 2009 – 2014</h2>
-    </header>
-    <div class="grid-1">
-        <div class="grid-1-2">
-            <div class="scrollReveal">
-                <picture>
-                    <source srcset="i/esl/esl-twelve-1-large.jpg" media="(min-width: 680px)">
-                    <source srcset="i/esl/esl-twelve-1.jpg">
-                    <img class="wrap" src="i/esl/esl-twelve-1.jpg" alt="ESL twelve wordpress">
-                </picture>
-            </div>
-            <div class="scrollReveal">
-                <picture>
-                    <source srcset="i/emirates/emirates-login.jpg" media="(min-width: 680px)">
-                    <source srcset="i/emirates/emirates-login-small.jpg">
-                    <img class="wrap" src="i/emirates/emirates-login-small.jpg" alt="Emirates Prism login">
-                </picture>
-                <p class="al-c"><small>Login background image from <a href="http://www.airpano.com">airpano</a></small></p>
-            </div>
-            <div class="scrollReveal">
-                <picture>
-                    <source srcset="i/emirates/emirates-1-large.jpg" media="(min-width: 680px)">
-                    <source srcset="i/emirates/emirates-1.jpg">
-                    <img class="wrap" src="i/emirates/emirates-1.jpg" alt="Emirates Prism digital asset management home page">
-                </picture>
-            </div>
-            <div class="scrollReveal">
-                <picture>
-                    <source srcset="i/lily-quilor-large.jpg" media="(min-width: 680px)">
-                    <source srcset="i/lily-quilor.jpg">
-                    <img class="wrap" src="i/lily-quilor.jpg" alt="Lily Quilor Creative Artworker">
-                </picture>
-                <p class="al-c"><small><a href="http://www.lilyquilor.com">LilyQuilor.com </a></small></p>
-            </div>
-        </div>
-        <div class="grid-1-2">
-            <div class="scrollReveal">
-                <picture>
-                    <source srcset="i/lowe/lowe-login-3.png" media="(min-width: 680px)">
-                    <source srcset="i/lowe/lowe-login-3.png">
-                    <img class="wrap" src="i/lowe/lowe-login-3.png" alt"lowe="" digital="" asset="" management="" login"="">
-                </picture>
-            </div>
-            <div class="scrollReveal">
-                <picture>
-                    <source srcset="i/lowe/lowe-assets-2.jpg" media="(min-width: 680px)">
-                    <source srcset="i/lowe/lowe-assets-2.jpg">
-                    <img class="wrap" src="i/lowe/lowe-assets-2.jpg" alt="Lowe assets page">
-                </picture>
-            </div>
-            <div class="scrollReveal">
-                <picture>
-                    <source srcset="i/vyre-large.jpg" media="(min-width: 680px)">
-                    <source srcset="i/vyre.jpg">
-                    <img class="wrap" src="i/vyre.jpg" alt="Vyre Ltd home page concept">
-                </picture>
-            </div>
-        </div>
     </div>
 </section>
 
-<section class="talk">
-    <header>
-        <h2>Get to know me first</h2>
-        <p>Dare to watch my first ever public talk at
-            <a href="https://www.futurerising.com/talk/video/roy-quilor-freelancer-designer-founder-awwesome">FutureRising </a>
-            in the University of West London. Hear my story on becoming a Web Designer, with lots of awkward moments.
-        </p>
+<section class="cf misc bg-light-gray pv4 pv6-ns">
+    <header class="tc">
+        <h2 class="f3">Misc 2009 – 2014</h2>
     </header>
-    <figure>
+    <div class="mw8 center">
+    <div class="fl w-100 w-50-ns ph3">
+        <div class="scrollReveal pb3">
+            <picture>
+                <source srcset="i/esl/esl-twelve-1-large.jpg" media="(min-width: 680px)">
+                <source srcset="i/esl/esl-twelve-1.jpg">
+                <img class="wrap" src="i/esl/esl-twelve-1.jpg" alt="ESL twelve wordpress">
+            </picture>
+        </div>
+        <div class="scrollReveal pb3">
+            <picture>
+                <source srcset="i/emirates/emirates-login.jpg" media="(min-width: 680px)">
+                <source srcset="i/emirates/emirates-login-small.jpg">
+                <img class="wrap" src="i/emirates/emirates-login-small.jpg" alt="Emirates Prism login">
+            </picture>
+            <p class="tc"><small>Login background image from <a class="link" href="http://www.airpano.com">airpano</a></small></p>
+        </div>
+        <div class="scrollReveal pb3">
+            <picture>
+                <source srcset="i/emirates/emirates-1-large.jpg" media="(min-width: 680px)">
+                <source srcset="i/emirates/emirates-1.jpg">
+                <img class="wrap" src="i/emirates/emirates-1.jpg" alt="Emirates Prism digital asset management home page">
+            </picture>
+        </div>
+        <div class="scrollReveal pb3">
+            <picture>
+                <source srcset="i/lily-quilor-large.jpg" media="(min-width: 680px)">
+                <source srcset="i/lily-quilor.jpg">
+                <img class="wrap" src="i/lily-quilor.jpg" alt="Lily Quilor Creative Artworker">
+            </picture>
+            <p class="tc"><small><a class="link" href="http://www.lilyquilor.com">LilyQuilor.com </a></small></p>
+        </div>
+    </div>
+    <div class="fl w-100 w-50-ns ph3">
+        <div class="scrollReveal pb3">
+            <picture>
+                <source srcset="i/lowe/lowe-login-3.png" media="(min-width: 680px)">
+                <source srcset="i/lowe/lowe-login-3.png">
+                <img class="wrap" src="i/lowe/lowe-login-3.png" alt"lowe="" digital="" asset="" management="" login"="">
+            </picture>
+        </div>
+        <div class="scrollReveal pb3">
+            <picture>
+                <source srcset="i/lowe/lowe-assets-2.jpg" media="(min-width: 680px)">
+                <source srcset="i/lowe/lowe-assets-2.jpg">
+                <img class="wrap" src="i/lowe/lowe-assets-2.jpg" alt="Lowe assets page">
+            </picture>
+        </div>
+        <div class="scrollReveal pb3">
+            <picture>
+                <source srcset="i/vyre-large.jpg" media="(min-width: 680px)">
+                <source srcset="i/vyre.jpg">
+                <img class="wrap" src="i/vyre.jpg" alt="Vyre Ltd home page concept">
+            </picture>
+        </div>
+    </div>
+</div>
+</section>
+
+<section class="cf talk pv4 pv6-ns bb b--light-gray">
+    <div class="cf mw7 center ph3">
+        <header>
+            <h2 class="f3">Get to know me first</h2>
+            <p class="measure lh-copy f5 f4-ns">Dare to watch my first ever public talk at
+                <a class="link" href="https://www.futurerising.com/talk/video/roy-quilor-freelancer-designer-founder-awwesome">FutureRising </a>
+                in the University of West London. Hear my story on becoming a Web Designer, with plenty of awkward moments.
+            </p>
+        </header>
+    </div>
+    <div class="cf mw7 center ph3">
         <div class="embed-container scrollReveal">
             <iframe class="change played" id="thevideo" src="" data-src="https://player.vimeo.com/video/130532021?api=1&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe>
         </div>
-        <figcaption>To use the chapter links below, please play the video first.</figcaption>
-    </figure>
-    <dl>
-        <dt>00:07</dt>
-        <dd><a class="timecode" data-seek="7.397" href="#">Awkward moment</a></dd>
-        <dt>01:16</dt>
-        <dd><a class="timecode" data-seek="76.191" href="#">Good old days</a></dd>
-        <dt>04:13</dt>
-        <dd><a class="timecode" data-seek="253.266" href="#">Influence</a></dd>
-        <dt>16:52</dt>
-        <dd><a class="timecode" data-seek="1012.391" href="#">Old portfolio</a></dd>
-        <dt>21:40</dt>
-        <dd><a class="timecode" data-seek="1299.905" href="#">Side projects</a></dd>
-        <dt>37:15</dt>
-        <dd><a class="timecode" data-seek="2235.209" href="#">Justify</a></dd>
-        <dt>43:04</dt>
-        <dd><a class="timecode" data-seek="2583.65" href="#">Be nice</a></dd>
-        <dt>44:30</dt>
-        <dd><a class="timecode" data-seek="2670.939" href="#">Do</a></dd>
-    </dl>
+        <!-- <figcaption class="tc pv4 gray">To use the chapter links below, please play the video first.</figcaption> -->
+    </div>
+    <div class="cf mw6 center pv4 ph3">
+        <dl class="db f6 gray">
+            <dt class="fl w-25 tr mb3 pr2">00:07</dt>
+            <dd class="fl w-25 ma0 mb3"><a class="timecode link" data-seek="7.397" href="#">Awkward moment</a></dd>
+            <dt class="fl w-25 tr mb3 pr2">01:16</dt>
+            <dd class="fl w-25 ma0 mb3"><a class="timecode link" data-seek="76.191" href="#">Good old days</a></dd>
+            <dt class="fl w-25 tr mb3 pr2">04:13</dt>
+            <dd class="fl w-25 ma0 mb3"><a class="timecode link" data-seek="253.266" href="#">Influence</a></dd>
+            <dt class="fl w-25 tr mb3 pr2">16:52</dt>
+            <dd class="fl w-25 ma0 mb3"><a class="timecode link" data-seek="1012.391" href="#">Old portfolio</a></dd>
+            <dt class="fl w-25 tr mb3 pr2">21:40</dt>
+            <dd class="fl w-25 ma0 mb3"><a class="timecode link" data-seek="1299.905" href="#">Side projects</a></dd>
+            <dt class="fl w-25 tr mb3 pr2">37:15</dt>
+            <dd class="fl w-25 ma0 mb3"><a class="timecode link" data-seek="2235.209" href="#">Justify</a></dd>
+            <dt class="fl w-25 tr mb3 pr2">43:04</dt>
+            <dd class="fl w-25 ma0 mb3"><a class="timecode link" data-seek="2583.65" href="#">Be nice</a></dd>
+            <dt class="fl w-25 tr mb3 pr2">44:30</dt>
+            <dd class="fl w-25 ma0 mb3"><a class="timecode link" data-seek="2670.939" href="#">Do</a></dd>
+        </dl>
+    </div>
 </section>
 
-<section class="clients">
-    <div class="centered">
-        <h3>Clients I&rsquo;ve worked with:</h3>
-            <ul>
-                <li>Diageo</li>
-                <li>Distell</li>
-                <li>Inghams</li>
-                <li>Emirates</li>
-                <li>Fox Sports Asia</li>
-                <li>Lowe</li>
-                <li>Nokia</li>
-                <li>Nestlé</li>
-                <li>Shell</li>
-                <li>Virgin Holidays</li>
+<section class="cf clients pv4 pv6-ns bb b--light-gray">
+    <div class="cf mw6 center ph3">
+        <h3 class="tc mb4">Clients I've worked with</h3>
+            <ul class="tc pa0">
+                <li class="fl w-50 pv2">Diageo</li>
+                <li class="fl w-50 pv2">Distell</li>
+                <li class="fl w-50 pv2">Inghams</li>
+                <li class="fl w-50 pv2">Emirates</li>
+                <li class="fl w-50 pv2">Fox Sports Asia</li>
+                <li class="fl w-50 pv2">Lowe</li>
+                <li class="fl w-50 pv2">Nokia</li>
+                <li class="fl w-50 pv2">Nestlé</li>
+                <li class="fl w-50 pv2">Shell</li>
+                <li class="fl w-50 pv2">Virgin Holidays</li>
             </ul>
     </div>
 </section>
 
 </main>
-<section class="about" id="contact">
-    <div class="centered">
-        <img src="i/build/roy-quilor.jpg" alt="Roy Quilor - Designer who loves simple designs, css and html.">
-        <h2>Contact</h2>
-        <p>Have an idea or project you&rsquo;d like to talk about? Drop me a line at roy[at]quilor.com, check my <a href="https://uk.linkedin.com/in/roy-quilor-0b78559">LinkedIn</a> profile
-or download my <a href="d/Roy-Quilor-CV.pdf">CV</a>. </p>
+<section class="about cf pv4 pv6-ns bb b--light-gray" id="contact">
+    <div class="mw7 center tc ph3">
+        <img class="mw5 center mb5" src="i/build/roy-quilor.jpg" alt="Roy Quilor - Designer who loves simple designs, css and html.">
+        <h2 class="f3">Contact</h2>
+        <p class="center f5 f4-ns mw6 lh-copy pv4 ph3">Have an idea or project you&rsquo;d like to talk about? Drop me a line at roy[at]quilor.com, check my <a class="link" href="https://uk.linkedin.com/in/roy-quilor-0b78559">LinkedIn</a> profile
+or download my <a class="link" href="d/Roy-Quilor-CV.pdf">CV</a>. </p>
         <p class="social">
-            <a class="twitter" href="http://twitter.com/royquilor">
-                <svg width="59px" height="48px" class="fill-black" viewbox="0 0 59 48" xmlns="http://www.w3.org/2000/svg">
+            <a class="fill-twitter link ph3" href="http://twitter.com/royquilor">
+                <svg class="h2" width="59px" height="48px" viewbox="0 0 59 48" xmlns="http://www.w3.org/2000/svg">
                     <title>Twitter</title>
                     <path d="M59,5.6875 C56.825,6.65 54.5,7.3 52.05,7.6 C54.55,6.1 56.475,3.725 57.375,0.9 C55.0375,2.2875 52.45,3.3 49.6875,3.8375 C47.475,1.475 44.325,0 40.85,0 C34.1625,0 28.75,5.425 28.75,12.1125 C28.75,13.0625 28.85,13.9875 29.0625,14.875 C19,14.375 10.075,9.55 4.1125,2.2125 C3.075,4 2.475,6.0875 2.475,8.3 C2.475,12.5 4.625,16.2125 7.875,18.3875 C5.875,18.3375 4,17.7875 2.375,16.875 L2.375,17.025 C2.375,22.9 6.55,27.7875 12.0875,28.9 C11.075,29.175 10,29.325 8.9,29.325 C8.125,29.325 7.3625,29.25 6.625,29.1 C8.1625,33.9125 12.6375,37.4125 17.9375,37.5125 C13.8,40.7625 8.575,42.7 2.9,42.7 C1.925,42.7 0.9625,42.6375 0.0125,42.525 C5.35,46 11.7125,48 18.5375,48 C40.825,48 53,29.5375 53,13.525 C53,13 52.9875,12.475 52.9625,11.9625 C55.325,10.25 57.375,8.125 59,5.6875 L59,5.6875 Z"/>
                 </svg>
             </a>
-            <a class="dribbble" href="http://dribbble.com/royquilor">
-                <svg width="48px" height="48px" class="fill-black" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+            <a class="fill-dribbble link ph3" href="http://dribbble.com/royquilor">
+                <svg class="h2" width="48px" height="48px" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
                     <title>Dribbble</title>
                     <path d="M24,0 C10.75,0 0,10.75 0,24 C0,37.2625 10.75,48 24,48 C37.25,48 48,37.2625 48,24 C48,10.75 37.25,0 24,0 L24,0 Z M39.2375,11.0625 C41.9375,14.2375 43.65,18.2625 43.95,22.675 C39.625,22.45 34.45,22.45 30.3,22.8375 C29.775,21.5125 29.2375,20.2125 28.65,18.9625 C33.4375,16.8875 37.125,14.1625 39.2375,11.0625 L39.2375,11.0625 Z M24,4 C28.85,4 33.3,5.725 36.7625,8.6 C34.5875,11.35 31.175,13.7375 26.925,15.55 C24.6,11.25 21.925,7.55 19.075,4.6375 C20.6625,4.2375 22.3,4 24,4 L24,4 Z M14.95,6.1875 C17.8375,9.0625 20.55,12.725 22.925,17.0125 C18.4125,18.3875 13.2375,19.175 7.7125,19.175 C6.6625,19.175 5.6375,19.1375 4.625,19.075 C6.0625,13.4375 9.875,8.7625 14.95,6.1875 L14.95,6.1875 Z M4.0375,23.05 C5.175,23.1 6.325,23.125 7.4875,23.1125 C13.7875,23.0375 19.65,22.05 24.6875,20.4375 C25.1625,21.425 25.6125,22.4375 26.0375,23.475 C25.35,23.6375 24.7375,23.8125 24.25,24.0125 C17.3625,26.9 11.9375,31.5625 9,37.2 C5.9,33.675 4,29.0625 4,24 C4,23.675 4.0125,23.3625 4.0375,23.05 L4.0375,23.05 Z M24,44 C19.375,44 15.125,42.425 11.7375,39.7875 C14.4,34.5125 19.15,30.15 25.1375,27.4375 C25.7,27.175 26.45,26.9625 27.3125,26.775 C28.025,28.75 28.6625,30.8 29.225,32.925 C30.0875,36.2375 30.7,39.5125 31.075,42.6875 C28.875,43.525 26.5,44 24,44 L24,44 Z M34.8125,40.8125 C34.4375,37.6 33.825,34.3 32.95,30.95 C32.525,29.325 32.0375,27.75 31.5125,26.2125 C35.4375,25.8875 40.1375,25.9375 43.875,26.2125 C43.2,32.35 39.75,37.625 34.8125,40.8125 L34.8125,40.8125 Z"/>
                 </svg>
             </a>
-            <a class="instagram" href="https://www.instagram.com/royquilor">
-                <svg width="48px" height="48px" class="fill-black" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+            <a class="fill-instagram link ph3" href="https://www.instagram.com/royquilor">
+                <svg class="h2" width="48px" height="48px" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
                     <title>Instagram</title>
                     <circle cx="23.9376623" cy="23.9168416" r="9.97402597"/>
                     <path d="M14.1886753,14.0742234 C16.8260571,11.4368416 20.3325506,9.96878961 24.0623377,9.96878961 C27.7921247,9.96878961 31.2986182,11.4445714 33.936,14.0819532 C35.6093922,15.7553455 36.8049039,17.7662338 37.4558338,20.0103896 L47.9376623,20.0103896 L47.9376623,5.92207792 C47.9376623,2.61693506 45.3830649,0.0623376623 42.0779221,0.0623376623 L6.17142857,0.0623376623 C2.86628571,0.0623376623 0.0623376623,2.61693506 0.0623376623,5.92207792 L0.0623376623,20.0103896 L10.6687169,20.0103896 C11.3197714,17.7662338 12.5152831,15.7476156 14.1886753,14.0742234 L14.1886753,14.0742234 Z M43.9480519,10.4353247 C43.9480519,11.3166545 43.2336623,12.0311688 42.3522078,12.0311688 L37.5646753,12.0311688 C36.6833455,12.0311688 35.9688312,11.3167792 35.9688312,10.4353247 L35.9688312,5.64779221 C35.9688312,4.76646234 36.6832208,4.05194805 37.5646753,4.05194805 L42.3522078,4.05194805 C43.2335377,4.05194805 43.9480519,4.76633766 43.9480519,5.64779221 L43.9480519,10.4353247 L43.9480519,10.4353247 Z"/>
@@ -441,18 +433,18 @@ or download my <a href="d/Roy-Quilor-CV.pdf">CV</a>. </p>
         </p>
     </div>
 </section>
-<footer>
-    <form action="//quilor.us1.list-manage.com/subscribe/post?u=7265102b2b8d8154f2a9207cd&amp;id=750c2abe73" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
-        <label for="mce-EMAIL">Subscribe for my tips. Made with <svg width="52px" height="48px" viewbox="0 0 52 48" xmlns="http://www.w3.org/2000/svg">
-            <path d="M47.7381818,4.06441558 C42.7012987,-1.18441558 34.5225974,-1.18441558 29.4857143,4.06441558 L26.0571429,7.61766234 L22.6285714,4.05194805 C17.5792208,-1.19688312 9.41298701,-1.19688312 4.3761039,4.05194805 C-1.29662338,9.94909091 -1.29662338,19.5241558 4.3761039,25.4212987 L26.0571429,48 L47.7381818,25.4337662 C53.4109091,19.5366234 53.4109091,9.96155844 47.7381818,4.06441558 L47.7381818,4.06441558 Z"/>
-            </svg>
-            <a href="http://jekyllrb.com/">Jekyll</a> <a href="http://susy.oddbird.net/">Susy</a> <a href="http://gruntjs.com/">Grunt</a> <a href="https://github.com/royquilor/Quilor">Github</a>
-            in Hertford, UK. Be <a href="https://youtu.be/QTXyXuqfBLA">happy</a>.
-        </label>
-        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter your email" required>
-        <input type="submit" value="Sign Up" name="subscribe" class="button" id="mc-embedded-subscribe">
-    </form>
-    <a class="hand" title="Back to top" href="#top"><i></i></a>
+<footer class="cf pv4">
+    <div class="mw7 center cf ph3 tc mb5">
+        <form action="//quilor.us1.list-manage.com/subscribe/post?u=7265102b2b8d8154f2a9207cd&amp;id=750c2abe73" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+            <label class="lh-copy" for="mce-EMAIL">Subscribe for my tips. Made with
+                <a class="link" href="http://jekyllrb.com/">Jekyll</a>, <a class="link" href="http://tachyons.io">Tachyons</a>, <a class="link" href="http://gruntjs.com/">Grunt</a>, <a class="link" href="https://github.com/royquilor/Quilor">Github</a>
+                in Hertford, UK. Be <a class="link" href="https://youtu.be/QTXyXuqfBLA">happy</a>.
+            </label>
+            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter your email" required>
+            <input type="submit" value="Sign Up" name="subscribe" class="button" id="mc-embedded-subscribe">
+        </form>
+    </div>
+    <a class="tc db f1 link hand" title="Back to top" href="#top">☝</a>
 </footer>
 <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.1/scrollreveal.min.js"></script>
 <script>
