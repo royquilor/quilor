@@ -9,7 +9,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
     <link rel="shortcut icon" href="/public/favicon.ico">
     <style type="text/css">
-.link,a{text-decoration:none}.w-100,img{width:100%}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}header,main,section{display:block}a{background-color:transparent}h1{font-size:2em;margin:.67em 0}svg:not(:root){overflow:hidden}body,div,header,html,main,section{box-sizing:border-box}.cf:after,.cf:before{content:" ";display:table}.cf:after{clear:both}.sans-serif{font-family:-apple-system,BlinkMacSystemFont,'avenir next',avenir,helvetica,'helvetica neue',Ubuntu,'segoe ui',arial,sans-serif}.fw4{font-weight:400}.lh-copy{line-height:1.6}.mw8{max-width:64rem}.bg-light-gray{background-color:#eee}.pv4{padding-top:2rem;padding-bottom:2rem}.pv5{padding-top:4rem;padding-bottom:4rem}.ph3{padding-left:1rem;padding-right:1rem}.mb3{margin-bottom:1rem}.tc{text-align:center}.f4{font-size:1.25rem}.center{margin-right:auto;margin-left:auto}@media screen and (min-width:48em){.pv6-ns{padding-top:8rem;padding-bottom:8rem}}a{color:#0099F7;background:rgba(77,155,208,.1)}.top svg{height:44px}iframe,img{height:auto}h1{max-width:24em}img{border:0;display:block}iframe{max-width:100%}
+.link,a{text-decoration:none}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}header,main,section{display:block}a{background-color:transparent;color:#0099F7;background:rgba(77,155,208,.1)}h1{font-size:2em;margin:.67em 0}img{border:0}svg:not(:root){overflow:hidden}body,div,header,html,main,section{box-sizing:border-box}.bb{border-bottom-style:solid;border-bottom-width:1px}.b--light-gray{border-color:#eee}.cf:after,.cf:before{content:" ";display:table}.cf:after{clear:both}.db{display:block}.fl{float:left;display:inline}.sans-serif{font-family:-apple-system,BlinkMacSystemFont,'avenir next',avenir,helvetica,'helvetica neue',Ubuntu,'segoe ui',arial,sans-serif}.fw4{font-weight:400}.lh-copy{line-height:1.6}.mw8{max-width:64rem}.w-100{width:100%}.pt5{padding-top:4rem}.pv4{padding-top:2rem;padding-bottom:2rem}.ph3{padding-left:1rem;padding-right:1rem}.mb3{margin-bottom:1rem}.tc{text-align:center}.f4{font-size:1.25rem}.center{margin-right:auto;margin-left:auto}@media screen and (min-width:48em){.pt6-ns,.pv6-ns{padding-top:8rem}.w-50-ns{width:50%}.pv6-ns{padding-bottom:8rem}}.top svg{height:44px}iframe,img{height:auto}h1{max-width:24em}img{width:100%;display:block}iframe{max-width:100%}
 </style>
 <script id="loadcss">
 (function(u,s){!function(e){"use strict";var n=function(n,t,o){var l,r=e.document,i=r.createElement("link");if(t)l=t;else{var a=(r.body||r.getElementsByTagName("head")[0]).childNodes;l=a[a.length-1]}var d=r.styleSheets;i.rel="stylesheet",i.href=n,i.media="only x",l.parentNode.insertBefore(i,t?l:l.nextSibling);var f=function(e){for(var n=i.href,t=d.length;t--;)if(d[t].href===n)return e();setTimeout(function(){f(e)})};return i.onloadcssdefined=f,f(function(){i.media=o||"all"}),i};"undefined"!=typeof module?module.exports=n:e.loadCSS=n}("undefined"!=typeof global?global:this);for(var i in u){loadCSS(u[i],s);}}(['/css/global-min.css'],document.getElementById("loadcss")));
@@ -21,7 +21,7 @@
 </head>
 
 <body class="w-100 sans-serif">
-<header class="top tc pv5 pv6-ns" id="top">
+<header class="top tc pt5 pt6-ns" id="top">
     <svg class="mb3" xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewbox="0 0 72 72">
       <defs>
         <lineargradient id="logo" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -35,9 +35,15 @@
 </header>
 
 <main>
-<section class="cf csspurge bg-light-gray pv4 pv6-ns">
-    <div class="mw8 center ph3">
-        <div class="scrollReveal mb3">
+<section class="cf csspurge bb b--light-gray pv4 pv6-ns">
+<div class="mw8 center cf">
+<div class="fl w-100 w-50-ns scrollReveal"><img class="db w-100" src="i/csspurge/concept-1.jpg"></div>
+<div class="fl w-100 w-50-ns scrollReveal"><img class="db w-100" src="i/csspurge/logo-2.png"></div>
+<div class="fl w-100 w-50-ns scrollReveal"><img class="db w-100" src="i/csspurge/logo-1.png"></div>
+<div class="fl w-100 w-50-ns scrollReveal"><img class="db w-100" src="i/csspurge/concept-3.jpg"></div>
+</div>
+<div class="w-100 scrollReveal mt5 mb5 bb b--light-gray"><img class="center xw-auto" src="i/csspurge/site-1.png"></div>
+        <!--div class="scrollReveal mb3">
             <a title="CSS Purge site" href="http://www.csspurge.com">
                 <picture>
                     <source srcset="i/build/css-purge.jpg" media="(min-width: 680px)">
@@ -45,8 +51,8 @@
                     <img src="i/build/css-purge.jpg" alt="CSS Purge - Saving the web 1kb at a time">
                 </picture>
             </a>
-        </div>
-        <div class="scrollReveal">
+        </div-->
+        <!--div class="scrollReveal">
             <a title="CSS Purge site" href="http://www.csspurge.com">
                 <picture>
                     <source srcset="i/build/css-purge-league-2016.png" media="(min-width: 680px)">
@@ -54,17 +60,72 @@
                     <img src="i/build/css-purge-league-2016.png" alt="CSS Purge - Saving the web 1kb at a time">
                 </picture>
             </a>
-        </div>
-    </div>
-    <header class="mw7 center pt4 ph3">
+        </div-->
+    
+<div class="mw7 center">
+    <header class="pt4 ph3">
         <h2 class="f3">The web is bloated</h2>
         <p class="measure lh-copy f5 f4-ns">Is your CSS file size insanely big and still growing? Up to 200kb has been touted as the holy grail. Check solutions, videos and recommended reading.</p>
         <p class="f5 f4-ns"><a class="link" href="http://www.csspurge.com">csspurge.com →</a></p>
     </header>
+
+ <ul class="pa0 ma0 pt4 ph3">
+          <li class="xfl xw-50-ns xpr4">
+              <h3 class="f4 fw6">Problem</h3>
+              <p class="lh-copy measure">My CSS always seems to get bigger in file size. In bigger projects with other designers and developers, code can get messy, hard to maintain, being more specific to style an element.</p>
+<p class="lh-copy measure">This leads to specificity wars, legacy, unused, repetitive styles. Who suffers? You and your users. Performance and speed is going down.</p>
+          </li>
+          <li class="xfl xw-50-ns xpr4">
+              <h3 class="f4 fw6">Who</h3>
+              <p class="lh-copy measure">After looking at over 20 popular sites, the issue of CSS bloat is a common theme. The audience is designers or developers who code css.</p>
+          </li>
+          <li class="xfl xw-50-ns xpr4">
+              <h3 class="f4 fw6">Goal</h3>
+              <p class="lh-copy measure">Find a way to reduce your file size, to make it into a system, one that everyone on your team can use. Raise awareness and save the web. Sounds a bit dramatic.</p>
+          </li>
+      </ul>
+</div>
 </section>
+
+<section class="cf bg-green pv4 pv6-ns">
+    <div class="w-100 scrollReveal"><img class="center w-100 w-33-ns" src="i/best11/best11.png" width="770" height="1520"></div>
+</section> 
+<section class="cf pt1 pb4 pb6-ns bb b--light-gray">
+<div class="mw9 center tc ph3 cf">
+<div class="dib w-100 w-33-ns scrollReveal"><img class="db w-100" src="i/best11/concept-1.jpg"></div>
+<div class="dib w-100 w-33-ns scrollReveal"><img class="db w-100" src="i/best11/concept-3.png"></div>
+<div class="dib w-100 w-33-ns scrollReveal"><img class="db w-100" src="i/best11/concept-2.jpg"></div>
+<!--div class="dib w-100 w-33-ns scrollReveal"><img class="db w-100" src="i/best11/concept-3.jpg"></div-->
+</div>
+
+<div class="mw7 center">
+    <header class="pt4 ph3">
+        <h2 class="f3">Best 11</h2>
+        <p class="measure lh-copy f5 f4-ns">A web app I built with a developer, back out in summer 2016.</p>
+    </header>
+
+ <ul class="pa0 ma0 ph3">
+          <li class="xfl xw-50-ns xpr4">
+              <h3 class="f4 fw6">Problem</h3>
+              <p class="lh-copy measure">As an Arsenal Fan, I always had an idea of what my starting eleven could be and wanted to share it with friends and social media.</p>
+          </li>
+          <li class="xfl xw-50-ns xpr4">
+              <h3 class="f4 fw6">Who</h3>
+              <p class="lh-copy measure">Arsenal fans who spends hours on twitter and the internet searching for news that Wenger has actually signed a player. Would you sign Zlatan? Would be nice to know Piers Morgans best eleven with the constraints of £200 million.</p>
+          </li>
+          <li class="xfl xw-50-ns xpr4">
+              <h3 class="f4 fw6">Goal</h3>
+              <p class="lh-copy measure">The user can search for players to add them in a formation. Then share it on social media.</p>
+          </li>
+      </ul>
+</div>
+
+
+</section>
+
 <section class="cf gains bb b--light-gray pv4 pv6-ns">
-    <div class="mw9 center ph3 cf">
-      <div class="fl w-33-ns">
+    <div class="xmw9 center tc xph3 cf">
+      <div class="dib xw-100 w-33-ns">
         <div class="iphone scrollReveal">
             <a title="Fullsize" href="i/build/3-create-exercise.png">
                 <picture>
@@ -76,7 +137,7 @@
             <span></span>
         </div>
       </div>
-      <div class="fl w-33-ns">
+      <div class="dib xw-100 w-33-ns">
         <div class="iphone scrollReveal">
             <a title="Fullsize" href="i/build/0-startup.png">
                 <picture>
@@ -88,7 +149,7 @@
             <span></span>
         </div>
       </div>
-      <div class="fl w-33-ns">
+      <div class="dib xw-100 w-30-ns">
         <div class="iphone scrollReveal">
             <a title="Fullsize" href="i/build/4-exercise-list.png">
                 <picture>
@@ -124,7 +185,7 @@
   </div>
 </section>
 
-<section class="gridscores cf pv4 pv6-ns">
+<section class="gridscores cf pv4 pv6-ns bb b--light-gray">
     <div class="mw8 center ph3">
         <div class="scrollReveal mb5">
             <a title="Full size" href="i/build/gridscores-ipad.png">
@@ -174,10 +235,10 @@
         </div>
 </section>
 
-<section class="cf awwesome bg-light-gray pv4 pv6-ns">
+<section class="cf awwesome pv4 pv6-ns">
   <div class="cf mw7 center ph3">
-      <div class="scrollReveal">
-            <a title="Full size" href="http://www.awwesome.com">
+      <div class="ba b--silver scrollReveal">
+            <a class="" title="Full size" href="http://www.awwesome.com">
                 <picture>
                     <source srcset="i/awwesome/awwesome-home.jpg" media="(min-width: 680px)">
                     <source srcset="i/awwesome/awwesome-home.jpg">
@@ -210,8 +271,19 @@
 </section>
 
 <section class="cf branding pv4 pv6-ns bb b--light-gray">
-        <div class="cf mw8 center ph3">
-            <div class="scrollReveal">
+        <div class="cf mw8 center tc ph3">
+<div class="mw9 center tc ph3 cf">
+<div class="dib w-100 w-33-ns scrollReveal"><img class="db w-100" src="i/awwesome/concept-1.png"></div>
+<div class="dib w-100 w-33-ns scrollReveal"><img class="db w-100" src="i/awwesome/concept-2.png"></div>
+<div class="dib w-100 w-33-ns scrollReveal"><img class="db w-100" src="i/awwesome/concept-3.png"></div>
+<div class="dib w-100 w-33-ns scrollReveal"><img class="db w-100" src="i/awwesome/concept-4.png"></div>
+<div class="dib w-100 w-33-ns scrollReveal"><img class="db w-100" src="i/awwesome/concept-5.png"></div>
+<div class="dib w-100 w-33-ns scrollReveal"><img class="db w-100" src="i/awwesome/concept-6.png"></div>
+
+
+</div>
+
+            <!--div class="scrollReveal">
                 <a title="Full size" href="http://www.quilor.com/i/build/awwesome-slogan.png">
                     <picture>
                         <source srcset="i/build/awwesome-slogan.png" media="(min-width: 680px)">
@@ -219,7 +291,7 @@
                         <img src="i/build/awwesome-slogan.png" alt="Awwesome logo">
                     </picture>
                 </a>
-            </div>
+            </div-->
         </div>
         <div class="cf mw7 center ph3">
             <header class="pt4">
@@ -244,7 +316,7 @@
     
 </section>
 
-<section class="intranet cf pv4 pv6-ns bg-light-gray">
+<section class="intranet cf pv4 pv6-ns bb b--light-gray">
         <div class="cf mw8 center ph3">
             <div class="scrollReveal ba b--black-10">
                 <a title="Full size" href="i/build/intranet-large.jpg">
@@ -283,27 +355,27 @@
     </div>
 </section>
 
-<section class="cf misc bg-light-gray pv4 pv6-ns">
+<!-- section class="cf misc bg-light-gray pv4 pv6-ns">
     <header class="tc">
         <h2 class="f3">Misc 2009 – 2014</h2>
     </header>
     <div class="mw8 center">
     <div class="fl w-100 w-50-ns ph3">
-        <!--div class="scrollReveal pb3">
+        <div class="scrollReveal pb3">
             <picture>
                 <source srcset="i/esl/esl-twelve-1-large.jpg" media="(min-width: 680px)">
                 <source srcset="i/esl/esl-twelve-1.jpg">
                 <img class="wrap" src="i/esl/esl-twelve-1.jpg" alt="ESL twelve wordpress">
             </picture>
-        </div-->
-        <!--div class="scrollReveal pb3">
+        </div>
+        <div class="scrollReveal pb3">
             <picture>
                 <source srcset="i/emirates/emirates-login.jpg" media="(min-width: 680px)">
                 <source srcset="i/emirates/emirates-login-small.jpg">
                 <img class="wrap" src="i/emirates/emirates-login-small.jpg" alt="Emirates Prism login">
             </picture>
             <p class="tc"><small>Login background image from <a class="link" href="http://www.airpano.com">airpano</a></small></p>
-        </div-->
+        </div>
         <div class="scrollReveal pb3">
             <picture>
                 <source srcset="i/emirates/emirates-1-large.jpg" media="(min-width: 680px)">
@@ -325,7 +397,7 @@
             <picture>
                 <source srcset="i/lowe/lowe-login-3.png" media="(min-width: 680px)">
                 <source srcset="i/lowe/lowe-login-3.png">
-                <img class="wrap" src="i/lowe/lowe-login-3.png" alt"lowe="" digital="" asset="" management="" login"="">
+                <img class="wrap" src="i/lowe/lowe-login-3.png" alt"Lowe digital asset management login">
             </picture>
         </div>
         <div class="scrollReveal pb3">
@@ -335,16 +407,16 @@
                 <img class="wrap" src="i/lowe/lowe-assets-2.jpg" alt="Lowe assets page">
             </picture>
         </div>
-        <!--div class="scrollReveal pb3">
+        <div class="scrollReveal pb3">
             <picture>
                 <source srcset="i/vyre-large.jpg" media="(min-width: 680px)">
                 <source srcset="i/vyre.jpg">
                 <img class="wrap" src="i/vyre.jpg" alt="Vyre Ltd home page concept">
             </picture>
-        </div-->
+        </div>
     </div>
 </div>
-</section>
+</section -->
 
 <section class="cf talk pv4 pv6-ns bb b--light-gray">
     <div class="cf mw7 center ph3">
