@@ -16,7 +16,8 @@
       height: 110px;
     }
     section {
-      margin-top: 70px;
+      xmargin-top: 70px;
+
     }
 
     @media screen and (min-width: 60em) {
@@ -24,7 +25,7 @@
         height: 60px;
       }
       section {
-        margin-top: 60px;
+        xmargin-top: 60px;
       }
       article {
         /*max-width:1300px;
@@ -53,10 +54,34 @@
       padding-top: 8px;
     }
 
+    .menu {
+      position: fixed;
+      overflow-y: auto;
+      top: 60px;
+      left: 0;
+      bottom: 0;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    main {
+      padding-top: 7rem;  
+    }
+
+    @media screen and (min-width: 60em) {
+      main {
+      padding-top: 4rem;
+      margin-left: 16rem;
+      }
+    }
+
   </style>
   <body class="sans-serif h-100">
 
-    <header class="bb bg-white b--black-10 fixed flex-l items-center w-100 top-0 z-1">
+    <header class="bb bg-white b--black-10 fixed flex-l items-center w-100 top-0 right-0 left-0 z-1">
       <div class="w5-l flex items-center">
         <div class="xdib-ns pa3 xbg-gray absolute relative-l">
           <a href="#">
@@ -77,9 +102,11 @@
       </form>
     </header>
 
-    <section class="pt4 pt0-l ">
-    <aside class="bg-black-05 h-100 w5 fixed dn db-l">
-      <form class="pa3 pt4 f6">
+    <section class="width-100">
+      <div class="row">
+    <aside class="menu bg-black-05 w5 dn db-l">
+      <div class="">
+      <form class="pa3 xpt4 f6">
         <fieldset id="favorite_movies" class="bn pa0">
           <legend class="fw7 mb2">Favorite Movies</legend>
           <div class="flex items-center mb2">
@@ -145,12 +172,51 @@
           </div>
         </fieldset>
       </form>
+      <form class="pa3 f6">
+        <fieldset id="favorite_movies" class="bn pa0">
+          <legend class="fw7 mb2">Writers</legend>
+          <div class="flex items-center mb2">
+            <input class="mr2" type="checkbox" id="spacejam" value="spacejam">
+            <label for="spacejam" class="lh-copy">Space Jam</label>
+          </div>
+          <div class="flex items-center mb2">
+            <input class="mr2" type="checkbox" id="airbud" value="airbud">
+            <label for="airbud" class="lh-copy">Air Bud</label>
+          </div>
+          <div class="flex items-center mb2">
+            <input class="mr2" type="checkbox" id="hocuspocus" value="hocuspocus">
+            <label for="hocuspocus" class="lh-copy">Hocus Pocus</label>
+          </div>
+          <div class="flex items-center mb2">
+            <input class="mr2" type="checkbox" id="diehard" value="diehard">
+            <label for="diehard" class="lh-copy">Die Hard</label>
+          </div>
+          <div class="flex items-center mb2">
+            <input class="mr2" type="checkbox" id="primer" value="primer">
+            <label for="primer" class="lh-copy">Primer</label>
+          </div>
+          <div class="flex items-center mb2">
+            <input class="mr2" type="checkbox" id="proxy" value="proxy">
+            <label for="proxy" class="lh-copy">Hudsucker Proxy</label>
+          </div>
+          <div class="flex items-center mb2">
+            <input class="mr2" type="checkbox" id="homealone" value="homealone">
+            <label for="homealone" class="lh-copy">Home Alone</label>
+          </div>
+        </fieldset>
+      </form>
+      </div>
     </aside>
 
-  <article>
+  <main>
   <div class="flex pa3 pt4 items-center justify-between ">
-    <div>
-      <h2 class="f3 fw4 mv0">10 results</h2>
+    <div class="flex items-center">
+      <h2 class="f3 fw4 mv0 mr2">10 results</h2>
+      <select>
+        <option>Relevance</option>
+        <option>Latest Releases</option>
+        <option>Earliest Releases</option>
+      </select>
     </div>
     <div class="">
       <a href="#" class="link pa2">
@@ -273,7 +339,8 @@
       </a>
     </div>
   </div>
-</article>
+</main>
+</div>
 </section>
 
   </body>
