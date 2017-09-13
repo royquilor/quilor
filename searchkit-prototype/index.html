@@ -19,6 +19,9 @@
       xmargin-top: 70px;
 
     }
+    aside {
+      transition: left 200ms;
+    }
 
     @media screen and (min-width: 60em) {
       header {
@@ -69,6 +72,7 @@
 
     main {
       padding-top: 7rem;
+      transition: margin 200ms;
     }
 
     @media screen and (min-width: 60em) {
@@ -80,10 +84,14 @@
 
     .wrapper.opened main {
       margin-left: 0;
+      transition: margin 200ms;
+
     }
 
     .wrapper.opened aside {
-      width: 0;
+      xwidth: 0;
+      left: -16rem;
+      transition: left 200ms;
     }
 
     .toggle {
