@@ -12,11 +12,10 @@
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.8.0/css/tachyons.min.css"/>
   </head>
   <style>
+
     header {
       height: 110px;
-    }
-    section {
-      xmargin-top: 70px;
+      border: 1px solid rgba(0, 0, 0, .1);
 
     }
     aside {
@@ -25,30 +24,41 @@
 
     @media screen and (min-width: 60em) {
       header {
-        height: 60px;
-      }
-      section {
-        xmargin-top: 60px;
+        height: 70px;
       }
       article {
-        /*max-width:1300px;
-        margin:0 auto;*/
         margin-left: 16rem;
       }
     }
 
     .input-search {
-      border: 1px solid transparent;
-      height:40px;
-      padding-left:45px;
-      padding-right:45px;
-      outline: none;
+    display: block;
+    height:40px;
+    outline: none;
     transition: all .2s ease-in-out;
-    border-radius: 20px;
+    width: 100%;
+    background-color: #fff;
+    border-color: #ddd;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    transition: all .2s ease-in-out;
+    padding-left: 40px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
     }
 
     .input-search:focus {
-      border-color: blue;
+      border-color: #bbb;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    .input-rounded {
+      padding: .5rem;
+      background-color: rgba(0, 0, 0, .05);
+      border: 1px solid transparent;
+      border-radius: 20px;
+      padding-left: 40px;
     }
 
     .search-button {
@@ -60,7 +70,7 @@
     .menu {
       position: fixed;
       overflow-y: auto;
-      top: 60px;
+      top: 70px;
       left: 0;
       bottom: 0;
     }
@@ -85,11 +95,9 @@
     .wrapper.opened main {
       margin-left: 0;
       transition: margin 200ms;
-
     }
 
     .wrapper.opened aside {
-      xwidth: 0;
       left: -16rem;
       transition: left 200ms;
     }
@@ -98,10 +106,42 @@
       cursor: pointer;
     }
 
+    .autosuggest {
+      position: absolute;
+      margin-top: -1px;
+      background: white;
+      width: 100%;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      border: 1px solid #bbb;
+      visibility: hidden;
+    }
+
+    .autosuggest ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .autosuggest li {
+      padding: .5rem 2.5rem;
+      xbackground: red;
+    }
+
+    .autosuggest li:hover {
+      cursor: pointer;
+      background-color: rgba(0,0,0,.05);
+    }
+
+    .searchform.opened .autosuggest {
+      visibility: visible;
+    }
+
+
+
   </style>
   <body class="sans-serif h-100">
     <div class="wrapper">
-    <header class="bb bg-white b--black-10 fixed flex-l items-center w-100 top-0 right-0 left-0 z-1">
+    <header class="bg-white fixed flex-l items-center w-100 top-0 right-0 left-0 z-1">
       <div class="w5-l flex items-center">
         <div class="xdib-ns pa3 xbg-gray absolute relative-l">
           <div class="toggle">
@@ -113,11 +153,22 @@
         </div>
       </div>
       <form class="black-80 flex-auto ph3">
-        <div class="relative">
+        <div class="relative searchform">
           <button class="absolute left-0 bn bg-transparent search-button">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="10.5" cy="10.5" r="7.5"></circle><line x1="21" y1="21" x2="15.8" y2="15.8"></line></svg>
           </button>
-          <input class="input-reset input-search pa2 mv1 mv0-l db w-100 bg-black-05" type="text" aria-describedby="name-desc">
+          <input class="input-reset input-search xinput-rounded searchauto" autofocus onkeyup="myFunction()" type="text" aria-describedby="name-desc">
+          <div class="autosuggest">
+            <ul>
+              <li>item 1</li>
+              <li>item 2</li>
+              <li>item 3</li>
+              <li>item 4</li>
+              <li>item 5</li>
+              <li>item 6</li>
+              <li>item 7</li>
+            </ul>
+          </div>
         </div>
       </form>
     </header>
@@ -378,6 +429,8 @@
 var wrapper = document.getElementsByClassName('wrapper')[0];
 var toggle = document.getElementsByClassName('toggle')[0];
 
+var searchform = document.getElementsByClassName('searchform')[0];
+var searchauto = document.getElementsByClassName('searchauto')[0];
 
 window.onload=function(){
 
@@ -385,7 +438,25 @@ window.onload=function(){
         wrapper.classList.toggle('opened');
     }
 
+    // searchauto.onclick=function(){
+    //     searchform.classList.toggle('opened');
+    // }
+
+    wrapper.onclick=function(){
+        searchform.classList.remove('opened');
+    }
+
 }
+
+function myFunction() {
+  searchauto.onkeyup=function(){
+      searchform.classList.add('opened');
+  }
+}
+
+
+
+
 </script>
 
   </body>
