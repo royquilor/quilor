@@ -68,7 +68,7 @@
     }
 
     main {
-      padding-top: 7rem;  
+      padding-top: 7rem;
     }
 
     @media screen and (min-width: 60em) {
@@ -78,15 +78,27 @@
       }
     }
 
+    .wrapper.opened main {
+      margin-left: 0;
+    }
+
+    .wrapper.opened aside {
+      width: 0;
+    }
+
+    .toggle {
+      cursor: pointer;
+    }
+
   </style>
   <body class="sans-serif h-100">
-
+    <div class="wrapper">
     <header class="bb bg-white b--black-10 fixed flex-l items-center w-100 top-0 right-0 left-0 z-1">
       <div class="w5-l flex items-center">
         <div class="xdib-ns pa3 xbg-gray absolute relative-l">
-          <a href="#">
+          <div class="toggle">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-          </a>
+          </div>
         </div>
         <div class="xdib-ns pa3 xbg-red flex-auto tc tl-l ">
           <a class="link" href="#">logo</a>
@@ -104,7 +116,7 @@
 
     <section class="width-100">
       <div class="row">
-    <aside class="menu bg-black-05 w5 dn db-l">
+    <aside id="aside" class="aside menu bg-black-05 w5 dn db-l">
       <div class="">
       <form class="pa3 xpt4 f6">
         <fieldset id="favorite_movies" class="bn pa0">
@@ -208,7 +220,7 @@
       </div>
     </aside>
 
-  <main>
+  <main id="main" class="main">
   <div class="flex pa3 pt4 items-center justify-between ">
     <div class="flex items-center">
       <h2 class="f3 fw4 mv0 mr2">10 results</h2>
@@ -342,6 +354,31 @@
 </main>
 </div>
 </section>
+</div>
+<script>
+// function w3_open() {
+//   document.getElementById("main").style.marginLeft = "0";
+//   document.getElementById("aside").style.width = "0";
+//   document.getElementById("mySidebar").style.display = "block";
+//   document.getElementById("openNav").style.display = 'none';
+// }
+// function w3_close() {
+//   document.getElementById("main").style.marginLeft = "0%";
+//   document.getElementById("mySidebar").style.display = "none";
+//   document.getElementById("openNav").style.display = "inline-block";
+// }
+var wrapper = document.getElementsByClassName('wrapper')[0];
+var toggle = document.getElementsByClassName('toggle')[0];
+
+
+window.onload=function(){
+
+    toggle.onclick=function(){
+        wrapper.classList.toggle('opened');
+    }
+
+}
+</script>
 
   </body>
 </html>
