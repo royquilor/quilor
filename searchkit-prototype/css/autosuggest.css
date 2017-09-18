@@ -1,0 +1,29 @@
+.autosuggest {
+position: absolute;
+margin-top: -1px;
+background: white;
+width: 100%;
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+border: 1px solid #bbb;
+visibility: hidden;
+}
+
+.autosuggest ul {
+list-style-type: none;
+padding: 0;
+}
+
+.autosuggest li {
+padding: .5rem 2.5rem;
+xbackground: red;
+}
+
+.autosuggest li:hover {
+cursor: pointer;
+background-color: rgba(0,0,0,.05);
+}
+
+.searchform.opened .autosuggest {
+visibility: visible;
+}

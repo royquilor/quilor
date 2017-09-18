@@ -1,0 +1,11 @@
+aside {
+transition: left 200ms;
+}
+
+.menu {
+position: fixed;
+overflow-y: auto;
+top: 70px;
+left: 0;
+bottom: 0;
+}

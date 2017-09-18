@@ -1,0 +1,37 @@
+header {
+height: 110px;
+border: 1px solid rgba(0, 0, 0, .1);
+}
+
+@media screen and (min-width: 60em) {
+header {
+  height: 70px;
+}
+}
+
+.row {
+display: flex;
+flex-wrap: wrap;
+}
+
+main {
+padding-top: 7rem;
+transition: margin 200ms;
+}
+
+@media screen and (min-width: 60em) {
+main {
+padding-top: 4rem;
+margin-left: 16rem;
+}
+}
+
+.wrapper.opened main {
+margin-left: 0;
+transition: margin 200ms;
+}
+
+.wrapper.opened aside {
+left: -16rem;
+transition: left 200ms;
+}
