@@ -1,0 +1,40 @@
+main {
+  width: 100%;
+}
+
+.filterstoggle {
+  cursor: pointer;
+}
+
+.filters {
+  position: relative;
+height: 40px;
+margin-right: 20px;
+margin-left: 8px;
+overflow: hidden;
+cursor: grab;
+cursor: -webkit-grab;
+}
+
+.nav {
+  position: relative;
+      display: -webkit-box;
+      display: flex;
+      flex-flow: row nowrap;
+      width: 100%;
+      padding-bottom: 30px;
+      overflow-x: scroll;
+      overflow-y: hidden;
+}
+
+
+form {
+  display: flex;
+  flex: 1 1 auto;
+  min-width: 0; /* 1 */
+  min-height: 0; /* 1 */
+}
+
+.wrapper.opened .filters {
+  xdisplay: block;
+}

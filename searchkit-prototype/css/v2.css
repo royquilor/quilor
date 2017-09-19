@@ -1,0 +1,35 @@
+main {
+  margin: 0;
+}
+
+.logo {
+   display: flex;
+   align-items: center;
+}
+
+/* Toggle menu */
+
+.container aside {
+left: -16rem;
+transition: left 200ms;
+}
+
+.container.opened main {
+margin-left: 16rem;
+transition: margin 200ms;
+}
+
+.container.opened header {
+left: 16rem;
+transition: left 200ms;
+}
+
+.container.opened aside {
+left: 0;
+transition: left 200ms;
+}
+
+.menu {
+  top: 0;
+  padding-top: 1rem;
+}

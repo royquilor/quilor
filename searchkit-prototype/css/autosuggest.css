@@ -3,19 +3,19 @@ position: absolute;
 margin-top: -1px;
 background: white;
 width: 100%;
-border-bottom-left-radius: 5px;
-border-bottom-right-radius: 5px;
 border: 1px solid #bbb;
 visibility: hidden;
+font-size: .875rem;
 }
 
 .autosuggest ul {
 list-style-type: none;
 padding: 0;
+margin: 0 0 1rem;
 }
 
 .autosuggest li {
-padding: .5rem 2.5rem;
+padding: .5rem 2rem;
 xbackground: red;
 }
 
@@ -26,4 +26,11 @@ background-color: rgba(0,0,0,.05);
 
 .searchform.opened .autosuggest {
 visibility: visible;
+}
+
+.autosuggest h2 {
+  text-transform: uppercase;
+  font-size: .75rem;
+  margin: 1rem 0 0;
+  padding: .5rem 1rem;
 }

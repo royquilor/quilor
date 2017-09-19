@@ -1,0 +1,20 @@
+.filterstoggle {
+  cursor: pointer;
+}
+
+.filters {
+  display: none;
+  transition: all 200ms;
+}
+
+form {
+  display: flex;
+  flex: 1 1 auto;
+  min-width: 0; /* 1 */
+  min-height: 0; /* 1 */
+}
+
+.wrapper.opened .filters {
+  display: flex;
+
+}

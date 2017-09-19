@@ -11,12 +11,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.8.0/css/tachyons.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/v2.css"/>
+    <link rel="stylesheet" href="css/v3.css"/>
+    <link rel="stylesheet" href="css/v4.css"/>
   </head>
 
   <body class="sans-serif h-100">
     <div class="wrapper">
-    <header class="bg-white fixed flex-l items-center w-100 top-0 right-0 left-0 z-1">
-      <div class="w5-l flex items-center">
+    <header class="bg-white fixed flex-l items-center top-0 right-0 left-0 z-1">
+      <div class="logo">
         <div class="xdib-ns pa3 xbg-gray absolute relative-l">
           <div class="toggle">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
@@ -26,7 +29,7 @@
           <a class="link" href="#">logo</a>
         </div>
       </div>
-      <form class="black-80 flex-auto ph3">
+      <form class="black-80 flex-auto pl4 pr3">
         <div class="relative searchform">
           <button class="absolute left-0 bn bg-transparent search-button">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="10.5" cy="10.5" r="7.5"></circle><line x1="21" y1="21" x2="15.8" y2="15.8"></line></svg>
@@ -57,119 +60,15 @@
 
     <section class="width-100">
       <div class="row">
-    <aside id="aside" class="aside menu bg-black-05 w5 dn db-l">
-      <div class="">
-      <form class="pa3 xpt4 f6">
-        <fieldset id="favorite_movies" class="bn pa0">
-          <legend class="fw7 mb2">Favorite Movies</legend>
-          <div class="flex items-center mb2">
-            <input class="mr2" type="checkbox" id="spacejam" value="spacejam">
-            <label for="spacejam" class="lh-copy">Space Jam</label>
-          </div>
-          <div class="flex items-center mb2">
-            <input class="mr2" type="checkbox" id="airbud" value="airbud">
-            <label for="airbud" class="lh-copy">Air Bud</label>
-          </div>
-          <div class="flex items-center mb2">
-            <input class="mr2" type="checkbox" id="hocuspocus" value="hocuspocus">
-            <label for="hocuspocus" class="lh-copy">Hocus Pocus</label>
-          </div>
-          <div class="flex items-center mb2">
-            <input class="mr2" type="checkbox" id="diehard" value="diehard">
-            <label for="diehard" class="lh-copy">Die Hard</label>
-          </div>
-          <div class="flex items-center mb2">
-            <input class="mr2" type="checkbox" id="primer" value="primer">
-            <label for="primer" class="lh-copy">Primer</label>
-          </div>
-          <div class="flex items-center mb2">
-            <input class="mr2" type="checkbox" id="proxy" value="proxy">
-            <label for="proxy" class="lh-copy">Hudsucker Proxy</label>
-          </div>
-          <div class="flex items-center mb2">
-            <input class="mr2" type="checkbox" id="homealone" value="homealone">
-            <label for="homealone" class="lh-copy">Home Alone</label>
-          </div>
-        </fieldset>
-      </form>
-      <form class="pa3 f6">
-        <fieldset id="favorite_movies" class="bn pa0">
-          <legend class="fw7 mb2">Actors</legend>
-          <div class="flex items-center mb2">
-            <input class="mr2" type="checkbox" id="spacejam" value="spacejam">
-            <label for="spacejam" class="lh-copy">Space Jam</label>
-          </div>
-          <div class="flex items-center mb2">
-            <input class="mr2" type="checkbox" id="airbud" value="airbud">
-            <label for="airbud" class="lh-copy">Air Bud</label>
-          </div>
-          <div class="flex items-center mb2">
-            <input class="mr2" type="checkbox" id="hocuspocus" value="hocuspocus">
-            <label for="hocuspocus" class="lh-copy">Hocus Pocus</label>
-          </div>
-          <div class="flex items-center mb2">
-            <input class="mr2" type="checkbox" id="diehard" value="diehard">
-            <label for="diehard" class="lh-copy">Die Hard</label>
-          </div>
-          <div class="flex items-center mb2">
-            <input class="mr2" type="checkbox" id="primer" value="primer">
-            <label for="primer" class="lh-copy">Primer</label>
-          </div>
-          <div class="flex items-center mb2">
-            <input class="mr2" type="checkbox" id="proxy" value="proxy">
-            <label for="proxy" class="lh-copy">Hudsucker Proxy</label>
-          </div>
-          <div class="flex items-center mb2">
-            <input class="mr2" type="checkbox" id="homealone" value="homealone">
-            <label for="homealone" class="lh-copy">Home Alone</label>
-          </div>
-        </fieldset>
-      </form>
-      <form class="pa3 f6">
-        <fieldset id="favorite_movies" class="bn pa0">
-          <legend class="fw7 mb2">Writers</legend>
-          <div class="flex items-center mb2">
-            <input class="mr2" type="checkbox" id="spacejam" value="spacejam">
-            <label for="spacejam" class="lh-copy">Space Jam</label>
-          </div>
-          <div class="flex items-center mb2">
-            <input class="mr2" type="checkbox" id="airbud" value="airbud">
-            <label for="airbud" class="lh-copy">Air Bud</label>
-          </div>
-          <div class="flex items-center mb2">
-            <input class="mr2" type="checkbox" id="hocuspocus" value="hocuspocus">
-            <label for="hocuspocus" class="lh-copy">Hocus Pocus</label>
-          </div>
-          <div class="flex items-center mb2">
-            <input class="mr2" type="checkbox" id="diehard" value="diehard">
-            <label for="diehard" class="lh-copy">Die Hard</label>
-          </div>
-          <div class="flex items-center mb2">
-            <input class="mr2" type="checkbox" id="primer" value="primer">
-            <label for="primer" class="lh-copy">Primer</label>
-          </div>
-          <div class="flex items-center mb2">
-            <input class="mr2" type="checkbox" id="proxy" value="proxy">
-            <label for="proxy" class="lh-copy">Hudsucker Proxy</label>
-          </div>
-          <div class="flex items-center mb2">
-            <input class="mr2" type="checkbox" id="homealone" value="homealone">
-            <label for="homealone" class="lh-copy">Home Alone</label>
-          </div>
-        </fieldset>
-      </form>
-      </div>
-    </aside>
+
 
   <main id="main" class="main">
   <div class="flex pa3 pt4 items-center justify-between ">
     <div class="flex items-center">
       <h2 class="f3 fw4 mv0 mr2">10 results</h2>
-      <select>
-        <option>Relevance</option>
-        <option>Latest Releases</option>
-        <option>Earliest Releases</option>
-      </select>
+      <div class="filterstoggle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-filter"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon></svg>
+      </div>
     </div>
     <div class="">
       <a href="#" class="link pa2">
@@ -180,6 +79,48 @@
       </a>
     </div>
   </div>
+  <div class="filters">
+    <div class="nav ph3">
+
+  <a class="link dim gray f6 dib mr3" href="#" title="Link 1">Link 1</a>
+  <a class="link dim gray f6 dib mr3" href="#" title="Link 2">Link 2</a>
+  <a class="link dim gray f6 dib mr3" href="#" title="Link 3">Link 3</a>
+  <a class="link dim gray f6 dib mr3" href="#" title="Link 4">Link 4</a>
+  <a class="link dim gray f6 dib mr3" href="#" title="Link 5">Link 5</a>
+  <a class="link dim gray f6 dib mr3" href="#" title="Link 6">Link 6</a>
+  <a class="link dim gray f6 dib mr3" href="#" title="Link 7">Link 7</a>
+  <a class="link dim gray f6 dib mr3" href="#" title="Link 8">Link 8</a>
+  <a class="link dim gray f6 dib mr3" href="#" title="Link 9">Link 9</a>
+  <a class="link dim gray f6 dib mr3" href="#" title="Link 10">Link 10</a>
+  <a class="link dim gray f6 dib mr3" href="#" title="Link 11">Link 11</a>
+  <a class="link dim gray f6 dib mr3" href="#" title="Link 12">Link 12</a>
+  <a class="link dim gray f6 dib mr3" href="#" title="Link 13">Link 13</a>
+  <a class="link dim gray f6 dib mr3" href="#" title="Link 14">Link 14</a>
+  <a class="link dim gray f6 dib mr3" href="#" title="Link 15">Link 15</a>
+  <a class="link dim gray f6 dib mr3" href="#" title="Link 16">Link 16</a>
+  <a class="link dim gray f6 dib mr3" href="#" title="Link 17">Link 17</a>
+  <a class="link dim gray f6 dib mr3" href="#" title="Link 18">Link 18</a>
+  <a class="link dim gray f6 dib mr3" href="#" title="Link 19">Link 19</a>
+  <a class="link dim gray f6 dib mr3" href="#" title="Link 20">Link 20</a>
+  <a class="link dim gray f6 dib mr3" href="#" title="Link 21">Link 21</a>
+  <a class="link dim gray f6 dib mr3" href="#" title="Link 22">Link 22</a>
+  <a class="link dim gray f6 dib mr3" href="#" title="Link 23">Link 23</a>
+  <a class="link dim gray f6 dib mr3" href="#" title="Link 24">Link 24</a>
+  <a class="link dim gray f6 dib mr3" href="#" title="Link 25">Link 25</a>
+  <a class="link dim gray f6 dib mr3" href="#" title="Link 26">Link 26</a>
+  <a class="link dim gray f6 dib mr3" href="#" title="Link 27">Link 27</a>
+  <a class="link dim gray f6 dib mr3" href="#" title="Link 28">Link 28</a>
+  <a class="link dim gray f6 dib mr3" href="#" title="Link 29">Link 29</a>
+  <a class="link dim gray f6 dib mr3" href="#" title="Link 30">Link 30</a>
+  <a class="link dim gray f6 dib mr3" href="#" title="Link 31">Link 31</a>
+  <a class="link dim gray f6 dib mr3" href="#" title="Link 32">Link 32</a>
+  <a class="link dim gray f6 dib mr3" href="#" title="Link 33">Link 33</a>
+  <a class="link dim gray f6 dib mr3" href="#" title="Link 34">Link 34</a>
+  <a class="link dim gray f6 dib mr3" href="#" title="Link 35">Link 35</a>
+  <a class="link dim gray f6 dib mr3" href="#" title="Link 36">Link 36</a>
+</div>
+</div>
+
   <div class="cf pa2">
     <div class="fl w5 pa2">
       <a href="https://geo.itunes.apple.com/us/album/blonde/id1146195596?at=1l3vqFJ&mt=1&app=music" class="db link dim tc">
@@ -187,8 +128,6 @@
         <dl class="mt2 f6 lh-copy">
           <dt class="clip">Title</dt>
           <dd class="ml0 black truncate w-100">Blonde</dd>
-          <dt class="clip">Artist</dt>
-          <dd class="ml0 gray truncate w-100">Frank Ocean</dd>
         </dl>
       </a>
     </div>
@@ -198,8 +137,6 @@
         <dl class="mt2 f6 lh-copy">
           <dt class="clip">Title</dt>
           <dd class="ml0 black truncate w-100 ttu">Jeffery</dd>
-          <dt class="clip">Artist</dt>
-          <dd class="ml0 gray truncate w-100">Young Thug</dd>
         </dl>
       </a>
     </div>
@@ -209,8 +146,6 @@
         <dl class="mt2 f6 lh-copy">
           <dt class="clip">Title</dt>
           <dd class="ml0 black truncate w-100">untitled umastered.</dd>
-          <dt class="clip">Artist</dt>
-          <dd class="ml0 gray truncate w-100">Kendrick Lamar</dd>
         </dl>
       </a>
     </div>
@@ -220,8 +155,6 @@
         <dl class="mt2 f6 lh-copy">
           <dt class="clip">Title</dt>
           <dd class="ml0 black truncate w-100">99%</dd>
-          <dt class="clip">Artist</dt>
-          <dd class="ml0 gray truncate w-100">Kaytranada</dd>
         </dl>
       </a>
     </div>
@@ -231,8 +164,6 @@
         <dl class="mt2 f6 lh-copy">
           <dt class="clip">Title</dt>
           <dd class="ml0 black truncate w-100">Aa</dd>
-          <dt class="clip">Artist</dt>
-          <dd class="ml0 gray truncate w-100">Baauer</dd>
         </dl>
       </a>
     </div>
@@ -242,8 +173,6 @@
         <dl class="mt2 f6 lh-copy">
           <dt class="clip">Title</dt>
           <dd class="ml0 black truncate w-100">99 cents</dd>
-          <dt class="clip">Artist</dt>
-          <dd class="ml0 gray truncate w-100">Santigold</dd>
         </dl>
       </a>
     </div>
@@ -253,8 +182,6 @@
         <dl class="mt2 f6 lh-copy">
           <dt class="clip">Title</dt>
           <dd class="ml0 black truncate w-100">A Moon Shaped Pool</dd>
-          <dt class="clip">Artist</dt>
-          <dd class="ml0 gray truncate w-100">Radiohead</dd>
         </dl>
       </a>
     </div>
@@ -264,8 +191,6 @@
         <dl class="mt2 f6 lh-copy">
           <dt class="clip">Title</dt>
           <dd class="ml0 black truncate w-100">The Life of Pablo</dd>
-          <dt class="clip">Artist</dt>
-          <dd class="ml0 gray truncate w-100">Kanye West</dd>
         </dl>
       </a>
     </div>
@@ -275,8 +200,6 @@
         <dl class="mt2 f6 lh-copy">
           <dt class="clip">Title</dt>
           <dd class="ml0 black truncate w-100">Coloring Book</dd>
-          <dt class="clip">Artist</dt>
-          <dd class="ml0 gray truncate w-100">Chance the Rapper</dd>
         </dl>
       </a>
     </div>
@@ -286,8 +209,6 @@
         <dl class="mt2 f6 lh-copy">
           <dt class="clip">Title</dt>
           <dd class="ml0 black truncate w-100">Everybody Looking</dd>
-          <dt class="clip">Artist</dt>
-          <dd class="ml0 gray truncate w-100">Gucci Mane</dd>
         </dl>
       </a>
     </div>
@@ -310,6 +231,7 @@
 // }
 var wrapper = document.getElementsByClassName('wrapper')[0];
 var toggle = document.getElementsByClassName('toggle')[0];
+var filterstoggle = document.getElementsByClassName('filterstoggle')[0];
 
 var searchform = document.getElementsByClassName('searchform')[0];
 var searchauto = document.getElementsByClassName('searchauto')[0];
@@ -320,9 +242,9 @@ window.onload=function(){
         wrapper.classList.toggle('opened');
     }
 
-    // searchauto.onclick=function(){
-    //     searchform.classList.toggle('opened');
-    // }
+    filterstoggle.onclick=function(){
+        wrapper.classList.toggle('opened');
+    }
 
     wrapper.onclick=function(){
         searchform.classList.remove('opened');

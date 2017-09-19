@@ -1,0 +1,111 @@
+main {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .04);
+  position: relative;
+
+}
+
+.logo {
+   display: flex;
+   align-items: center;
+}
+
+.toggle {
+  display: flex;
+  display: 0 0 auto;
+  xbackground: red;
+  padding: 0 .75rem;
+  height: 40px;
+  align-items: center;
+}
+
+aside {
+  background: #eee;
+  z-index: 2;
+}
+
+
+/* Toggle menu */
+
+.container aside {
+xleft: -16rem;
+width: 0;
+xtransition: left 200ms;
+}
+
+.container.opened main {
+xmargin-left: 16rem;
+transition: margin 200ms;
+}
+
+.container.opened header {
+xleft: 16rem;
+transition: left 200ms;
+}
+
+.container.opened aside {
+xleft: 0;
+xtransition: left 200ms;
+width: 100%;
+}
+
+.menu {
+  top: 40px;
+  padding: 0;
+  width: 100%;
+}
+
+main {
+  padding-top: 40px;
+}
+
+.input-search {
+  border:none;
+  box-shadow: none;
+  height: 39px;
+  padding-left: 0;
+}
+
+.search-button {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media screen and (min-width: 60em) {
+  main {
+    padding-top: 40px;
+  }
+}
+
+header {
+  height: 40px;
+}
+
+.autosuggest {
+  left: 0;
+}
+
+.overlay {
+  width: 0;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+left: 0;
+xbackground-color: rgba(0,0,0, 0.3);
+overflow-y: auto;
+overflow-x: hidden;
+text-align: center;
+opacity: 0.8;
+transition: opacity 1s;
+}
+
+.container.opened .overlay {
+  width: 100%;
+  xbackground-color: rgba(0,0,0, 0.9);
+}

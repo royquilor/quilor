@@ -11,53 +11,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.8.0/css/tachyons.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/mobile-overlay.css"/>
   </head>
 
   <body class="sans-serif h-100">
-    <div class="wrapper">
-    <header class="bg-white fixed flex-l items-center w-100 top-0 right-0 left-0 z-1">
-      <div class="w5-l flex items-center">
-        <div class="xdib-ns pa3 xbg-gray absolute relative-l">
-          <div class="toggle">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-          </div>
-        </div>
-        <div class="xdib-ns pa3 xbg-red flex-auto tc tl-l ">
-          <a class="link" href="#">logo</a>
-        </div>
+    <div class="container">
+    <aside id="aside" class="aside menu w5">
+      <div class="xdib-ns pa3 xbg-red flex-auto xtc xtl-l ">
+        <a class="link" href="#">logo</a>
       </div>
-      <form class="black-80 flex-auto ph3">
-        <div class="relative searchform">
-          <button class="absolute left-0 bn bg-transparent search-button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="10.5" cy="10.5" r="7.5"></circle><line x1="21" y1="21" x2="15.8" y2="15.8"></line></svg>
-          </button>
-          <input class="input-reset input-search xinput-rounded searchauto" onkeyup="myFunction()" type="text" aria-describedby="name-desc">
-          <div class="autosuggest">
-            <div>
-              <h2>Actors</h2>
-              <ul>
-                <li>item 1</li>
-                <li>item 2</li>
-                <li>item 3</li>
-                <li>item 4</li>
-              </ul>
-            </div>
-            <div>
-              <h2>Writers</h2>
-              <ul>
-                <li>item 1</li>
-                <li>item 2</li>
-                <li>item 3</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </form>
-    </header>
-
-    <section class="width-100">
-      <div class="row">
-    <aside id="aside" class="aside menu bg-black-05 w5 dn db-l">
       <div class="">
       <form class="pa3 xpt4 f6">
         <fieldset id="favorite_movies" class="bn pa0">
@@ -161,25 +123,45 @@
       </div>
     </aside>
 
+    <div class="wrapper">
+    <header class="bg-white fixed items-center top-0 right-0 left-0 z-1">
+      <div class="toggle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </div>
+      <form class="search black-80 flex-auto">
+        <div class="searchform">
+          <!-- <button class="absolute left-0 bn bg-transparent search-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="10.5" cy="10.5" r="7.5"></circle><line x1="21" y1="21" x2="15.8" y2="15.8"></line></svg>
+          </button> -->
+          <input class="input-reset input-search xinput-rounded searchauto" onkeyup="myFunction()" type="text" aria-describedby="name-desc" placeholder="Search">
+          <div class="autosuggest">
+            <div>
+              <h2>Actors</h2>
+              <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+              </ul>
+            </div>
+            <div>
+              <h2>Writers</h2>
+              <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </form>
+    </header>
+
+    <section class="width-100">
+      <div class="row">
+
+
   <main id="main" class="main">
-  <div class="flex pa3 pt4 items-center justify-between ">
-    <div class="flex items-center">
-      <h2 class="f3 fw4 mv0 mr2">10 results</h2>
-      <select>
-        <option>Relevance</option>
-        <option>Latest Releases</option>
-        <option>Earliest Releases</option>
-      </select>
-    </div>
-    <div class="">
-      <a href="#" class="link pa2">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-list"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3" y2="6"></line><line x1="3" y1="12" x2="3" y2="12"></line><line x1="3" y1="18" x2="3" y2="18"></line></svg>
-      </a>
-      <a href="#" class="link pa2">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-grid"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
-      </a>
-    </div>
-  </div>
   <div class="cf pa2">
     <div class="fl w5 pa2">
       <a href="https://geo.itunes.apple.com/us/album/blonde/id1146195596?at=1l3vqFJ&mt=1&app=music" class="db link dim tc">
@@ -187,8 +169,6 @@
         <dl class="mt2 f6 lh-copy">
           <dt class="clip">Title</dt>
           <dd class="ml0 black truncate w-100">Blonde</dd>
-          <dt class="clip">Artist</dt>
-          <dd class="ml0 gray truncate w-100">Frank Ocean</dd>
         </dl>
       </a>
     </div>
@@ -198,8 +178,6 @@
         <dl class="mt2 f6 lh-copy">
           <dt class="clip">Title</dt>
           <dd class="ml0 black truncate w-100 ttu">Jeffery</dd>
-          <dt class="clip">Artist</dt>
-          <dd class="ml0 gray truncate w-100">Young Thug</dd>
         </dl>
       </a>
     </div>
@@ -209,8 +187,6 @@
         <dl class="mt2 f6 lh-copy">
           <dt class="clip">Title</dt>
           <dd class="ml0 black truncate w-100">untitled umastered.</dd>
-          <dt class="clip">Artist</dt>
-          <dd class="ml0 gray truncate w-100">Kendrick Lamar</dd>
         </dl>
       </a>
     </div>
@@ -220,8 +196,6 @@
         <dl class="mt2 f6 lh-copy">
           <dt class="clip">Title</dt>
           <dd class="ml0 black truncate w-100">99%</dd>
-          <dt class="clip">Artist</dt>
-          <dd class="ml0 gray truncate w-100">Kaytranada</dd>
         </dl>
       </a>
     </div>
@@ -231,8 +205,6 @@
         <dl class="mt2 f6 lh-copy">
           <dt class="clip">Title</dt>
           <dd class="ml0 black truncate w-100">Aa</dd>
-          <dt class="clip">Artist</dt>
-          <dd class="ml0 gray truncate w-100">Baauer</dd>
         </dl>
       </a>
     </div>
@@ -242,8 +214,6 @@
         <dl class="mt2 f6 lh-copy">
           <dt class="clip">Title</dt>
           <dd class="ml0 black truncate w-100">99 cents</dd>
-          <dt class="clip">Artist</dt>
-          <dd class="ml0 gray truncate w-100">Santigold</dd>
         </dl>
       </a>
     </div>
@@ -253,8 +223,6 @@
         <dl class="mt2 f6 lh-copy">
           <dt class="clip">Title</dt>
           <dd class="ml0 black truncate w-100">A Moon Shaped Pool</dd>
-          <dt class="clip">Artist</dt>
-          <dd class="ml0 gray truncate w-100">Radiohead</dd>
         </dl>
       </a>
     </div>
@@ -264,8 +232,6 @@
         <dl class="mt2 f6 lh-copy">
           <dt class="clip">Title</dt>
           <dd class="ml0 black truncate w-100">The Life of Pablo</dd>
-          <dt class="clip">Artist</dt>
-          <dd class="ml0 gray truncate w-100">Kanye West</dd>
         </dl>
       </a>
     </div>
@@ -275,8 +241,6 @@
         <dl class="mt2 f6 lh-copy">
           <dt class="clip">Title</dt>
           <dd class="ml0 black truncate w-100">Coloring Book</dd>
-          <dt class="clip">Artist</dt>
-          <dd class="ml0 gray truncate w-100">Chance the Rapper</dd>
         </dl>
       </a>
     </div>
@@ -286,8 +250,6 @@
         <dl class="mt2 f6 lh-copy">
           <dt class="clip">Title</dt>
           <dd class="ml0 black truncate w-100">Everybody Looking</dd>
-          <dt class="clip">Artist</dt>
-          <dd class="ml0 gray truncate w-100">Gucci Mane</dd>
         </dl>
       </a>
     </div>
@@ -296,6 +258,10 @@
 </div>
 </section>
 </div>
+<div class="overlay"></div>
+
+</div>
+
 <script>
 // function w3_open() {
 //   document.getElementById("main").style.marginLeft = "0";
@@ -308,24 +274,32 @@
 //   document.getElementById("mySidebar").style.display = "none";
 //   document.getElementById("openNav").style.display = "inline-block";
 // }
-var wrapper = document.getElementsByClassName('wrapper')[0];
+var container = document.getElementsByClassName('container')[0];
 var toggle = document.getElementsByClassName('toggle')[0];
-
+var wrapper = document.getElementsByClassName('wrapper')[0];
 var searchform = document.getElementsByClassName('searchform')[0];
 var searchauto = document.getElementsByClassName('searchauto')[0];
+var main = document.getElementsByClassName('main')[0];
+var overlay = document.getElementsByClassName('overlay')[0];
+
 
 window.onload=function(){
 
     toggle.onclick=function(){
-        wrapper.classList.toggle('opened');
+      container.classList.toggle('opened');
+      //document.body.style.backgroundColor = "rgba(0,0,0,0.9)";
     }
 
     // searchauto.onclick=function(){
-    //     searchform.classList.toggle('opened');
+    //   searchform.classList.toggle('opened');
     // }
 
     wrapper.onclick=function(){
-        searchform.classList.remove('opened');
+      searchform.classList.remove('opened');
+    }
+
+    overlay.onclick=function(){
+      container.classList.remove('opened');
     }
 
 }
