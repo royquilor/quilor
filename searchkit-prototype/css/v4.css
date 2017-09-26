@@ -7,26 +7,50 @@ main {
 }
 
 .filters {
-  position: relative;
+  /*position: relative;
 height: 40px;
 margin-right: 20px;
 margin-left: 8px;
 overflow: hidden;
 cursor: grab;
-cursor: -webkit-grab;
+cursor: -webkit-grab;*/
 }
 
 .nav {
-  position: relative;
-      display: -webkit-box;
-      display: flex;
-      flex-flow: row nowrap;
-      width: 100%;
-      padding-bottom: 30px;
-      overflow-x: scroll;
-      overflow-y: hidden;
+  overflow: hidden;
+      cursor: grab;
+      cursor: -webkit-grab;
+      height: 20px;
+      position: relative;
 }
 
+.nav:after {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 100px;
+    height: 60px;
+    pointer-events: none;
+    content: "";
+    background: linear-gradient(90deg,hsla(0,0%,100%,0) 0,#fff 95%,#fff);
+}
+
+.nav div {
+  display: flex;
+  flex-flow: row nowrap;
+  padding-bottom: 3rem;
+}
+
+.nav a {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba( 0, 0, 0, .2 );
+  padding: .25rem .75rem;
+  border-radius: .25rem;
+  
+}
 
 form {
   display: flex;
@@ -35,6 +59,10 @@ form {
   min-height: 0; /* 1 */
 }
 
-.wrapper.opened .filters {
-  xdisplay: block;
+.navfilters {
+  /*display: none;*/
+}
+
+.wrapper.opened .navfilters {
+  /*display: block;*/
 }
