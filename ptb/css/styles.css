@@ -1,0 +1,459 @@
+body {
+font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+}
+
+a {
+background-color: #eee;
+padding: .5rem 1rem;
+border-radius: 500px;
+box-shadow: 0 0 0 2px #eee inset;
+background-color: transparent;
+font-weight: 600;
+}
+
+.grid {
+display: flex;
+flex-wrap: wrap;
+justify-content:space-between;
+}
+
+.dark { background-color: #111111; }
+.dragon { background-color: #00449e; }
+.electric { background-color: #FFDC00; }
+.fairy { background-color: #ffa3d7; }
+.fight { background-color: #FF4136; }
+.fire { background-color: #FF851B; }
+.flying { background-color: #7FDBFF; }
+.ghost { background-color: #B10DC9; }
+.grass { background-color: #2ECC40; }
+.ice { background-color: #39CCCC; }
+.normal { background-color: #AAAAAA; }
+.poison { background-color: #85144b; }
+.psychic { background-color: #F012BE; }
+.steel { background-color: #DDDDDD; }
+.water { background-color: #0074D9; }
+
+.bug-card h1 { color: #2ECC40 }
+.fighting-card h1 { color: #e7040f; }
+
+.test {
+overflow-x: scroll;
+overflow-y: hidden;
+}
+
+nav {
+overflow: hidden;
+background: white;
+height: 16px;
+}
+
+main {
+margin: 1rem;
+border-radius: 1rem;
+display: flex;
+flex-direction: column;
+height: 100%;
+flex-grow: 1;
+position: relative;
+}
+
+main::after {
+content: "";
+position: absolute;
+background: #fff;
+left: 2px;
+top: 2px;
+right: 2px;
+bottom: 2px;
+border-radius: .875rem;
+}
+
+h1 {
+margin-top: 0;
+}
+
+h2,
+h3 {
+text-transform: uppercase;
+font-size: .75rem;
+color: rgba(0,0,0,.8);
+}
+
+header {
+border-bottom: 1px solid #eee;
+margin-bottom: .5rem;
+z-index: 1;
+}
+
+main {
+padding: 1.5rem
+}
+
+section {
+flex-direction: row;
+display: flex;
+border-bottom: 1px solid #eee;
+padding: .5rem 0;
+z-index: 1;
+}
+
+section div {
+flex: 1;
+}
+
+section:last-child {
+border: 0;
+}
+
+footer {
+display: flex;
+flex-direction: row;
+z-index: 1;
+flex: 1;
+padding-top: 1rem;
+line-height: 1.5
+}
+
+ul {
+list-style: none;
+margin:0 0 1rem;
+padding: 0;
+line-height: 1.5;
+}
+
+p {
+margin: 0 0 1rem;
+}
+
+ul,
+p {
+color: rgba(0,0,0,.5);
+}
+
+.card {
+display: none;
+}
+
+.tablinks {
+  text-decoration: none;
+}
+
+/* =BUG */
+
+.bug-link.active {
+background-color: #2ECC40;
+box-shadow: 0 0 0 2px #2ECC40 inset;
+color: #fff;
+}
+
+.bug-card {
+background: #2ECC40;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #2ECC40, #FFDC00);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #2ECC40, #FFDC00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* =Dark */
+
+.dark-link.active {
+background-color: #111111;
+box-shadow: 0 0 0 2px #111111 inset;
+color: #fff;
+}
+
+.dark-card {
+  background: #111111;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #111111, #DDDDDD);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #111111, #DDDDDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.dark-card h1 {
+  color: #111111;
+}
+
+/* =DRAGON */
+
+.dragon-link.active {
+  background-color: #00449e;
+  box-shadow: 0 0 0 2px #00449e inset;
+  color: #fff;
+}
+
+.dragon-card h1 {
+  color: #00449e;
+}
+
+.dragon-card {
+background: #00449e;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #00449e, #7FDBFF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #00449e, #7FDBFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* =ELECTRIC */
+
+.electric-link.active {
+background-color: #FFDC00;
+box-shadow: 0 0 0 2px #FFDC00 inset;
+color: #fff;
+}
+
+.electric-card h1 {
+  color: #FFDC00;
+}
+
+.electric-card {
+background: #FFDC00;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #FFDC00, #FF851B);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #FFDC00, #FF851B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* =FAIRY */
+
+.fairy-link.active {
+background-color: #d5008f;
+box-shadow: 0 0 0 2px #d5008f inset;
+color: #fff;
+}
+
+.fairy-card h1 {
+  color: #d5008f;
+}
+
+.fairy-card {
+background: #d5008f;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #d5008f, #ffa3d7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #d5008f, #ffa3d7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* =FIGHTING */
+
+.fighting-link.active {
+  background-color: #e7040f;
+  box-shadow: 0 0 0 2px #e7040f inset;
+  color: #fff;
+}
+
+.fighting-card h1 {
+  color: #e7040f;
+}
+
+.fighting-card {
+  background: #e7040f;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #e7040f, #ff725c);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #e7040f, #ff725c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* =FIRE */
+
+.fire-link.active {
+background-color: #FF851B;
+box-shadow: 0 0 0 2px #FF851B inset;
+color: #fff;
+}
+
+.fire-card h1 {
+  color: #FF851B;
+}
+
+.fire-card {
+background: #FF851B;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #FF851B, #FFDC00);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #FF851B, #FFDC00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* =FLYING */
+
+.flying-link.active {
+background-color: #7FDBFF;
+box-shadow: 0 0 0 2px #7FDBFF inset;
+color: #fff;
+}
+
+.flying-card h1 {
+  color: #7FDBFF;
+}
+
+.flying-card {
+background: #7FDBFF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #7FDBFF, #96ccff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #7FDBFF, #96ccff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* =GHOST */
+
+.ghost-link.active {
+background-color: #B10DC9;
+box-shadow: 0 0 0 2px #B10DC9 inset;
+color: #fff;
+}
+
+.ghost-card h1 {
+  color: #B10DC9;
+}
+
+.ghost-card {
+background: #B10DC9;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #B10DC9, #a463f2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #B10DC9, #a463f2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* =GRASS */
+
+.grass-link.active {
+background-color: #137752;
+box-shadow: 0 0 0 2px #137752 inset;
+color: #fff;
+}
+
+.grass-card h1 {
+  color: #137752;
+}
+
+.grass-card {
+background: #137752;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #137752, #FFDC00);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #137752, #FFDC00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* =GROUND */
+
+.ground-link.active {
+  background-color: #843700;
+  box-shadow: 0 0 0 2px #843700 inset;
+  color: #fff;
+}
+
+.ground-card h1 {
+  color: #843700;
+}
+
+.ground-card {
+  background: #843700;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #843700, #da864a);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #843700, #da864a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* =ICE */
+
+.ice-link.active {
+background-color: #39CCCC;
+box-shadow: 0 0 0 2px #39CCCC inset;
+color: #fff;
+}
+
+.ice-card h1 {
+  color: #39CCCC;
+}
+
+.ice-card {
+background: #39CCCC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #39CCCC, #EEEEEE);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #39CCCC, #EEEEEE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* =NORMAL */
+
+.normal-link.active {
+background-color: #AAAAAA;
+box-shadow: 0 0 0 2px #AAAAAA inset;
+color: #fff;
+}
+
+.normal-card h1 {
+  color: #AAAAAA;
+}
+
+.normal-card {
+background: #AAAAAA;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #AAAAAA, #EEEEEE);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #AAAAAA, #EEEEEE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* =POISON */
+
+.poison-link.active {
+background-color: #85144b;
+box-shadow: 0 0 0 2px #85144b inset;
+color: #fff;
+}
+
+.poison-card h1 {
+  color: #85144b;
+}
+
+.poison-card {
+background: #85144b;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #85144b, #FFDC00);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #85144b, #FFDC00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* =PSYCHIC */
+
+.psychic-link.active {
+background-color: #F012BE;
+box-shadow: 0 0 0 2px #F012BE inset;
+color: #fff;
+}
+
+.psychic-card h1 {
+  color: #F012BE;
+}
+
+.psychic-card {
+background: #F012BE;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #F012BE, #ffa3d7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #F012BE, #ffa3d7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* =ROCK */
+
+.rock-link.active {
+background-color: #867b00;
+box-shadow: 0 0 0 2px #867b00 inset;
+color: #fff;
+}
+
+.rock-card h1 {
+  color: #867b00;
+}
+
+.rock-card {
+background: #867b00;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #867b00, #d7c938);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #867b00, #d7c938); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* =STEEL */
+
+.steel-link.active {
+background-color: #DDDDDD;
+box-shadow: 0 0 0 2px #DDDDDD inset;
+color: #fff;
+}
+
+.steel-card h1 {
+color: #DDDDDD;
+}
+
+.steel-card {
+background: #DDDDDD;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #DDDDDD, #EEEEEE);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #DDDDDD, #EEEEEE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* =WATER */
+
+.water-link.active {
+background-color: #0074D9;
+box-shadow: 0 0 0 2px #0074D9 inset;
+color: #fff;
+}
+
+.water-card h1 {
+color: #0074D9;
+}
+
+.water-card {
+background: #0074D9;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #0074D9, #96ccff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #0074D9, #96ccff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
